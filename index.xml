@@ -7,14 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>AKAxedx</copyright>
-        <lastBuildDate>Sun, 25 Aug 2024 00:29:18 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>MyFirstBlog</title>
-        <link>https://akaxedx.github.io/p/myfirstblog/</link>
-        <pubDate>Sun, 25 Aug 2024 00:29:18 +0800</pubDate>
+        <lastBuildDate>Sun, 25 Aug 2024 01:38:49 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Java秋招笔记</title>
+        <link>https://akaxedx.github.io/p/java%E7%A7%8B%E6%8B%9B%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Sun, 25 Aug 2024 01:38:49 +0800</pubDate>
         
-        <guid>https://akaxedx.github.io/p/myfirstblog/</guid>
-        <description>&lt;p&gt;草泥马&lt;/p&gt;
-</description>
+        <guid>https://akaxedx.github.io/p/java%E7%A7%8B%E6%8B%9B%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://akaxedx.github.io/p/java%E7%A7%8B%E6%8B%9B%E7%AC%94%E8%AE%B0/saber.png" alt="Featured image of post Java秋招笔记" /&gt;</description>
         </item>
         <item>
         <title>归档</title>
@@ -30,8 +29,8 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://akaxedx.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
+        <description>&lt;h1 id=&#34;no-about&#34;&gt;no about
+&lt;/h1&gt;</description>
         </item>
         <item>
         <title>搜索</title>
