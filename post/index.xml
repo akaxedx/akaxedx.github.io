@@ -7,7 +7,29 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>AKAxedx</copyright>
-        <lastBuildDate>Sun, 25 Aug 2024 01:38:49 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 25 Aug 2024 02:25:02 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Spring 源码解析笔记</title>
+        <link>https://akaxedx.github.io/p/spring-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Sun, 25 Aug 2024 02:25:02 +0800</pubDate>
+        
+        <guid>https://akaxedx.github.io/p/spring-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://akaxedx.github.io/p/spring-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%AC%94%E8%AE%B0/image-20240825022846591.png" alt="Featured image of post Spring 源码解析笔记" /&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/spring-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%AC%94%E8%AE%B0/image-20240825022846591.png&#34;
+	width=&#34;225&#34;
+	height=&#34;90&#34;
+	srcset=&#34;https://akaxedx.github.io/p/spring-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%AC%94%E8%AE%B0/image-20240825022846591_hu12678922718756564882.png 480w, https://akaxedx.github.io/p/spring-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%AC%94%E8%AE%B0/image-20240825022846591_hu2570617796628560944.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240825022846591&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;250&#34;
+		data-flex-basis=&#34;600px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Java秋招笔记</title>
         <link>https://akaxedx.github.io/p/java%E7%A7%8B%E6%8B%9B%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Sun, 25 Aug 2024 01:38:49 +0800</pubDate>
