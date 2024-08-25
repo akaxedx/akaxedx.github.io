@@ -251,59 +251,64 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#java-中创建线程的方式">Java 中创建线程的方式</a>
+    <li><a href="#juc">JUC</a>
       <ol>
-        <li><a href="#继承thread类">继承Thread类</a></li>
-        <li><a href="#实现runnable接口">实现Runnable接口</a></li>
-        <li><a href="#实现-callable-接口">实现 Callable 接口</a></li>
-        <li><a href="#线程池创建线程">线程池创建线程</a></li>
-        <li><a href="#总结">总结</a></li>
+        <li><a href="#java-中创建线程的方式">Java 中创建线程的方式</a>
+          <ol>
+            <li><a href="#继承thread类">继承Thread类</a></li>
+            <li><a href="#实现runnable接口">实现Runnable接口</a></li>
+            <li><a href="#实现-callable-接口">实现 Callable 接口</a></li>
+            <li><a href="#线程池创建线程">线程池创建线程</a></li>
+            <li><a href="#总结">总结</a></li>
+          </ol>
+        </li>
+        <li><a href="#不建议使用-executors-创建线程池的原因">不建议使用 Executors 创建线程池的原因</a>
+          <ol>
+            <li><a href="#fixedthreadpool">FixedThreadPool</a></li>
+            <li><a href="#singlethreadexecutor">SingleThreadExecutor</a></li>
+            <li><a href="#总结-1">总结</a></li>
+          </ol>
+        </li>
+        <li><a href="#线程池有哪几种状态每种状态分别表示什么">线程池有哪几种状态，每种状态分别表示什么</a>
+          <ol>
+            <li><a href="#running">RUNNING</a></li>
+            <li><a href="#shutdown">SHUTDOWN</a></li>
+            <li><a href="#stop">STOP</a></li>
+            <li><a href="#tidying">TIDYING</a></li>
+            <li><a href="#terminated">TERMINATED</a></li>
+          </ol>
+        </li>
+        <li><a href="#synchronized-和-reentrantlock">Synchronized 和 ReentrantLock</a></li>
+        <li><a href="#reentrantlock分为公平和非公平锁底层是怎么实现的">ReentrantLock分为公平和非公平锁，底层是怎么实现的</a>
+          <ol>
+            <li><a href="#总结-2">总结</a></li>
+          </ol>
+        </li>
+        <li><a href="#synchronized-锁是怎么升级的">Synchronized 锁是怎么升级的</a></li>
+        <li><a href="#threadlocal的应用场景底层实现是什么样的">ThreadLocal的应用场景，底层实现是什么样的</a>
+          <ol>
+            <li><a href="#threadlocal-底层">ThreadLocal 底层</a></li>
+            <li><a href="#应用场景">应用场景</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
-    <li><a href="#不建议使用-executors-创建线程池的原因">不建议使用 Executors 创建线程池的原因</a>
+    <li><a href="#java-核心类库及其底层原理">Java 核心类库及其底层原理</a>
       <ol>
-        <li><a href="#fixedthreadpool">FixedThreadPool</a></li>
-        <li><a href="#singlethreadexecutor">SingleThreadExecutor</a></li>
-        <li><a href="#总结-1">总结</a></li>
-      </ol>
-    </li>
-    <li><a href="#线程池有哪几种状态每种状态分别表示什么">线程池有哪几种状态，每种状态分别表示什么</a>
-      <ol>
-        <li><a href="#running">RUNNING</a></li>
-        <li><a href="#shutdown">SHUTDOWN</a></li>
-        <li><a href="#stop">STOP</a></li>
-        <li><a href="#tidying">TIDYING</a></li>
-        <li><a href="#terminated">TERMINATED</a></li>
-      </ol>
-    </li>
-    <li><a href="#synchronized-和-reentrantlock">Synchronized 和 ReentrantLock</a></li>
-    <li><a href="#reentrantlock分为公平和非公平锁底层是怎么实现的">ReentrantLock分为公平和非公平锁，底层是怎么实现的</a>
-      <ol>
-        <li><a href="#总结-2">总结</a></li>
-      </ol>
-    </li>
-    <li><a href="#synchronized-锁是怎么升级的">Synchronized 锁是怎么升级的</a></li>
-    <li><a href="#threadlocal的应用场景底层实现是什么样的">ThreadLocal的应用场景，底层实现是什么样的</a>
-      <ol>
-        <li><a href="#threadlocal-底层">ThreadLocal 底层</a></li>
-        <li><a href="#应用场景">应用场景</a></li>
-      </ol>
-    </li>
-  </ol>
-
-  <ol>
-    <li><a href="#jdkjrejvm之间的区别">JDK，JRE，JVM之间的区别</a>
-      <ol>
-        <li><a href="#jdk">JDK</a></li>
-        <li><a href="#jre">JRE</a></li>
-        <li><a href="#jvm">JVM</a></li>
-        <li><a href="#eg">e.g.</a></li>
-      </ol>
-    </li>
-    <li><a href="#hashcode-与-equals-之间的关系">hashCode() 与 equals() 之间的关系</a>
-      <ol>
-        <li><a href="#理论">理论</a></li>
-        <li><a href="#demo-演示">demo 演示</a></li>
+        <li><a href="#jdkjrejvm之间的区别">JDK，JRE，JVM之间的区别</a>
+          <ol>
+            <li><a href="#jdk">JDK</a></li>
+            <li><a href="#jre">JRE</a></li>
+            <li><a href="#jvm">JVM</a></li>
+            <li><a href="#eg">e.g.</a></li>
+          </ol>
+        </li>
+        <li><a href="#hashcode-与-equals-之间的关系">hashCode() 与 equals() 之间的关系</a>
+          <ol>
+            <li><a href="#理论">理论</a></li>
+            <li><a href="#demo-演示">demo 演示</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -379,10 +384,11 @@
     <section class="article-content">
     
     
-    <h1 id="juc">JUC
-</h1><h2 id="java-中创建线程的方式">Java 中创建线程的方式
-</h2><h3 id="继承thread类">继承Thread类
-</h3><div class="highlight"><div class="chroma">
+    <h1 id="heading">
+</h1><h2 id="juc">JUC
+</h2><h3 id="java-中创建线程的方式">Java 中创建线程的方式
+</h3><h4 id="继承thread类">继承Thread类
+</h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -414,8 +420,8 @@
 <li>由于 Java 是单继承，直接继承 Thread 会限制继承其他类，因此多用 Runnable 接口实现多线程</li>
 <li>Thread 也是继承了 Runnable 接口的类，本质上还是等于继承了 Runnable 接口</li>
 </ul>
-<h3 id="实现runnable接口">实现Runnable接口
-</h3><div class="highlight"><div class="chroma">
+<h4 id="实现runnable接口">实现Runnable接口
+</h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -491,8 +497,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="实现-callable-接口">实现 Callable 接口
-</h3><div class="highlight"><div class="chroma">
+</div><h4 id="实现-callable-接口">实现 Callable 接口
+</h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -540,8 +546,8 @@
 <li>与 Runnable 的区别在于可以拿到线程执行的结果，这里需要与 FutureTask 结合使用</li>
 <li>而 FutureTask 是继承的 Runnable 接口和 Future 接口的接口</li>
 </ul>
-<h3 id="线程池创建线程">线程池创建线程
-</h3><div class="highlight"><div class="chroma">
+<h4 id="线程池创建线程">线程池创建线程
+</h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -575,11 +581,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="总结">总结
-</h3><p>以上四种方式底层均为 Runnable 接口</p>
-<h2 id="不建议使用-executors-创建线程池的原因">不建议使用 Executors 创建线程池的原因
-</h2><h3 id="fixedthreadpool">FixedThreadPool
-</h3><p>当我们使用 Executors 创建  FixedThreadPool 时，对应的构造方法为</p>
+</div><h4 id="总结">总结
+</h4><p>以上四种方式底层均为 Runnable 接口</p>
+<h3 id="不建议使用-executors-创建线程池的原因">不建议使用 Executors 创建线程池的原因
+</h3><h4 id="fixedthreadpool">FixedThreadPool
+</h4><p>当我们使用 Executors 创建  FixedThreadPool 时，对应的构造方法为</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -599,8 +605,8 @@
 </div><ul>
 <li>这里 LinkedBlockingQueue 是一个无界的阻塞队列，如果使用该线程池执行任务，如果任务过多就会不断的添加进队列，会有 OOM 的风险</li>
 </ul>
-<h3 id="singlethreadexecutor">SingleThreadExecutor
-</h3><p>当我们使用 Executors 创建  SingleThreadExecutor 时，对应的构造方法为</p>
+<h4 id="singlethreadexecutor">SingleThreadExecutor
+</h4><p>当我们使用 Executors 创建  SingleThreadExecutor 时，对应的构造方法为</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -622,21 +628,21 @@
 </div><ul>
 <li>也是 LinkedBlockingQueue</li>
 </ul>
-<h3 id="总结-1">总结
-</h3><p>除了 OOM 的风险外，我们使用  Executors 来创建线程池也不能自定义线程的名字，不利于排查问题，所以应该用 <code>ThreadPoolExecutor</code> 直接定义线程池，可以灵活控制</p>
-<h2 id="线程池有哪几种状态每种状态分别表示什么">线程池有哪几种状态，每种状态分别表示什么
-</h2><h3 id="running">RUNNING
-</h3><p>表示线程池正常运行，既能接收新任务，也会正常处理队列中的任务</p>
-<h3 id="shutdown">SHUTDOWN
-</h3><p>当调用线程池 shutdown() 方法时，进入 SHUTDOWN 状态，表示线程池正处于关闭状态，<strong>不会接收新任务</strong>，但<strong>会继续把队列中的任务处理完</strong></p>
-<h3 id="stop">STOP
-</h3><p>当调用线程池 shutdownnow() 方法时，线程池进入 STOP 状态，表示线程池正处于停止状态，此状态 <strong>不会接收新任务，也不会处理队列中的任务</strong>，正在运行的线程也会终断</p>
-<h3 id="tidying">TIDYING
-</h3><p>线程池中没有线程运行后，线程池状态自动变为 TIDYING，并且调用 terminated()，该方法是空方法，可以自行扩展</p>
-<h3 id="terminated">TERMINATED
-</h3><p>terminated() 方法执行完后，线程池状态变为 TERMINATED</p>
-<h2 id="synchronized-和-reentrantlock">Synchronized 和 ReentrantLock
-</h2><div class="table-wrapper"><table>
+<h4 id="总结-1">总结
+</h4><p>除了 OOM 的风险外，我们使用  Executors 来创建线程池也不能自定义线程的名字，不利于排查问题，所以应该用 <code>ThreadPoolExecutor</code> 直接定义线程池，可以灵活控制</p>
+<h3 id="线程池有哪几种状态每种状态分别表示什么">线程池有哪几种状态，每种状态分别表示什么
+</h3><h4 id="running">RUNNING
+</h4><p>表示线程池正常运行，既能接收新任务，也会正常处理队列中的任务</p>
+<h4 id="shutdown">SHUTDOWN
+</h4><p>当调用线程池 shutdown() 方法时，进入 SHUTDOWN 状态，表示线程池正处于关闭状态，<strong>不会接收新任务</strong>，但<strong>会继续把队列中的任务处理完</strong></p>
+<h4 id="stop">STOP
+</h4><p>当调用线程池 shutdownnow() 方法时，线程池进入 STOP 状态，表示线程池正处于停止状态，此状态 <strong>不会接收新任务，也不会处理队列中的任务</strong>，正在运行的线程也会终断</p>
+<h4 id="tidying">TIDYING
+</h4><p>线程池中没有线程运行后，线程池状态自动变为 TIDYING，并且调用 terminated()，该方法是空方法，可以自行扩展</p>
+<h4 id="terminated">TERMINATED
+</h4><p>terminated() 方法执行完后，线程池状态变为 TERMINATED</p>
+<h3 id="synchronized-和-reentrantlock">Synchronized 和 ReentrantLock
+</h3><div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Synchronized</th>
@@ -670,25 +676,25 @@
 </tr>
 </tbody>
 </table></div>
-<h2 id="reentrantlock分为公平和非公平锁底层是怎么实现的">ReentrantLock分为公平和非公平锁，底层是怎么实现的
-</h2><p>首先，不管是公平锁还是非公平锁，他们的底层实现都会用 AQS 来进行排队，他们的区别在于线程在使用 lock() 方法加锁时：</p>
+<h3 id="reentrantlock分为公平和非公平锁底层是怎么实现的">ReentrantLock分为公平和非公平锁，底层是怎么实现的
+</h3><p>首先，不管是公平锁还是非公平锁，他们的底层实现都会用 AQS 来进行排队，他们的区别在于线程在使用 lock() 方法加锁时：</p>
 <ul>
 <li>公平锁：检查 AQS 队列中是否存在线程在排队，如果有，则当前线程也进行排队</li>
 <li>非公平锁：不检查是否排队，直接竞争锁</li>
 </ul>
-<h3 id="总结-2">总结
-</h3><p>不管是否是公平锁，一旦没竞争到锁，都会进行排队，当锁释放时，都是唤醒排在最前面的线程，所以非公平锁知识体现在的线程加锁阶段，而没有体现在线程被唤醒阶段</p>
+<h4 id="总结-2">总结
+</h4><p>不管是否是公平锁，一旦没竞争到锁，都会进行排队，当锁释放时，都是唤醒排在最前面的线程，所以非公平锁知识体现在的线程加锁阶段，而没有体现在线程被唤醒阶段</p>
 <p>ReentrantLock 是可重入锁，不管是否公平</p>
-<h2 id="synchronized-锁是怎么升级的">Synchronized 锁是怎么升级的
-</h2><ul>
+<h3 id="synchronized-锁是怎么升级的">Synchronized 锁是怎么升级的
+</h3><ul>
 <li>偏向锁：在锁对象的对象头中记录一下当前获取到该锁的线程 ID，该线程下次如果又来获取该锁就可以直接获取到了，也就是支持<strong>锁重入</strong></li>
 <li>轻量级锁：有偏向锁升级，当一个线程获取到锁后，此时这把锁是偏向锁，此时又有第二个线程来<strong>竞争</strong>锁，偏向锁会升级为轻量级锁，轻量级锁通过自旋实现，不会阻塞线程</li>
 <li><strong>自旋次数过多</strong>仍没有获取到锁，则会升级成<strong>重量级锁</strong>，重量级锁会导致线程阻塞</li>
 <li>自旋锁：自旋锁就是线程在获取锁的过程中，不会去阻塞线程，也就无所谓唤醒线程，<strong>阻塞和唤醒这两个步骤都是需要操作系统去进行的</strong>，比较耗费时间，自旋锁是线程通过 CAS 获取预期的一个标记，如果没获取到则循环获取，这个过程线程一直在运行中，没有使用太多操作系统资源，比较轻量</li>
 </ul>
-<h2 id="threadlocal的应用场景底层实现是什么样的">ThreadLocal的应用场景，底层实现是什么样的
-</h2><h3 id="threadlocal-底层">ThreadLocal 底层
-</h3><ul>
+<h3 id="threadlocal的应用场景底层实现是什么样的">ThreadLocal的应用场景，底层实现是什么样的
+</h3><h4 id="threadlocal-底层">ThreadLocal 底层
+</h4><ul>
 <li>ThreadLocal 是 Java 中所提供的线程本地存储机制，可以利用该机制将数据 <strong>缓存在某个线程内部</strong>，该线程可以在任意时刻、任意方法中获取缓存的数据</li>
 <li>ThreadLocal 底层是通过 ThreadLocalMap 实现的，每个 Thread 对象中都存在一个 ThreadLocalMap，Map 的 key 为 Threadlocal 对象，Map 的 value 为需要缓存的值</li>
 </ul>
@@ -741,25 +747,25 @@
 </div><ul>
 <li>在线程池中使用 ThreadLocal 会造成内存泄漏，因为当 ThreadLocal 对象使用完后，应该把设置的 key，value 也就是 Entry 对象进行回收，但线程池中的线程不会回收，而线程对象是通过强引用指向 ThreadLocalMap，ThreadLocalMap 也是通过强引用指向 Entry 对象，线程不被回收，Entry 对象也就不会回收，从而出现内存泄漏。解决方法是，在使用 ThreadLocal 对象后，手动调用 ThreadLocal d  remove 方法，手动清除 Entry 对象</li>
 </ul>
-<h3 id="应用场景">应用场景
-</h3><p>一个经典的场景就是连接管理（一个线程持有一个连接，该连接对象可以在不同方法之间进行传递，线程之间不共享同一个连接）</p>
-<h1 id="java-核心类库及其底层原理">Java 核心类库及其底层原理
-</h1><h2 id="jdkjrejvm之间的区别">JDK，JRE，JVM之间的区别
-</h2><h3 id="jdk">JDK
-</h3><p>JDK 是 JAVA 标准开发包，提供了<strong>编译</strong>、<strong>运行</strong> Java 程序所需的各种工具和资源，包括 <strong>Java 编译器、Java 运行时环境</strong>，以及常见的 <strong>Java 类库</strong>等</p>
-<h3 id="jre">JRE
-</h3><p>JRE 是 Java 运行环境，用于<strong>运行</strong> Java 的字节码文件。JRE 中包括了 JVM 以及 JVM 工作所需的类库，普通用户只需要安装 JRE 来运行 Java 程序，而程序开发者必须安装 JDK 来编译、调试程序</p>
-<h3 id="jvm">JVM
-</h3><p>JAVM 是 Java 虚拟机，是 JRE 的一部分，是整个 Java 实现跨平台最核心的部分，负责运行字节码文件</p>
-<h3 id="eg">e.g.
-</h3><p>写 Java 代码，txt 就可以写，但是写出来的代码，想要运行，需要编译成字节码，需要编译器，JDK 中包含编译器 javac，编译折后的字节码想要运行，需要一个可执行字节码的程序，这个程序就是 JVM，专门用来执行 Java 字节码的</p>
+<h4 id="应用场景">应用场景
+</h4><p>一个经典的场景就是连接管理（一个线程持有一个连接，该连接对象可以在不同方法之间进行传递，线程之间不共享同一个连接）</p>
+<h2 id="java-核心类库及其底层原理">Java 核心类库及其底层原理
+</h2><h3 id="jdkjrejvm之间的区别">JDK，JRE，JVM之间的区别
+</h3><h4 id="jdk">JDK
+</h4><p>JDK 是 JAVA 标准开发包，提供了<strong>编译</strong>、<strong>运行</strong> Java 程序所需的各种工具和资源，包括 <strong>Java 编译器、Java 运行时环境</strong>，以及常见的 <strong>Java 类库</strong>等</p>
+<h4 id="jre">JRE
+</h4><p>JRE 是 Java 运行环境，用于<strong>运行</strong> Java 的字节码文件。JRE 中包括了 JVM 以及 JVM 工作所需的类库，普通用户只需要安装 JRE 来运行 Java 程序，而程序开发者必须安装 JDK 来编译、调试程序</p>
+<h4 id="jvm">JVM
+</h4><p>JAVM 是 Java 虚拟机，是 JRE 的一部分，是整个 Java 实现跨平台最核心的部分，负责运行字节码文件</p>
+<h4 id="eg">e.g.
+</h4><p>写 Java 代码，txt 就可以写，但是写出来的代码，想要运行，需要编译成字节码，需要编译器，JDK 中包含编译器 javac，编译折后的字节码想要运行，需要一个可执行字节码的程序，这个程序就是 JVM，专门用来执行 Java 字节码的</p>
 <p>开发需要 JDK</p>
 <p>运行编译好的 Java 字节码文件需要 JRE</p>
 <p>JVM 在执行 Java 字节码时，需要把字节码解释为机器指令，而不同操作系统的机器指令有可能是不一样的，导致不同操作系统的 JVM 是不一样的，所以安装 JDK 时要选择操作系统</p>
 <p>另外 JVM 执行的是 Java 字节码，所以只要编译后是 Java 字节码，都可以在 JVM 上运行，比如 Apache Groovy，Scala ， Kotlin 等</p>
-<h2 id="hashcode-与-equals-之间的关系">hashCode() 与 equals() 之间的关系
-</h2><h3 id="理论">理论
-</h3><p>在 Java 中，每个对象都可以调用自己的 hashCode() 方法得到自己的哈希值，相当于对象的指纹信息，通常来说不会有相同的，但 Java 中做不到这样绝对，但我们仍然可以使用 hashCode 来做一些判断</p>
+<h3 id="hashcode-与-equals-之间的关系">hashCode() 与 equals() 之间的关系
+</h3><h4 id="理论">理论
+</h4><p>在 Java 中，每个对象都可以调用自己的 hashCode() 方法得到自己的哈希值，相当于对象的指纹信息，通常来说不会有相同的，但 Java 中做不到这样绝对，但我们仍然可以使用 hashCode 来做一些判断</p>
 <ul>
 <li>如果两个对象的 hashCode 不同，这两个对象一定同</li>
 <li>如果两个对象的 hashCode 相同，不代表一定是同一个对象</li>
@@ -767,8 +773,8 @@
 </ul>
 <p>在 Java 的一些集合类的实现中，在比较两个对象是否相等时，会根据上面的原则，先调用 hashCode() 方法进行比较，如果不同直接判定不同，如果相同进一步调用 equals() 方法。equals() 方法就是来最终确定两个对象是不是相等的。equals() 的实现通常会很重，逻辑较多。</p>
 <p>所以 <strong>在我们重写了 equals() 方法时，一定要确保 hashCode()  方法能遵循上述规则</strong></p>
-<h3 id="demo-演示">demo 演示
-</h3><p>未重写 hashCode()</p>
+<h4 id="demo-演示">demo 演示
+</h4><p>未重写 hashCode()</p>
 <p>User 类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

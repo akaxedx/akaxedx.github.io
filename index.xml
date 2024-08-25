@@ -13,8 +13,9 @@
         <pubDate>Sun, 25 Aug 2024 18:10:13 +0800</pubDate>
         
         <guid>https://akaxedx.github.io/p/tomcat/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/tomcat/saber.jpg" alt="Featured image of post Tomcat" /&gt;&lt;h1 id=&#34;tomcat-中为什么要使用自定义类加载器&#34;&gt;Tomcat 中为什么要使用自定义类加载器
-&lt;/h1&gt;&lt;p&gt;一个 Tomcat 中可以部署很多个应用，而每个应用中都存在很多类，各个应用中的类是独立的，全类名是可以相同的。一个 Tomcat 不管内部部署了多少应用，Tomcat 启动之后就是一个 Java 进程，也就是一个 JVM，所以如果 Tomcat 中只存在一个类加载器，比如默认的 AppClassLoader，那么只能加载一个同名类，这是有问题的。在 Tomcat中，会为部署的每个应用都生成一个类加载器实例，叫做 WebAppClassLoader，这样 Tomcat 中每个应用都可以使用自己的类加载器去加载自己的类，实现应用之间的类隔离，不出现冲突。另外 Tomcat 还利用自定义加载器实现了热加载的功能&lt;/p&gt;
+        <description>&lt;img src="https://akaxedx.github.io/p/tomcat/saber.jpg" alt="Featured image of post Tomcat" /&gt;&lt;h1 id=&#34;heading&#34;&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;tomcat-中为什么要使用自定义类加载器&#34;&gt;Tomcat 中为什么要使用自定义类加载器
+&lt;/h2&gt;&lt;p&gt;一个 Tomcat 中可以部署很多个应用，而每个应用中都存在很多类，各个应用中的类是独立的，全类名是可以相同的。一个 Tomcat 不管内部部署了多少应用，Tomcat 启动之后就是一个 Java 进程，也就是一个 JVM，所以如果 Tomcat 中只存在一个类加载器，比如默认的 AppClassLoader，那么只能加载一个同名类，这是有问题的。在 Tomcat中，会为部署的每个应用都生成一个类加载器实例，叫做 WebAppClassLoader，这样 Tomcat 中每个应用都可以使用自己的类加载器去加载自己的类，实现应用之间的类隔离，不出现冲突。另外 Tomcat 还利用自定义加载器实现了热加载的功能&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/tomcat/image-20240825182113654.png&#34;
 	width=&#34;894&#34;
 	height=&#34;486&#34;
@@ -37,10 +38,11 @@
         <pubDate>Sun, 25 Aug 2024 05:53:40 +0800</pubDate>
         
         <guid>https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/698503.jpg" alt="Featured image of post Java 基础" /&gt;&lt;h1 id=&#34;juc&#34;&gt;JUC
-&lt;/h1&gt;&lt;h2 id=&#34;java-中创建线程的方式&#34;&gt;Java 中创建线程的方式
-&lt;/h2&gt;&lt;h3 id=&#34;继承thread类&#34;&gt;继承Thread类
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>&lt;img src="https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/698503.jpg" alt="Featured image of post Java 基础" /&gt;&lt;h1 id=&#34;heading&#34;&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;juc&#34;&gt;JUC
+&lt;/h2&gt;&lt;h3 id=&#34;java-中创建线程的方式&#34;&gt;Java 中创建线程的方式
+&lt;/h3&gt;&lt;h4 id=&#34;继承thread类&#34;&gt;继承Thread类
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -72,8 +74,8 @@
 &lt;li&gt;由于 Java 是单继承，直接继承 Thread 会限制继承其他类，因此多用 Runnable 接口实现多线程&lt;/li&gt;
 &lt;li&gt;Thread 也是继承了 Runnable 接口的类，本质上还是等于继承了 Runnable 接口&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;实现runnable接口&#34;&gt;实现Runnable接口
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h4 id=&#34;实现runnable接口&#34;&gt;实现Runnable接口
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -149,8 +151,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;实现-callable-接口&#34;&gt;实现 Callable 接口
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;h4 id=&#34;实现-callable-接口&#34;&gt;实现 Callable 接口
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -198,8 +200,8 @@
 &lt;li&gt;与 Runnable 的区别在于可以拿到线程执行的结果，这里需要与 FutureTask 结合使用&lt;/li&gt;
 &lt;li&gt;而 FutureTask 是继承的 Runnable 接口和 Future 接口的接口&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;线程池创建线程&#34;&gt;线程池创建线程
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h4 id=&#34;线程池创建线程&#34;&gt;线程池创建线程
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -233,11 +235,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;总结&#34;&gt;总结
-&lt;/h3&gt;&lt;p&gt;以上四种方式底层均为 Runnable 接口&lt;/p&gt;
-&lt;h2 id=&#34;不建议使用-executors-创建线程池的原因&#34;&gt;不建议使用 Executors 创建线程池的原因
-&lt;/h2&gt;&lt;h3 id=&#34;fixedthreadpool&#34;&gt;FixedThreadPool
-&lt;/h3&gt;&lt;p&gt;当我们使用 Executors 创建  FixedThreadPool 时，对应的构造方法为&lt;/p&gt;
+&lt;/div&gt;&lt;h4 id=&#34;总结&#34;&gt;总结
+&lt;/h4&gt;&lt;p&gt;以上四种方式底层均为 Runnable 接口&lt;/p&gt;
+&lt;h3 id=&#34;不建议使用-executors-创建线程池的原因&#34;&gt;不建议使用 Executors 创建线程池的原因
+&lt;/h3&gt;&lt;h4 id=&#34;fixedthreadpool&#34;&gt;FixedThreadPool
+&lt;/h4&gt;&lt;p&gt;当我们使用 Executors 创建  FixedThreadPool 时，对应的构造方法为&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -257,8 +259,8 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;这里 LinkedBlockingQueue 是一个无界的阻塞队列，如果使用该线程池执行任务，如果任务过多就会不断的添加进队列，会有 OOM 的风险&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;singlethreadexecutor&#34;&gt;SingleThreadExecutor
-&lt;/h3&gt;&lt;p&gt;当我们使用 Executors 创建  SingleThreadExecutor 时，对应的构造方法为&lt;/p&gt;
+&lt;h4 id=&#34;singlethreadexecutor&#34;&gt;SingleThreadExecutor
+&lt;/h4&gt;&lt;p&gt;当我们使用 Executors 创建  SingleThreadExecutor 时，对应的构造方法为&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -280,21 +282,21 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;也是 LinkedBlockingQueue&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;总结-1&#34;&gt;总结
-&lt;/h3&gt;&lt;p&gt;除了 OOM 的风险外，我们使用  Executors 来创建线程池也不能自定义线程的名字，不利于排查问题，所以应该用 &lt;code&gt;ThreadPoolExecutor&lt;/code&gt; 直接定义线程池，可以灵活控制&lt;/p&gt;
-&lt;h2 id=&#34;线程池有哪几种状态每种状态分别表示什么&#34;&gt;线程池有哪几种状态，每种状态分别表示什么
-&lt;/h2&gt;&lt;h3 id=&#34;running&#34;&gt;RUNNING
-&lt;/h3&gt;&lt;p&gt;表示线程池正常运行，既能接收新任务，也会正常处理队列中的任务&lt;/p&gt;
-&lt;h3 id=&#34;shutdown&#34;&gt;SHUTDOWN
-&lt;/h3&gt;&lt;p&gt;当调用线程池 shutdown() 方法时，进入 SHUTDOWN 状态，表示线程池正处于关闭状态，&lt;strong&gt;不会接收新任务&lt;/strong&gt;，但&lt;strong&gt;会继续把队列中的任务处理完&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;stop&#34;&gt;STOP
-&lt;/h3&gt;&lt;p&gt;当调用线程池 shutdownnow() 方法时，线程池进入 STOP 状态，表示线程池正处于停止状态，此状态 &lt;strong&gt;不会接收新任务，也不会处理队列中的任务&lt;/strong&gt;，正在运行的线程也会终断&lt;/p&gt;
-&lt;h3 id=&#34;tidying&#34;&gt;TIDYING
-&lt;/h3&gt;&lt;p&gt;线程池中没有线程运行后，线程池状态自动变为 TIDYING，并且调用 terminated()，该方法是空方法，可以自行扩展&lt;/p&gt;
-&lt;h3 id=&#34;terminated&#34;&gt;TERMINATED
-&lt;/h3&gt;&lt;p&gt;terminated() 方法执行完后，线程池状态变为 TERMINATED&lt;/p&gt;
-&lt;h2 id=&#34;synchronized-和-reentrantlock&#34;&gt;Synchronized 和 ReentrantLock
-&lt;/h2&gt;&lt;table&gt;
+&lt;h4 id=&#34;总结-1&#34;&gt;总结
+&lt;/h4&gt;&lt;p&gt;除了 OOM 的风险外，我们使用  Executors 来创建线程池也不能自定义线程的名字，不利于排查问题，所以应该用 &lt;code&gt;ThreadPoolExecutor&lt;/code&gt; 直接定义线程池，可以灵活控制&lt;/p&gt;
+&lt;h3 id=&#34;线程池有哪几种状态每种状态分别表示什么&#34;&gt;线程池有哪几种状态，每种状态分别表示什么
+&lt;/h3&gt;&lt;h4 id=&#34;running&#34;&gt;RUNNING
+&lt;/h4&gt;&lt;p&gt;表示线程池正常运行，既能接收新任务，也会正常处理队列中的任务&lt;/p&gt;
+&lt;h4 id=&#34;shutdown&#34;&gt;SHUTDOWN
+&lt;/h4&gt;&lt;p&gt;当调用线程池 shutdown() 方法时，进入 SHUTDOWN 状态，表示线程池正处于关闭状态，&lt;strong&gt;不会接收新任务&lt;/strong&gt;，但&lt;strong&gt;会继续把队列中的任务处理完&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;stop&#34;&gt;STOP
+&lt;/h4&gt;&lt;p&gt;当调用线程池 shutdownnow() 方法时，线程池进入 STOP 状态，表示线程池正处于停止状态，此状态 &lt;strong&gt;不会接收新任务，也不会处理队列中的任务&lt;/strong&gt;，正在运行的线程也会终断&lt;/p&gt;
+&lt;h4 id=&#34;tidying&#34;&gt;TIDYING
+&lt;/h4&gt;&lt;p&gt;线程池中没有线程运行后，线程池状态自动变为 TIDYING，并且调用 terminated()，该方法是空方法，可以自行扩展&lt;/p&gt;
+&lt;h4 id=&#34;terminated&#34;&gt;TERMINATED
+&lt;/h4&gt;&lt;p&gt;terminated() 方法执行完后，线程池状态变为 TERMINATED&lt;/p&gt;
+&lt;h3 id=&#34;synchronized-和-reentrantlock&#34;&gt;Synchronized 和 ReentrantLock
+&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Synchronized&lt;/th&gt;
@@ -328,25 +330,25 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;reentrantlock分为公平和非公平锁底层是怎么实现的&#34;&gt;ReentrantLock分为公平和非公平锁，底层是怎么实现的
-&lt;/h2&gt;&lt;p&gt;首先，不管是公平锁还是非公平锁，他们的底层实现都会用 AQS 来进行排队，他们的区别在于线程在使用 lock() 方法加锁时：&lt;/p&gt;
+&lt;h3 id=&#34;reentrantlock分为公平和非公平锁底层是怎么实现的&#34;&gt;ReentrantLock分为公平和非公平锁，底层是怎么实现的
+&lt;/h3&gt;&lt;p&gt;首先，不管是公平锁还是非公平锁，他们的底层实现都会用 AQS 来进行排队，他们的区别在于线程在使用 lock() 方法加锁时：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;公平锁：检查 AQS 队列中是否存在线程在排队，如果有，则当前线程也进行排队&lt;/li&gt;
 &lt;li&gt;非公平锁：不检查是否排队，直接竞争锁&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;总结-2&#34;&gt;总结
-&lt;/h3&gt;&lt;p&gt;不管是否是公平锁，一旦没竞争到锁，都会进行排队，当锁释放时，都是唤醒排在最前面的线程，所以非公平锁知识体现在的线程加锁阶段，而没有体现在线程被唤醒阶段&lt;/p&gt;
+&lt;h4 id=&#34;总结-2&#34;&gt;总结
+&lt;/h4&gt;&lt;p&gt;不管是否是公平锁，一旦没竞争到锁，都会进行排队，当锁释放时，都是唤醒排在最前面的线程，所以非公平锁知识体现在的线程加锁阶段，而没有体现在线程被唤醒阶段&lt;/p&gt;
 &lt;p&gt;ReentrantLock 是可重入锁，不管是否公平&lt;/p&gt;
-&lt;h2 id=&#34;synchronized-锁是怎么升级的&#34;&gt;Synchronized 锁是怎么升级的
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;synchronized-锁是怎么升级的&#34;&gt;Synchronized 锁是怎么升级的
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;偏向锁：在锁对象的对象头中记录一下当前获取到该锁的线程 ID，该线程下次如果又来获取该锁就可以直接获取到了，也就是支持&lt;strong&gt;锁重入&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;轻量级锁：有偏向锁升级，当一个线程获取到锁后，此时这把锁是偏向锁，此时又有第二个线程来&lt;strong&gt;竞争&lt;/strong&gt;锁，偏向锁会升级为轻量级锁，轻量级锁通过自旋实现，不会阻塞线程&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;自旋次数过多&lt;/strong&gt;仍没有获取到锁，则会升级成&lt;strong&gt;重量级锁&lt;/strong&gt;，重量级锁会导致线程阻塞&lt;/li&gt;
 &lt;li&gt;自旋锁：自旋锁就是线程在获取锁的过程中，不会去阻塞线程，也就无所谓唤醒线程，&lt;strong&gt;阻塞和唤醒这两个步骤都是需要操作系统去进行的&lt;/strong&gt;，比较耗费时间，自旋锁是线程通过 CAS 获取预期的一个标记，如果没获取到则循环获取，这个过程线程一直在运行中，没有使用太多操作系统资源，比较轻量&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;threadlocal的应用场景底层实现是什么样的&#34;&gt;ThreadLocal的应用场景，底层实现是什么样的
-&lt;/h2&gt;&lt;h3 id=&#34;threadlocal-底层&#34;&gt;ThreadLocal 底层
-&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;threadlocal的应用场景底层实现是什么样的&#34;&gt;ThreadLocal的应用场景，底层实现是什么样的
+&lt;/h3&gt;&lt;h4 id=&#34;threadlocal-底层&#34;&gt;ThreadLocal 底层
+&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;ThreadLocal 是 Java 中所提供的线程本地存储机制，可以利用该机制将数据 &lt;strong&gt;缓存在某个线程内部&lt;/strong&gt;，该线程可以在任意时刻、任意方法中获取缓存的数据&lt;/li&gt;
 &lt;li&gt;ThreadLocal 底层是通过 ThreadLocalMap 实现的，每个 Thread 对象中都存在一个 ThreadLocalMap，Map 的 key 为 Threadlocal 对象，Map 的 value 为需要缓存的值&lt;/li&gt;
 &lt;/ul&gt;
@@ -399,25 +401,25 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;在线程池中使用 ThreadLocal 会造成内存泄漏，因为当 ThreadLocal 对象使用完后，应该把设置的 key，value 也就是 Entry 对象进行回收，但线程池中的线程不会回收，而线程对象是通过强引用指向 ThreadLocalMap，ThreadLocalMap 也是通过强引用指向 Entry 对象，线程不被回收，Entry 对象也就不会回收，从而出现内存泄漏。解决方法是，在使用 ThreadLocal 对象后，手动调用 ThreadLocal d  remove 方法，手动清除 Entry 对象&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;应用场景&#34;&gt;应用场景
-&lt;/h3&gt;&lt;p&gt;一个经典的场景就是连接管理（一个线程持有一个连接，该连接对象可以在不同方法之间进行传递，线程之间不共享同一个连接）&lt;/p&gt;
-&lt;h1 id=&#34;java-核心类库及其底层原理&#34;&gt;Java 核心类库及其底层原理
-&lt;/h1&gt;&lt;h2 id=&#34;jdkjrejvm之间的区别&#34;&gt;JDK，JRE，JVM之间的区别
-&lt;/h2&gt;&lt;h3 id=&#34;jdk&#34;&gt;JDK
-&lt;/h3&gt;&lt;p&gt;JDK 是 JAVA 标准开发包，提供了&lt;strong&gt;编译&lt;/strong&gt;、&lt;strong&gt;运行&lt;/strong&gt; Java 程序所需的各种工具和资源，包括 &lt;strong&gt;Java 编译器、Java 运行时环境&lt;/strong&gt;，以及常见的 &lt;strong&gt;Java 类库&lt;/strong&gt;等&lt;/p&gt;
-&lt;h3 id=&#34;jre&#34;&gt;JRE
-&lt;/h3&gt;&lt;p&gt;JRE 是 Java 运行环境，用于&lt;strong&gt;运行&lt;/strong&gt; Java 的字节码文件。JRE 中包括了 JVM 以及 JVM 工作所需的类库，普通用户只需要安装 JRE 来运行 Java 程序，而程序开发者必须安装 JDK 来编译、调试程序&lt;/p&gt;
-&lt;h3 id=&#34;jvm&#34;&gt;JVM
-&lt;/h3&gt;&lt;p&gt;JAVM 是 Java 虚拟机，是 JRE 的一部分，是整个 Java 实现跨平台最核心的部分，负责运行字节码文件&lt;/p&gt;
-&lt;h3 id=&#34;eg&#34;&gt;e.g.
-&lt;/h3&gt;&lt;p&gt;写 Java 代码，txt 就可以写，但是写出来的代码，想要运行，需要编译成字节码，需要编译器，JDK 中包含编译器 javac，编译折后的字节码想要运行，需要一个可执行字节码的程序，这个程序就是 JVM，专门用来执行 Java 字节码的&lt;/p&gt;
+&lt;h4 id=&#34;应用场景&#34;&gt;应用场景
+&lt;/h4&gt;&lt;p&gt;一个经典的场景就是连接管理（一个线程持有一个连接，该连接对象可以在不同方法之间进行传递，线程之间不共享同一个连接）&lt;/p&gt;
+&lt;h2 id=&#34;java-核心类库及其底层原理&#34;&gt;Java 核心类库及其底层原理
+&lt;/h2&gt;&lt;h3 id=&#34;jdkjrejvm之间的区别&#34;&gt;JDK，JRE，JVM之间的区别
+&lt;/h3&gt;&lt;h4 id=&#34;jdk&#34;&gt;JDK
+&lt;/h4&gt;&lt;p&gt;JDK 是 JAVA 标准开发包，提供了&lt;strong&gt;编译&lt;/strong&gt;、&lt;strong&gt;运行&lt;/strong&gt; Java 程序所需的各种工具和资源，包括 &lt;strong&gt;Java 编译器、Java 运行时环境&lt;/strong&gt;，以及常见的 &lt;strong&gt;Java 类库&lt;/strong&gt;等&lt;/p&gt;
+&lt;h4 id=&#34;jre&#34;&gt;JRE
+&lt;/h4&gt;&lt;p&gt;JRE 是 Java 运行环境，用于&lt;strong&gt;运行&lt;/strong&gt; Java 的字节码文件。JRE 中包括了 JVM 以及 JVM 工作所需的类库，普通用户只需要安装 JRE 来运行 Java 程序，而程序开发者必须安装 JDK 来编译、调试程序&lt;/p&gt;
+&lt;h4 id=&#34;jvm&#34;&gt;JVM
+&lt;/h4&gt;&lt;p&gt;JAVM 是 Java 虚拟机，是 JRE 的一部分，是整个 Java 实现跨平台最核心的部分，负责运行字节码文件&lt;/p&gt;
+&lt;h4 id=&#34;eg&#34;&gt;e.g.
+&lt;/h4&gt;&lt;p&gt;写 Java 代码，txt 就可以写，但是写出来的代码，想要运行，需要编译成字节码，需要编译器，JDK 中包含编译器 javac，编译折后的字节码想要运行，需要一个可执行字节码的程序，这个程序就是 JVM，专门用来执行 Java 字节码的&lt;/p&gt;
 &lt;p&gt;开发需要 JDK&lt;/p&gt;
 &lt;p&gt;运行编译好的 Java 字节码文件需要 JRE&lt;/p&gt;
 &lt;p&gt;JVM 在执行 Java 字节码时，需要把字节码解释为机器指令，而不同操作系统的机器指令有可能是不一样的，导致不同操作系统的 JVM 是不一样的，所以安装 JDK 时要选择操作系统&lt;/p&gt;
 &lt;p&gt;另外 JVM 执行的是 Java 字节码，所以只要编译后是 Java 字节码，都可以在 JVM 上运行，比如 Apache Groovy，Scala ， Kotlin 等&lt;/p&gt;
-&lt;h2 id=&#34;hashcode-与-equals-之间的关系&#34;&gt;hashCode() 与 equals() 之间的关系
-&lt;/h2&gt;&lt;h3 id=&#34;理论&#34;&gt;理论
-&lt;/h3&gt;&lt;p&gt;在 Java 中，每个对象都可以调用自己的 hashCode() 方法得到自己的哈希值，相当于对象的指纹信息，通常来说不会有相同的，但 Java 中做不到这样绝对，但我们仍然可以使用 hashCode 来做一些判断&lt;/p&gt;
+&lt;h3 id=&#34;hashcode-与-equals-之间的关系&#34;&gt;hashCode() 与 equals() 之间的关系
+&lt;/h3&gt;&lt;h4 id=&#34;理论&#34;&gt;理论
+&lt;/h4&gt;&lt;p&gt;在 Java 中，每个对象都可以调用自己的 hashCode() 方法得到自己的哈希值，相当于对象的指纹信息，通常来说不会有相同的，但 Java 中做不到这样绝对，但我们仍然可以使用 hashCode 来做一些判断&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如果两个对象的 hashCode 不同，这两个对象一定同&lt;/li&gt;
 &lt;li&gt;如果两个对象的 hashCode 相同，不代表一定是同一个对象&lt;/li&gt;
@@ -425,8 +427,8 @@
 &lt;/ul&gt;
 &lt;p&gt;在 Java 的一些集合类的实现中，在比较两个对象是否相等时，会根据上面的原则，先调用 hashCode() 方法进行比较，如果不同直接判定不同，如果相同进一步调用 equals() 方法。equals() 方法就是来最终确定两个对象是不是相等的。equals() 的实现通常会很重，逻辑较多。&lt;/p&gt;
 &lt;p&gt;所以 &lt;strong&gt;在我们重写了 equals() 方法时，一定要确保 hashCode()  方法能遵循上述规则&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;demo-演示&#34;&gt;demo 演示
-&lt;/h3&gt;&lt;p&gt;未重写 hashCode()&lt;/p&gt;
+&lt;h4 id=&#34;demo-演示&#34;&gt;demo 演示
+&lt;/h4&gt;&lt;p&gt;未重写 hashCode()&lt;/p&gt;
 &lt;p&gt;User 类&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -637,12 +639,13 @@
         <pubDate>Sun, 25 Aug 2024 05:44:46 +0800</pubDate>
         
         <guid>https://akaxedx.github.io/p/%E5%A4%87%E6%88%98%E7%A7%8B%E6%8B%9B/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/%E5%A4%87%E6%88%98%E7%A7%8B%E6%8B%9B/%E5%A4%87%E6%88%98%E7%A7%8B%E6%8B%9B.PNG" alt="Featured image of post 备战秋招" /&gt;&lt;h1 id=&#34;java-基础&#34;&gt;JAVA 基础
-&lt;/h1&gt;&lt;p&gt;包含 Java SE、JUC 等 Java 语言相关的特性&lt;/p&gt;
+        <description>&lt;img src="https://akaxedx.github.io/p/%E5%A4%87%E6%88%98%E7%A7%8B%E6%8B%9B/%E5%A4%87%E6%88%98%E7%A7%8B%E6%8B%9B.PNG" alt="Featured image of post 备战秋招" /&gt;&lt;h1 id=&#34;heading&#34;&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;java-基础&#34;&gt;JAVA 基础
+&lt;/h2&gt;&lt;p&gt;包含 Java SE、JUC 等 Java 语言相关的特性&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;具体地址&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;tomcat&#34;&gt;Tomcat
-&lt;/h1&gt;&lt;p&gt;包含 Tomcat 相关的面试题&lt;/p&gt;
+&lt;h2 id=&#34;tomcat&#34;&gt;Tomcat
+&lt;/h2&gt;&lt;p&gt;包含 Tomcat 相关的面试题&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://akaxedx.github.io/p/tomcat/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;具体地址&lt;/a&gt;&lt;/p&gt;
 </description>
