@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="演示说明">
-<title>404 Page not found</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="秋招 Tomcat 部分">
+<title>Tomcat</title>
 
-<link rel='canonical' href='https://akaxedx.github.io/404.html'>
+<link rel='canonical' href='https://akaxedx.github.io/p/tomcat/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="404 Page not found">
-<meta property='og:description' content="演示说明">
-<meta property='og:url' content='https://akaxedx.github.io/404.html'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Tomcat">
+<meta property='og:description' content="秋招 Tomcat 部分">
+<meta property='og:url' content='https://akaxedx.github.io/p/tomcat/'>
 <meta property='og:site_name' content='AKAxedx-王方骏'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-08-25T18:10:13&#43;08:00 '/>
-<meta name="twitter:title" content="404 Page not found">
-<meta name="twitter:description" content="演示说明">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='秋招' /><meta property='article:published_time' content='2024-08-25T18:10:13&#43;08:00'/><meta property='article:modified_time' content='2024-08-25T18:10:13&#43;08:00'/><meta property='og:image' content='https://akaxedx.github.io/p/tomcat/saber.jpg' />
+<meta name="twitter:title" content="Tomcat">
+<meta name="twitter:description" content="秋招 Tomcat 部分"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://akaxedx.github.io/p/tomcat/saber.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
   
 
 
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -226,11 +229,115 @@
     </ol>
 </aside>
 
+    
+
             <main class="main full-width">
-    <div class="not-found-card">
-        <h1 class="article-title">404 错误</h1>
-        <h2 class="article-subtitle">页面不存在</h2>
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/tomcat/">
+                <img src="/p/tomcat/saber_hu10789320058108177354.jpg"
+                        srcset="/p/tomcat/saber_hu10789320058108177354.jpg 800w, /p/tomcat/saber_hu17818528551056573452.jpg 1600w"
+                        width="800" 
+                        height="572" 
+                        loading="lazy"
+                        alt="Featured image of post Tomcat" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/tomcat/">Tomcat</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            秋招 Tomcat 部分
+        </h3>
+        
     </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-08-25</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="tomcat-中为什么要使用自定义类加载器">Tomcat 中为什么要使用自定义类加载器
+</h1><p>一个 Tomcat 中可以部署很多个应用，而每个应用中都存在很多类，各个应用中的类是独立的，全类名是可以相同的。一个 Tomcat 不管内部部署了多少应用，Tomcat 启动之后就是一个 Java 进程，也就是一个 JVM，所以如果 Tomcat 中只存在一个类加载器，比如默认的 AppClassLoader，那么只能加载一个同名类，这是有问题的。在 Tomcat中，会为部署的每个应用都生成一个类加载器实例，叫做 WebAppClassLoader，这样 Tomcat 中每个应用都可以使用自己的类加载器去加载自己的类，实现应用之间的类隔离，不出现冲突。另外 Tomcat 还利用自定义加载器实现了热加载的功能</p>
+<p><img src="/p/tomcat/image-20240825182113654.png"
+	width="894"
+	height="486"
+	srcset="/p/tomcat/image-20240825182113654_hu16669531742994426364.png 480w, /p/tomcat/image-20240825182113654_hu3744469537917276043.png 1024w"
+	loading="lazy"
+	
+		alt="Tomcat 应用图解"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="183"
+		data-flex-basis="441px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E7%A7%8B%E6%8B%9B/">秋招</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
     <footer class="site-footer">
     <section class="copyright">
         &copy; 
@@ -246,6 +353,84 @@
     </section>
 </footer>
 
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
 
             </main>
         </div>
