@@ -631,6 +631,22 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行结果：111&lt;/p&gt;
+&lt;h3 id=&#34;-和-equals-方法的区别&#34;&gt;== 和 equals 方法的区别
+&lt;/h3&gt;&lt;p&gt;// TODO&lt;/p&gt;
+&lt;h3 id=&#34;stringstringbufferstringbuilder的区别&#34;&gt;String、StringBuffer、StringBuilder的区别
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;String 是不可变的，如果尝试修改，会生成一个字符串对象，StringBuffrt 和 StringBuilder 是可变的&lt;/li&gt;
+&lt;li&gt;StringBuffer 是线程安全的，StringBuilder 是线程不安全的，单线程环境下 StringBuilder 效率更高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;泛型中-extends-和-super-的区别&#34;&gt;泛型中 extends 和 super 的区别
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;? extends T&gt; 表示包括 T 在内的任何 T 的子类
+&lt;/li&gt;
+&lt;li&gt;
+&lt;? super T&gt; 表示包括 T 在内的任何 T 的父类
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
