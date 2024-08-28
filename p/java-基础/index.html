@@ -312,6 +312,40 @@
         <li><a href="#-和-equals-方法的区别">== 和 equals 方法的区别</a></li>
         <li><a href="#stringstringbufferstringbuilder的区别">String、StringBuffer、StringBuilder的区别</a></li>
         <li><a href="#泛型中-extends-和-super-的区别">泛型中 extends 和 super 的区别</a></li>
+        <li><a href="#重载和重写的区别">重载和重写的区别</a>
+          <ol>
+            <li><a href="#重载">重载</a></li>
+            <li><a href="#重写">重写</a></li>
+          </ol>
+        </li>
+        <li><a href="#list-和-set-的区别">List 和 Set 的区别</a>
+          <ol>
+            <li><a href="#list">List</a></li>
+            <li><a href="#set">Set</a></li>
+          </ol>
+        </li>
+        <li><a href="#arraylist-和-linkedlist-的区别">ArrayList 和 LinkedList 的区别</a></li>
+        <li><a href="#concurrenthashmap-的扩容机制">ConcurrentHashMap 的扩容机制</a>
+          <ol>
+            <li><a href="#jdk-17版本">JDK 1.7版本</a></li>
+            <li><a href="#jdk-18版本">JDK 1.8版本</a></li>
+          </ol>
+        </li>
+        <li><a href="#jdk17-jdk18-hashmap-发生了什么变化">JDK1.7-JDK1.8 HashMap 发生了什么变化</a>
+          <ol>
+            <li><a href="#jdk17">JDK1.7</a></li>
+            <li><a href="#jdk18">JDK1.8</a></li>
+          </ol>
+        </li>
+        <li><a href="#hashmap-的-put-方法">HashMap 的 put 方法</a></li>
+        <li><a href="#hashmap-的扩容机制">HashMap 的扩容机制</a>
+          <ol>
+            <li><a href="#jdk17-1">JDK1.7</a></li>
+            <li><a href="#jdk18-1">JDK1.8</a></li>
+          </ol>
+        </li>
+        <li><a href="#深拷贝和浅拷贝">深拷贝和浅拷贝</a></li>
+        <li><a href="#copyonwritearraylist-的底层原理">CopyOnWriteArrayList 的底层原理</a></li>
       </ol>
     </li>
   </ol>
@@ -981,7 +1015,10 @@
 </div>
 </div><p>运行结果：111</p>
 <h3 id="-和-equals-方法的区别">== 和 equals 方法的区别
-</h3><p>// TODO</p>
+</h3><ul>
+<li>== 如果比较基本数据类型，比较的是值，如果是引用类型，比较的是引用地址</li>
+<li>equals() 使用 equals() 方法比较，具体逻辑看具体实现，比如String 类型，虽然是引用类型，但是 String 重写了 equals() 方法，比较的是字符串中各个字符是否相等</li>
+</ul>
 <h3 id="stringstringbufferstringbuilder的区别">String、StringBuffer、StringBuilder的区别
 </h3><ul>
 <li>String 是不可变的，如果尝试修改，会生成一个字符串对象，StringBuffrt 和 StringBuilder 是可变的</li>
@@ -994,8 +1031,135 @@
 </li>
 <li>
 <? super T> 表示包括 T 在内的任何 T 的父类
+
 </li>
 </ul>
+<h3 id="重载和重写的区别">重载和重写的区别
+</h3><h4 id="重载">重载
+</h4><p>发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，发生在编译时</p>
+<h4 id="重写">重写
+</h4><p>发生在父子类中，方法名，参数列表必须相同，返回值返回小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类。如果父类方法访问修饰符为 private 则不能重写该方法</p>
+<h3 id="list-和-set-的区别">List 和 Set 的区别
+</h3><h4 id="list">List
+</h4><p>有序，按对象进入的顺序保存对象，可重复，允许多个 Null 元素对象，可以使用 Iterator 取出所有元素，再逐一遍历，还可以使用 get 获取指定下标的元素</p>
+<h4 id="set">Set
+</h4><p>无序，不可重复，最多允许一个 Null 元素对象，取元素时只能使用 Iterator 接口取得所有元素，再逐一遍历</p>
+<h3 id="arraylist-和-linkedlist-的区别">ArrayList 和 LinkedList 的区别
+</h3><ul>
+<li>
+<p>底层数据结构不同，ArrayList 基于数组，而LinkedList 基于链表</p>
+</li>
+<li>
+<p>由于底层数据结构不同，他们使用的场景也不同，ArrayList 更适合随机查找，LinkedList 更适合删除和添加。查询、添加、删除的时间复杂度不同</p>
+</li>
+<li>
+<p>都是先了 List 接口，而 LinkedList 还而额外实现了 Deque 接口，所以 LinkedList 还能当队列来使用</p>
+</li>
+</ul>
+<p><img src="/p/java-%E5%9F%BA%E7%A1%80/image-20240828210912717.png"
+	width="925"
+	height="60"
+	srcset="/p/java-%E5%9F%BA%E7%A1%80/image-20240828210912717_hu901548699770461657.png 480w, /p/java-%E5%9F%BA%E7%A1%80/image-20240828210912717_hu4555355651699633956.png 1024w"
+	loading="lazy"
+	
+		alt="ArrayList 定义"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1541"
+		data-flex-basis="3700px"
+	
+></p>
+<p><img src="/p/java-%E5%9F%BA%E7%A1%80/image-20240828210953999.png"
+	width="759"
+	height="84"
+	srcset="/p/java-%E5%9F%BA%E7%A1%80/image-20240828210953999_hu7892589002831382563.png 480w, /p/java-%E5%9F%BA%E7%A1%80/image-20240828210953999_hu16943263855593016364.png 1024w"
+	loading="lazy"
+	
+		alt="LinkedList 定义"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="903"
+		data-flex-basis="2168px"
+	
+></p>
+<h3 id="concurrenthashmap-的扩容机制">ConcurrentHashMap 的扩容机制
+</h3><h4 id="jdk-17版本">JDK 1.7版本
+</h4><ul>
+<li>ConcurrentHashMap 是基于 Segment 分段实现的</li>
+<li>每个 Segment 相当于一个小的 HashMap</li>
+<li>每个 Segment 内部会进行扩容，和 HashMap 扩容类似</li>
+<li>先生成新的数组，然后转移元素到新数组中</li>
+<li>扩容的判断也是每个 Segment 内部单独判断的，判断是否超过阈值</li>
+</ul>
+<h4 id="jdk-18版本">JDK 1.8版本
+</h4><ul>
+<li>不再使用 Segment 实现</li>
+<li>当某个线程进行 put 时，如果 ConcurrentHashMap 正在扩容，那么该线程一起进行扩容</li>
+<li>如果某个线程 put 时，没有在进行扩容，则将 key-value 添加到 ConcurrentHashMap 中，然后判断是否超过阈值，超过进行扩容</li>
+<li>ConcurrentHashMap 支持多线程同时扩容</li>
+<li>扩容之前生成一个新的数组</li>
+<li>在转移元素时，先将原数组分组，将每组分给不同的线程来进行元素的转移，每个线程负责一组或多组的元素转移工作</li>
+</ul>
+<h3 id="jdk17-jdk18-hashmap-发生了什么变化">JDK1.7-JDK1.8 HashMap 发生了什么变化
+</h3><h4 id="jdk17">JDK1.7
+</h4><p>数组 + 链表</p>
+<p>头插法</p>
+<p>hash 算法复杂</p>
+<h4 id="jdk18">JDK1.8
+</h4><p>数组 + 链表 + 红黑树</p>
+<p>红黑树提高插入和查询的整体效率</p>
+<p>尾插法</p>
+<p>hash 算法简化</p>
+<h3 id="hashmap-的-put-方法">HashMap 的 put 方法
+</h3><p>大致如下</p>
+<ul>
+<li>通过哈希算法与与运算计算得出数组下标</li>
+<li>如果数组下标为空，则将 key-value 封装为 Entry (1.8 版本为 Node) 对象，并放入该位置
+<ul>
+<li>如果是 JDK1.7，先判断是否扩容，如果扩容，就进行扩容，不扩容就生成 Entry 对象，使用头插法插入当前位置的链表中</li>
+<li>如果是 JDK1.8，先判断该位置上的 Node 的类型（链表、红黑树）
+<ul>
+<li>如果是红黑树 Node，将 key-value 封装成一个 红黑树节点并添加进树中（插入/更新）</li>
+<li>如果是链表 Node，则将 key-value 封装为一个链表 Node 并通过尾插法插入当前链表尾部，由于尾插进行了遍历，遍历过程中进行插入或更新，如果长度大于 8，将链表转换成红黑树</li>
+<li>插入链表或红黑树后才进行判单是否进行扩容</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="hashmap-的扩容机制">HashMap 的扩容机制
+</h3><h4 id="jdk17-1">JDK1.7
+</h4><ul>
+<li>先生成新数组</li>
+<li>遍历老数组的每个位置上的链表的每个元素</li>
+<li>取出每个元素的 key，并基于新的数组长度，计算出每个元素再新数组中的下标</li>
+<li>将元素添加到新数组中去</li>
+<li>所有元素转移完后，将新数组赋值给 HashMap 对象中的 table 属性</li>
+</ul>
+<h4 id="jdk18-1">JDK1.8
+</h4><ul>
+<li>先生成新数组</li>
+<li>遍历老数组中的每个位置的链表或红黑树</li>
+<li>如果是链表，则直接将链表中的每个元素重新计算下标，添加到新数组中</li>
+<li>如果是红黑树，先遍历红黑树，计算每个元素对应的下标位置
+<ul>
+<li>统计每个下标位置的元素个数</li>
+<li>如果该位置的元素超过了8，生成一个新的红黑树，并将根节点的添加到新数组的对应位置</li>
+<li>如果没有超过8，则生成一个链表，将头节点添加到数组的对应位置</li>
+</ul>
+</li>
+<li>所有元素转移完了之后，将新数组赋值给 HashMap 对象的 table 属性</li>
+</ul>
+<h3 id="深拷贝和浅拷贝">深拷贝和浅拷贝
+</h3><p>深拷贝和浅拷贝就是指对象的拷贝，一个对象中存在两种类型的属性，一种是基本数据类型，一种是实例对象的引用</p>
+<ul>
+<li>浅拷贝是指，只拷贝基本数据类型的值，以及实例对象的引用地址，不会复制一份引用地址所指向的对象，也就是浅拷贝出来的对象，内部的属性指向的是同一个对象</li>
+<li>深拷贝是指，既会拷贝基本数据类型的值，也会针对实例对象的引用地址所指向的对象进行复制，深拷贝出来的对象，内部的属性指向的不是同一个对象</li>
+</ul>
+<h3 id="copyonwritearraylist-的底层原理">CopyOnWriteArrayList 的底层原理
+</h3><p>// TODO</p>
 
 </section>
 

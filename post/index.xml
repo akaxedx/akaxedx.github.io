@@ -632,7 +632,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行结果：111&lt;/p&gt;
 &lt;h3 id=&#34;-和-equals-方法的区别&#34;&gt;== 和 equals 方法的区别
-&lt;/h3&gt;&lt;p&gt;// TODO&lt;/p&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;== 如果比较基本数据类型，比较的是值，如果是引用类型，比较的是引用地址&lt;/li&gt;
+&lt;li&gt;equals() 使用 equals() 方法比较，具体逻辑看具体实现，比如String 类型，虽然是引用类型，但是 String 重写了 equals() 方法，比较的是字符串中各个字符是否相等&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;stringstringbufferstringbuilder的区别&#34;&gt;String、StringBuffer、StringBuilder的区别
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;String 是不可变的，如果尝试修改，会生成一个字符串对象，StringBuffrt 和 StringBuilder 是可变的&lt;/li&gt;
@@ -645,8 +648,135 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;? super T&gt; 表示包括 T 在内的任何 T 的父类
+
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;重载和重写的区别&#34;&gt;重载和重写的区别
+&lt;/h3&gt;&lt;h4 id=&#34;重载&#34;&gt;重载
+&lt;/h4&gt;&lt;p&gt;发生在同一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，发生在编译时&lt;/p&gt;
+&lt;h4 id=&#34;重写&#34;&gt;重写
+&lt;/h4&gt;&lt;p&gt;发生在父子类中，方法名，参数列表必须相同，返回值返回小于等于父类，抛出的异常范围小于等于父类，访问修饰符范围大于等于父类。如果父类方法访问修饰符为 private 则不能重写该方法&lt;/p&gt;
+&lt;h3 id=&#34;list-和-set-的区别&#34;&gt;List 和 Set 的区别
+&lt;/h3&gt;&lt;h4 id=&#34;list&#34;&gt;List
+&lt;/h4&gt;&lt;p&gt;有序，按对象进入的顺序保存对象，可重复，允许多个 Null 元素对象，可以使用 Iterator 取出所有元素，再逐一遍历，还可以使用 get 获取指定下标的元素&lt;/p&gt;
+&lt;h4 id=&#34;set&#34;&gt;Set
+&lt;/h4&gt;&lt;p&gt;无序，不可重复，最多允许一个 Null 元素对象，取元素时只能使用 Iterator 接口取得所有元素，再逐一遍历&lt;/p&gt;
+&lt;h3 id=&#34;arraylist-和-linkedlist-的区别&#34;&gt;ArrayList 和 LinkedList 的区别
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;底层数据结构不同，ArrayList 基于数组，而LinkedList 基于链表&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由于底层数据结构不同，他们使用的场景也不同，ArrayList 更适合随机查找，LinkedList 更适合删除和添加。查询、添加、删除的时间复杂度不同&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;都是先了 List 接口，而 LinkedList 还而额外实现了 Deque 接口，所以 LinkedList 还能当队列来使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/image-20240828210912717.png&#34;
+	width=&#34;925&#34;
+	height=&#34;60&#34;
+	srcset=&#34;https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/image-20240828210912717_hu901548699770461657.png 480w, https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/image-20240828210912717_hu4555355651699633956.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ArrayList 定义&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;1541&#34;
+		data-flex-basis=&#34;3700px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/image-20240828210953999.png&#34;
+	width=&#34;759&#34;
+	height=&#34;84&#34;
+	srcset=&#34;https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/image-20240828210953999_hu7892589002831382563.png 480w, https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/image-20240828210953999_hu16943263855593016364.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;LinkedList 定义&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;903&#34;
+		data-flex-basis=&#34;2168px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;concurrenthashmap-的扩容机制&#34;&gt;ConcurrentHashMap 的扩容机制
+&lt;/h3&gt;&lt;h4 id=&#34;jdk-17版本&#34;&gt;JDK 1.7版本
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;ConcurrentHashMap 是基于 Segment 分段实现的&lt;/li&gt;
+&lt;li&gt;每个 Segment 相当于一个小的 HashMap&lt;/li&gt;
+&lt;li&gt;每个 Segment 内部会进行扩容，和 HashMap 扩容类似&lt;/li&gt;
+&lt;li&gt;先生成新的数组，然后转移元素到新数组中&lt;/li&gt;
+&lt;li&gt;扩容的判断也是每个 Segment 内部单独判断的，判断是否超过阈值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;jdk-18版本&#34;&gt;JDK 1.8版本
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;不再使用 Segment 实现&lt;/li&gt;
+&lt;li&gt;当某个线程进行 put 时，如果 ConcurrentHashMap 正在扩容，那么该线程一起进行扩容&lt;/li&gt;
+&lt;li&gt;如果某个线程 put 时，没有在进行扩容，则将 key-value 添加到 ConcurrentHashMap 中，然后判断是否超过阈值，超过进行扩容&lt;/li&gt;
+&lt;li&gt;ConcurrentHashMap 支持多线程同时扩容&lt;/li&gt;
+&lt;li&gt;扩容之前生成一个新的数组&lt;/li&gt;
+&lt;li&gt;在转移元素时，先将原数组分组，将每组分给不同的线程来进行元素的转移，每个线程负责一组或多组的元素转移工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jdk17-jdk18-hashmap-发生了什么变化&#34;&gt;JDK1.7-JDK1.8 HashMap 发生了什么变化
+&lt;/h3&gt;&lt;h4 id=&#34;jdk17&#34;&gt;JDK1.7
+&lt;/h4&gt;&lt;p&gt;数组 + 链表&lt;/p&gt;
+&lt;p&gt;头插法&lt;/p&gt;
+&lt;p&gt;hash 算法复杂&lt;/p&gt;
+&lt;h4 id=&#34;jdk18&#34;&gt;JDK1.8
+&lt;/h4&gt;&lt;p&gt;数组 + 链表 + 红黑树&lt;/p&gt;
+&lt;p&gt;红黑树提高插入和查询的整体效率&lt;/p&gt;
+&lt;p&gt;尾插法&lt;/p&gt;
+&lt;p&gt;hash 算法简化&lt;/p&gt;
+&lt;h3 id=&#34;hashmap-的-put-方法&#34;&gt;HashMap 的 put 方法
+&lt;/h3&gt;&lt;p&gt;大致如下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过哈希算法与与运算计算得出数组下标&lt;/li&gt;
+&lt;li&gt;如果数组下标为空，则将 key-value 封装为 Entry (1.8 版本为 Node) 对象，并放入该位置
+&lt;ul&gt;
+&lt;li&gt;如果是 JDK1.7，先判断是否扩容，如果扩容，就进行扩容，不扩容就生成 Entry 对象，使用头插法插入当前位置的链表中&lt;/li&gt;
+&lt;li&gt;如果是 JDK1.8，先判断该位置上的 Node 的类型（链表、红黑树）
+&lt;ul&gt;
+&lt;li&gt;如果是红黑树 Node，将 key-value 封装成一个 红黑树节点并添加进树中（插入/更新）&lt;/li&gt;
+&lt;li&gt;如果是链表 Node，则将 key-value 封装为一个链表 Node 并通过尾插法插入当前链表尾部，由于尾插进行了遍历，遍历过程中进行插入或更新，如果长度大于 8，将链表转换成红黑树&lt;/li&gt;
+&lt;li&gt;插入链表或红黑树后才进行判单是否进行扩容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hashmap-的扩容机制&#34;&gt;HashMap 的扩容机制
+&lt;/h3&gt;&lt;h4 id=&#34;jdk17-1&#34;&gt;JDK1.7
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;先生成新数组&lt;/li&gt;
+&lt;li&gt;遍历老数组的每个位置上的链表的每个元素&lt;/li&gt;
+&lt;li&gt;取出每个元素的 key，并基于新的数组长度，计算出每个元素再新数组中的下标&lt;/li&gt;
+&lt;li&gt;将元素添加到新数组中去&lt;/li&gt;
+&lt;li&gt;所有元素转移完后，将新数组赋值给 HashMap 对象中的 table 属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;jdk18-1&#34;&gt;JDK1.8
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;先生成新数组&lt;/li&gt;
+&lt;li&gt;遍历老数组中的每个位置的链表或红黑树&lt;/li&gt;
+&lt;li&gt;如果是链表，则直接将链表中的每个元素重新计算下标，添加到新数组中&lt;/li&gt;
+&lt;li&gt;如果是红黑树，先遍历红黑树，计算每个元素对应的下标位置
+&lt;ul&gt;
+&lt;li&gt;统计每个下标位置的元素个数&lt;/li&gt;
+&lt;li&gt;如果该位置的元素超过了8，生成一个新的红黑树，并将根节点的添加到新数组的对应位置&lt;/li&gt;
+&lt;li&gt;如果没有超过8，则生成一个链表，将头节点添加到数组的对应位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;所有元素转移完了之后，将新数组赋值给 HashMap 对象的 table 属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;深拷贝和浅拷贝&#34;&gt;深拷贝和浅拷贝
+&lt;/h3&gt;&lt;p&gt;深拷贝和浅拷贝就是指对象的拷贝，一个对象中存在两种类型的属性，一种是基本数据类型，一种是实例对象的引用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;浅拷贝是指，只拷贝基本数据类型的值，以及实例对象的引用地址，不会复制一份引用地址所指向的对象，也就是浅拷贝出来的对象，内部的属性指向的是同一个对象&lt;/li&gt;
+&lt;li&gt;深拷贝是指，既会拷贝基本数据类型的值，也会针对实例对象的引用地址所指向的对象进行复制，深拷贝出来的对象，内部的属性指向的不是同一个对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;copyonwritearraylist-的底层原理&#34;&gt;CopyOnWriteArrayList 的底层原理
+&lt;/h3&gt;&lt;p&gt;// TODO&lt;/p&gt;
 </description>
         </item>
         <item>
