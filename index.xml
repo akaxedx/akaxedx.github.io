@@ -7,7 +7,46 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>AKAxedx</copyright>
-        <lastBuildDate>Sun, 25 Aug 2024 18:10:13 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 Aug 2024 20:13:09 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计网基础</title>
+        <link>https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/</link>
+        <pubDate>Thu, 29 Aug 2024 20:13:09 +0800</pubDate>
+        
+        <guid>https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/</guid>
+        <description>&lt;img src="https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/saber.jpg" alt="Featured image of post 计网基础" /&gt;&lt;h1 id=&#34;新标记&#34;&gt;新标记
+&lt;/h1&gt;&lt;h2 id=&#34;描述下-http-和-https-的区别&#34;&gt;描述下 HTTP 和 HTTPS 的区别
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;HTTP：互联网上应用最为广泛的一种网络通信协议，基于 TCP，可以使浏览器工作更为高效，减少网络传输&lt;/li&gt;
+&lt;li&gt;HTTPS：是 HTTP 的加强版，可认为是 HTTP + SSL（Secure Socket Layer）。在 HTTP 的基础上增加了一系列的安全机制。一方面保证数据传输安全，另一方面对网文者增加了验证机制。是目前现行架构下，最为安全的解决方案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;主要区别&#34;&gt;主要区别
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;HTTP 的连接是简单无状态的，HTTPS 的数据传输是经过证书加密的，安全性更高&lt;/li&gt;
+&lt;li&gt;HTTP 是免费的，HTTPS 需要申请证书，证书通常需要收费，费用一般不低&lt;/li&gt;
+&lt;li&gt;他们的传输协议不同，所使用的端口也不同，HTTP 默认80端口，HTTPS 默认是 443&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;HTTPS 的缺点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS 的握手协议比较费时，所以会影响服务的相应速度以及吞吐量&lt;/li&gt;
+&lt;li&gt;HTTPS 也并不是完全安全的。他的证书体系起始并不完全安全，HTTPS 在面对 DDOS 的攻击时，几乎起不到任何作用&lt;/li&gt;
+&lt;li&gt;功能越强大的证书费用越高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cookie-和-session-的区别&#34;&gt;Cookie 和 Session 的区别
+&lt;/h2&gt;&lt;p&gt;当服务器 tomcat 第一次接收到客户端请求时，会开辟一块独立的 session 空间，建立一个 session 对象，同时会生成一个 session id，通过响应头的方式保存到客户端浏览器的 cookie 当中。以后客户端每次请求，都会在请求头部带上这个 session id，这样可以对应上服务端的一些会话的相关信息，比如用户的登录状态&lt;/p&gt;
+&lt;p&gt;如果没有客户端的 Cookie，Session 是无法进行身份验证的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当服务端从单体应用升级为分布式之后，cookie + session 这种机制要怎么扩展&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;session 黏贴：在负载均衡中，通过一个机制保证所有的请求都会转发到同一个 tomcat 实例中。问题：当这个 tomcat 实例出现问题后，请求会被转发到其他实例，这时候用户的 session 信息丢失&lt;/li&gt;
+&lt;li&gt;session 复制：当一个 tomcat 实例上保存了 session 信息后，主动将 session 复制到集群中的其他实例。问题：复制需要时间，在复制过程中，容易产生 session 信息丢失&lt;/li&gt;
+&lt;li&gt;session 共享：将服务端的 session 信息保存到一个第三方中，比如 redis。可实现单点登录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bionioaio-分别是什么&#34;&gt;BIO，NIO，AIO 分别是什么
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;BIO：同步阻塞 IO，使用 BIO 读取数据，线程会阻塞住，并且需要线程主动去查询是否有数据可读，并且需要处理完一个 Socket 之后才能处理下一个 Socket&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Tomcat</title>
         <link>https://akaxedx.github.io/p/tomcat/</link>
         <pubDate>Sun, 25 Aug 2024 18:10:13 +0800</pubDate>
