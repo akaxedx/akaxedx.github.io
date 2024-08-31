@@ -325,7 +325,7 @@
     <section class="article-content">
     
     
-    <h1 id="heading">
+    <h1 id="tomcat">Tomcat
 </h1><h2 id="tomcat-中为什么要使用自定义类加载器">Tomcat 中为什么要使用自定义类加载器
 </h2><p>一个 Tomcat 中可以部署很多个应用，而每个应用中都存在很多类，各个应用中的类是独立的，全类名是可以相同的。一个 Tomcat 不管内部部署了多少应用，Tomcat 启动之后就是一个 Java 进程，也就是一个 JVM，所以如果 Tomcat 中只存在一个类加载器，比如默认的 AppClassLoader，那么只能加载一个同名类，这是有问题的。在 Tomcat中，会为部署的每个应用都生成一个类加载器实例，叫做 WebAppClassLoader，这样 Tomcat 中每个应用都可以使用自己的类加载器去加载自己的类，实现应用之间的类隔离，不出现冲突。另外 Tomcat 还利用自定义加载器实现了热加载的功能</p>
 <p><img src="/p/tomcat/image-20240825182113654.png"
