@@ -260,8 +260,15 @@
       </ol>
     </li>
     <li><a href="#单例-bean-和单例模式">单例 Bean 和单例模式</a></li>
+    <li><a href="#spring-中的事务是如何实现的">Spring 中的事务是如何实现的</a></li>
     <li><a href="#spring-事务传播机制">Spring 事务传播机制</a></li>
-    <li><a href="#spring-1">Spring</a></li>
+    <li><a href="#spring-事务什么时候会失效">Spring 事务什么时候会失效</a></li>
+    <li><a href="#spring-中-bean-是线程安全的吗">Spring 中 Bean 是线程安全的吗</a></li>
+    <li><a href="#spring-中的-bean-创建的生命周期有哪些步骤">Spring 中的 Bean 创建的生命周期有哪些步骤</a></li>
+    <li><a href="#applicationcontext-和-beanfactory-有什么区别">ApplicationContext 和 beanFactory 有什么区别</a></li>
+    <li><a href="#spring-容器启动流程是怎样的">Spring 容器启动流程是怎样的</a></li>
+    <li><a href="#spring-boot-中常用注解及其底层实现">Spring Boot 中常用注解及其底层实现</a></li>
+    <li><a href="#spring-boot-是如何启动-tomcat的">Spring Boot 是如何启动 Tomcat的</a></li>
   </ol>
 </nav>
         </div>
@@ -372,6 +379,20 @@
 </h2><p>单例模式表示 JVM 中某个类的对象只会存在一个</p>
 <p>单例 Bean 并不表示 JVM 中只能存在唯一的某个类的对象</p>
 <p>单例 Bean ，使用同一个名字能拿到同一个对象，但我可以 new 出来很多个该对象取不同的名字</p>
+<h2 id="spring-中的事务是如何实现的">Spring 中的事务是如何实现的
+</h2><ul>
+<li>Spring 事务底层是基于数据库事务和 AOP 机制的</li>
+<li>首先对于使用了 @Transactional 注解的 Bean，spring 会创建一个代理对象作为 Bean</li>
+<li>当调用代理对象的方法时，会先判断该方法上是否加了 @Transactional 注解</li>
+<li>如果加了，那么则利用事务管理器创建一个数据库连接</li>
+<li>并且修改数据库连接的 autocommit 属性为 false，禁止此连接的自动提交，这是实现 Spring 事务非常重要的一步</li>
+<li>然后执行当前方法，方法中会执行 sql</li>
+<li>执行完当前方法后，如果没有出现异常就直接提交事务</li>
+<li>如果出现了异常，并且这个异常是需要回滚的就会回滚事务，否则仍然提交事务</li>
+<li>Spring 事务的隔离级别对应的就是数据库的隔离级别</li>
+<li>Spring 事务的传播机制是 Spring 事务自己实现的，也是 Spring 事务中最复杂的</li>
+<li>Spring 事务的传播机制是基于数据库连接来做的，一个数据库连接一个事务，如果传播机制配置为需要新开一个事务，那么实际上就是先建立一个数据库连接，在此新数据库连接上执行 sql</li>
+</ul>
 <h2 id="spring-事务传播机制">Spring 事务传播机制
 </h2><p>多个事务方法相互调用时，事务如何在这些方法间传播，方法 A是一个事务的方法，方法 A 执行过程中调用了方法 B，那么方法 B 有无事务以及方法 B 对事务的要求不同都会对方法 A 的事务具体执行造成影响，同时方法 A 的事务对方法 B 的事务执行也有影响，这种影响具体是什么就由这两个方法所定义的事务传播类型所决定</p>
 <ul>
@@ -383,8 +404,90 @@
 <li>NEVER：不使用事务，如果当前事务存在，则抛出异常</li>
 <li>NESTED：如果当前事务存在，则在嵌套事务中执行，否则开启一个事物</li>
 </ul>
-<h2 id="spring-1">Spring
-</h2>
+<h2 id="spring-事务什么时候会失效">Spring 事务什么时候会失效
+</h2><p>spring 事务的原理是 AOP，进行了切面增强，那么失效的根本原因是这个 AOP 不起作用了，常见情况有以下几种</p>
+<ul>
+<li>发生自调用，类里面使用 this 调用本类的方法（this 通常省略），此时这个 this 对象不是代理类，而是 UserService 对象本身</li>
+<li>方法不是 public 的：@Transactional 只能用于 public 方法上，否则事务不会失效，如果要用在非 public 方法上，可以开启 AspectJ 代理模式</li>
+<li>数据库不支持事务</li>
+<li>没有被 spring 管理</li>
+<li>异常被吃掉事务不会回滚（或抛出的一场没有被定义，默认 RuntimeException）</li>
+</ul>
+<h2 id="spring-中-bean-是线程安全的吗">Spring 中 Bean 是线程安全的吗
+</h2><p>Bean 本质上还是一个对象</p>
+<p>Spring 本身没有针对 Bean 做线程安全的处理，所以</p>
+<ul>
+<li>如果 Bean 是无状态的，那么 Bean 是线程安全的</li>
+<li>如果 Bean 是有状态的，那么 Bean 是线程不安全的</li>
+</ul>
+<p>（有状态：Bean 里的属性会变化，Setter方法）</p>
+<p>另外，Bean 是不是线程安全，跟 Bean 的作用域没有关系，Bean 的作用域只是表示 Bean 生命周期范围，对于任何生命周期的 Bean 都是一个对象，这个对象是不是线程安全的，还是得看这个 Bean 对象本身</p>
+<h2 id="spring-中的-bean-创建的生命周期有哪些步骤">Spring 中的 Bean 创建的生命周期有哪些步骤
+</h2><ul>
+<li>推断构造方法</li>
+<li>实例化</li>
+<li>填充属性（依赖注入）</li>
+<li>处理 Aware 回调</li>
+<li>初始化前，处理 @PostConstruct 注解</li>
+<li>初始化，处理 InitializingBean 接口</li>
+<li>初始化后，进行 AOP</li>
+</ul>
+<p><img src="/p/spring/image-20240902094138683.png"
+	width="1818"
+	height="880"
+	srcset="/p/spring/image-20240902094138683_hu5351735520810056888.png 480w, /p/spring/image-20240902094138683_hu8986877396039803655.png 1024w"
+	loading="lazy"
+	
+		alt="image-20240902094138683"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="206"
+		data-flex-basis="495px"
+	
+></p>
+<h2 id="applicationcontext-和-beanfactory-有什么区别">ApplicationContext 和 beanFactory 有什么区别
+</h2><p>BeanFactory 是 Spring 中非常核心的组件，表示 Bean 工厂，可以生成 Bean，维护 Bean，而 ApplicationContext 继承了 BeanFactory，所以 ApplicationContext 拥有 BeanFactory 所有的特点，也是一个 Bean 工厂，但是 ApplicationContext 除开继承了 BeanFactory 之外，还继承了诸如 EnvironmentCapable、MessageSource、ApplicationEventPublisher 等接口，从而 ApplicationContext 还有获取系统环境变量、国际化、事件发布等功能，这是 BeanFactory 所不具备的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">ApplicationContext</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">EnvironmentCapable</span><span class="p">,</span><span class="w"> </span><span class="n">ListableBeanFactory</span><span class="p">,</span><span class="w"> </span><span class="n">HierarchicalBeanFactory</span><span class="p">,</span><span class="w"> </span><span class="n">MessageSource</span><span class="p">,</span><span class="w"> </span><span class="n">ApplicationEventPublisher</span><span class="p">,</span><span class="w"> </span><span class="n">ResourcePatternResolver</span><span class="w"> 
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里 ApplicationContext 不仅继承了 ListableBeanFactory，还继承了环境变量操作的接口</p>
+<p>EnvironmentCapable ，国际化 MessageSource 等接口</p>
+<h2 id="spring-容器启动流程是怎样的">Spring 容器启动流程是怎样的
+</h2><ul>
+<li>在创建 Sprig 容器，也就是启动 Spring 时</li>
+<li>首先会进行扫描，扫描得到所有的 BeanDefinition 对象，并存在一个 Map 中</li>
+<li>然后筛选出非懒加载的单例 BeanDefinition 进行创建 Bean，对于多例 Bean 不需要再启动过程中去进行创建，对于多例 Bean 会在每次获取 Bean 时利用 BeanDefinition 去创建</li>
+<li>利用 BeanDefinition 创建 Bean 就是 Bean 的创建生命周期，这期间把包括了合并 BeanDefinition、推断构造方法、实例化、属性填充、初始化前、初始化、初始化后等步骤，其中 AOP 就是发生再初始化后这一步骤中</li>
+<li>单例 Bean 创建完了之后， Spring 会发布一个容器启动事件</li>
+<li>Spring 启动结束</li>
+<li>在源码中会更复杂，比如源码中会提供一些模板方法，让子类来实现，比如源码中还涉及到一些 BeanFactoryPostProcessor 和 BeanPostprocessor 的注册，Spring 的扫描就是通过 BeanFactoryPostProcessor 来实现的，依赖注入就是通过 BeanPostprocessor 来实现的</li>
+<li>在 Spring 启动过程中还回去处理 @Import 等注解</li>
+</ul>
+<h2 id="spring-boot-中常用注解及其底层实现">Spring Boot 中常用注解及其底层实现
+</h2><ul>
+<li>@SpringBootApplication 注解：这个注解标识了一个 SpringBoot 工程，它实际上是另外三个注解的组合
+<ul>
+<li>@SpringBootConfiguration：这个注解实际上就是以恶搞 @Configuration，表示启动类也是一个配置类</li>
+<li>@EnableAutoConfiguration：向 Spring 容器中导入了一个 Selector，用来加载 ClassPath 下 SpringFactories 中所定义的自动配置类，将这些自动加载为配置 Bean</li>
+<li>@ComponentScan：标识扫描路径，因为默认是没有配置实际扫描路径，所以 SpringBoot 扫描的路径是启动类所在的当前目录</li>
+</ul>
+</li>
+<li>@Bean 注解：用来定义 Bean，类似于 XML 中的 <bean> 标签，Spring 在启动时，会对加了 @Bean 注解的方法进行解析，将方法的名字作为 beanName，并通过执行方法得到 bean 对象</li>
+<li>@Controller、@Service、@ResponseBody、@Autowired</li>
+</ul>
+<h2 id="spring-boot-是如何启动-tomcat的">Spring Boot 是如何启动 Tomcat的
+</h2><ul>
+<li>首先，SpringBoot 在启动时会先创建一个 Spring 容器</li>
+<li>在创建 Spring 容器过程中，会利用 @ConditionalOnClass 技术来判断当前 classpath 中是否存在 Tomcat 依赖，如果存在则会生成一个启动 Tomcat 的 Bean</li>
+<li>Spring 容器创建完后，就会获取激动 Tomcat 的 Bean，并且创建 Tomcat 对象，并绑定端口等，然后启动 Tomcat</li>
+</ul>
+
 </section>
 
 

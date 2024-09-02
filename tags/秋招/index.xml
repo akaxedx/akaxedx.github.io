@@ -7,7 +7,279 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>AKAxedx</copyright>
-        <lastBuildDate>Fri, 30 Aug 2024 17:59:49 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/tags/%E7%A7%8B%E6%8B%9B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 02 Sep 2024 10:17:38 +0800</lastBuildDate><atom:link href="https://akaxedx.github.io/tags/%E7%A7%8B%E6%8B%9B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>数据库相关</title>
+        <link>https://akaxedx.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/</link>
+        <pubDate>Mon, 02 Sep 2024 10:17:38 +0800</pubDate>
+        
+        <guid>https://akaxedx.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/</guid>
+        <description>&lt;img src="https://akaxedx.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/saber.jpg" alt="Featured image of post 数据库相关" /&gt;&lt;h1 id=&#34;数据库相关&#34;&gt;数据库相关
+&lt;/h1&gt;&lt;h2 id=&#34;mybatis-的优缺点&#34;&gt;Mybatis 的优缺点
+&lt;/h2&gt;&lt;h3 id=&#34;优点&#34;&gt;优点
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;基于 SQL 语言编程，相当灵活，不会对应用程序或者数据库的现有设计造成任何影响，SQL 写在 XML 里，基础 SQL 与程序代码的耦合，便于统一管理；提供 XML 标签，支持编写动态 SQL 语句，并可重用&lt;/li&gt;
+&lt;li&gt;与 JDBC 相比，减少了 50% 以上的代码量，消除了 JDBC 大量冗余的代码，不需要手动开关连接&lt;/li&gt;
+&lt;li&gt;很好的与各种数据库兼容（因为 Mybatis 使用 JDBC 来连接数据库，所以只要 JDBC 支持的数据库 Mybatis 都支持）&lt;/li&gt;
+&lt;li&gt;能够与 Spring 很好的集成&lt;/li&gt;
+&lt;li&gt;提供映射标签，支持对象与数据库的 ORM 字段关系映射；提供对象关系映射标签，支持对象关系组件维护&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;缺点&#34;&gt;缺点
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;SQL 语句的编写工作量大，尤其当字段多、关联表多时，对开发人员编写 SQL 语句的功底有一定要求&lt;/li&gt;
+&lt;li&gt;SQL 语句依赖于数据库，导致数据库移植性差，不能随意更换数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-和--的区别&#34;&gt;#{} 和 ${} 的区别
+&lt;/h2&gt;&lt;p&gt;#{} 是预编译处理、是占位符，${} 是字符串替换、是拼接符&lt;/p&gt;
+&lt;p&gt;Mybatis 在处理 #{} 时，会将 SQL 中的 #{} 替换为 ? ，调用 PreparedStatement 来赋值&lt;/p&gt;
+&lt;p&gt;Mybatis 在处理 ${} 时，会将 SQL 中的 ${} 替换成变量的值，调用 Statement 来赋值&lt;/p&gt;
+&lt;p&gt;使用 #{} 可以有效地防止 SQL 注入，提高系统安全性&lt;/p&gt;
+&lt;h2 id=&#34;索引的基本原理&#34;&gt;索引的基本原理
+&lt;/h2&gt;&lt;p&gt;索引用来快速地寻找那些具有特定值的记录，如果没有索引，一般来说执行查询时遍历整张表&lt;/p&gt;
+&lt;p&gt;索引的原理：就是把无序的数据编程有序的查询&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把创建了索引的列的内容进行排序&lt;/li&gt;
+&lt;li&gt;对排序结果生成倒排表&lt;/li&gt;
+&lt;li&gt;在倒排表内容上拼上数据地址链&lt;/li&gt;
+&lt;li&gt;在查询时先拿到倒排表内容，再取出数据的地址链，从而拿到具体数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;索引设计的原则&#34;&gt;索引设计的原则
+&lt;/h2&gt;&lt;p&gt;查询更快，占用空间更小&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;适合索引的列时出现再 where 子句中的列，或者连接子句中指定的列&lt;/li&gt;
+&lt;li&gt;基数较小的类，索引效果较差，没必要在此列建立索引&lt;/li&gt;
+&lt;li&gt;使用短索引，如果对长字符串列进行索引，应该指定一个前缀长度，这样能够节省大量索引空间，如果搜索词超过索引前缀长度，则使用索引排除不匹配的行，然后检查其余行是否可能匹配&lt;/li&gt;
+&lt;li&gt;不要过度索引，索引需要额外的磁盘空间，并降低写操作的性能。再修改表内容的时候，索引会进行更新甚至重构，索引列越多，这个事件就会越长。所以只要保持需要的索引有利于查询即可&lt;/li&gt;
+&lt;li&gt;定义有外键的数据列一定要建立索引&lt;/li&gt;
+&lt;li&gt;更新频繁字段不适合创建索引&lt;/li&gt;
+&lt;li&gt;若是不能有效区分数据的列不适合做索引列（如性别）&lt;/li&gt;
+&lt;li&gt;尽量的扩展索引，不要新建索引，比如表中已经有 a 的索引，现在要加  (a,b) 的 索引，那么只需要修改原来的索引即可&lt;/li&gt;
+&lt;li&gt;对于哪些查询中很少涉及的列，重复值比较多的列不要建立索引&lt;/li&gt;
+&lt;li&gt;对于定义为 text、image 和 bit 的数据类型的列不要建立索引&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;事务的基本特性和隔离级别&#34;&gt;事务的基本特性和隔离级别
+&lt;/h2&gt;&lt;h3 id=&#34;事务基本特性-acid&#34;&gt;事务基本特性 ACID
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原子性&lt;/strong&gt; 指的是一个事务中的操作要么全部成功，要么全部失败&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一致性&lt;/strong&gt; 指的是数据库总是从一个一致性的状态转换到另一个一致性的状态。比如 A 转账给 B 100 元，假设 A 只有 90 元，支付之前我们数据库里的数据都是符合约束的，但是如果事务执行成功，数据库数据就破坏约束了，因此事务不能成功&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;隔离性&lt;/strong&gt; 指的是一个事务的修改再最终提交前，对其他事务是不可见的&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;持久性&lt;/strong&gt; 指的是一旦事务提交，所做的修改就会永久保存到数据库中&lt;/p&gt;
+&lt;h3 id=&#34;隔离性的四个隔离级别&#34;&gt;隔离性的四个隔离级别
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;read uncommit 读未提交，可能会读到其他事务未提交的数据，也叫做脏读，用户本来应该读取到 id = 1的用户 age 应该是 10，结果读到了其他事务还没有提交的事务，结果读取结果 age = 20，这就是脏读&lt;/li&gt;
+&lt;li&gt;read commit 读已提交，两次读取结果不一致，也叫不可重复读，不可重复读解决了脏读的问题，他只会读取已经提交的事务。用户开启事务读取 id = 1的用户，查询到 age = 10，再次读取发现结果未 20，在同一个事务里同一个查询读取到不同的结果叫做不可重复读&lt;/li&gt;
+&lt;li&gt;repeatable read 可重复读，mysql 默认级别，每次读取结果都一样，但是可能产生幻读&lt;/li&gt;
+&lt;li&gt;serializable 串行，一般是不会使用的，他会给每一行读取的数据加锁，会导致大量超时和锁竞争的问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;什么是-mvcc&#34;&gt;什么是 MVCC
+&lt;/h2&gt;&lt;p&gt;多版本并发控制，指的是在使用 READ COMMITTD、REPEATABLE READ 这两种隔离级别的事务在执行普通 SELECT 操作时访问记录的版本链的过程。可以使用不同事务的读-写、写-读操作并发执行，从而提升系统性能。READ COMMITTD、REPEATABLE READ 这两个隔离级别的一个很大的不同是：生成 ReadView 的时机不同，READ COMMITTD 在每一次进行普通 SELECT 操作前都会生成一个 ReadView，而 REPEATABLE READ 只在第一次进行普通 SELECT 操作前生成一个 ReadView，之后的查询操作都重复使用这个 ReadView&lt;/p&gt;
+&lt;h2 id=&#34;myisam-和-innodb-的区别&#34;&gt;MyISAM 和 InnoDB 的区别
+&lt;/h2&gt;&lt;h3 id=&#34;myisam&#34;&gt;MyISAM
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;不支持事务，但是每次查询都是原子的&lt;/li&gt;
+&lt;li&gt;支持表级锁，每次操作对整个表加锁&lt;/li&gt;
+&lt;li&gt;存储表的总行数&lt;/li&gt;
+&lt;li&gt;一个 MyISAM 表有三个文件：索引文件，表结构文件，数据文件&lt;/li&gt;
+&lt;li&gt;采用非聚集索引，索引文件的数据域存储指向数据文件的指针。辅索引与主索引基本一致，但是辅索引不用保证唯一性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;innodb&#34;&gt;InnoDB
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;支持 ACID 的事务&lt;/li&gt;
+&lt;li&gt;支持事务的四种隔离级别&lt;/li&gt;
+&lt;li&gt;支持行级锁以及外键约束，因此可以支持写并发&lt;/li&gt;
+&lt;li&gt;不存储行总数&lt;/li&gt;
+&lt;li&gt;一个 InnoDB 引擎存储在一个文件空间（共享表空间，表大小不受操作系统控制，一个表可能分布在多个文件中），也可能未多个（设置为独立表空间，表大小受操作系统文件大小限制，一般为 2G），受操作系统文件大小的限制&lt;/li&gt;
+&lt;li&gt;主键索引采用聚集索引（索引的数据域存储数据文件本身），辅索引的数据域存储主键的值；因此从辅索引查找数据，需要先通过辅索引找到主键值，再访问辅索引；最好使用自增主键，防止插入数据时，为维持 B+ 树结构，文件的大调整&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;explain-语句结果中各个字段分别表示什么&#34;&gt;Explain 语句结果中各个字段分别表示什么
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;列名&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;查询语句中每出现一个 SELECT 关键字，MySQL 就会为它分配一个唯一的 id 值，某些子查询会被优化为 join 查询，那么出现的 id 会一样&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;select_type&lt;/td&gt;
+&lt;td&gt;SELECT 关键字对应的那个查询类型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;table&lt;/td&gt;
+&lt;td&gt;表名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;partitions&lt;/td&gt;
+&lt;td&gt;匹配的分区信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;针对单表的查询方式（全表扫描、索引）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;possible_keys&lt;/td&gt;
+&lt;td&gt;可能用到的索引&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;key&lt;/td&gt;
+&lt;td&gt;实际上使用的索引&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ken_len&lt;/td&gt;
+&lt;td&gt;实际上使用的索引长度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ref&lt;/td&gt;
+&lt;td&gt;当使用索引列等值查询时，与索引列进行等值匹配的对象信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rows&lt;/td&gt;
+&lt;td&gt;预估的需要读取的记录条数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;filterte&lt;/td&gt;
+&lt;td&gt;某个表经过 搜索条件过滤后剩余记录条数的百分比&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extra&lt;/td&gt;
+&lt;td&gt;一些额外的信息，比如排列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;索引覆盖是什么&#34;&gt;索引覆盖是什么
+&lt;/h2&gt;&lt;p&gt;索引覆盖就是一个 SQL 再执行时，可以利用索引来快速查找，并且此 SQL 所要查询的字段在当前索引对应的字段中都包含了，那么就表示此 SQL 走完索引后不用回表了，所需要的字段都在当前索引的叶子节点上存在，可以直接作为结果返回&lt;/p&gt;
+&lt;h2 id=&#34;最左前缀原则&#34;&gt;最左前缀原则
+&lt;/h2&gt;&lt;p&gt;当一个 SQL 想要利用索引时，就一定要提供该索引锁对应的字段中最左边的字段，也iu是排在最前面的字段，比如针对 a,b,c 三个字段建立了一个联合索引，那么在写以恶搞 SQL 时就一定要提供 a 字段的条件，这样才能用到联合索引，这是由于建立 a,b,c 三个字段的联合索引时，底层的 B+ 树时按照 a,b,c 三个字段从左往右去比较大小进行排序的，所以如果想要利用 B+ 树进行快速查找也得符合这个规则&lt;/p&gt;
+&lt;h2 id=&#34;innodb-是如何实现事务的&#34;&gt;InnoDB 是如何实现事务的
+&lt;/h2&gt;&lt;p&gt;InnoDB 通过 Buffer Pool，LogBuffer，Redo Log，Undo Log 来实现事务，以一个 update 语句为例&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;InnoDB 在收到一个 update 后，会先根据条件找到数据所在的也，并将该页缓存在 Buffer Pool 中&lt;/li&gt;
+&lt;li&gt;执行 update 语句，修改 Buffer Pool 重点数据，也就是内存中的数据&lt;/li&gt;
+&lt;li&gt;针对 update 语句生成一个 RedoLog 对象，并存入 LogBuffer 中&lt;/li&gt;
+&lt;li&gt;针对 update 语句生成 undolog 日志，用于事务回滚&lt;/li&gt;
+&lt;li&gt;如果事务提交，那么把 RedoLog 对象进行持久化，后续还有其他机制将 Buffer Pool 中所修改的数据页持久化到磁盘中&lt;/li&gt;
+&lt;li&gt;如果事务回滚，那么利用 undolog 日志进行回滚&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;b-树和-b-树的区别为什么-mysql-使用-b-树&#34;&gt;B 树和 B+ 树的区别，为什么 Mysql 使用 B+ 树
+&lt;/h2&gt;&lt;p&gt;B 树的特点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;节点排序&lt;/li&gt;
+&lt;li&gt;一个节点可以存放多个元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;B+ 树的特点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拥有 B 树的特点&lt;/li&gt;
+&lt;li&gt;叶子节点之间有指针&lt;/li&gt;
+&lt;li&gt;非叶子节点上的元素在叶子节点上都冗余了，也就是叶子节点中存储了所有的元素，并且排好序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mysql 索引使用的是 B+ 树，因为索引是用来加快查询的，而 B+ 树通过对数据进行 排序所以是可以提高查询速度的，然后通过一个节点中可以存储多个元素，从而可以使 B+ 树的高度不会太高，在 Mysql 中一个 InnoDB 页就是一个 B+ 树节点，一个 InnoDB 页默认 16kb，所以一般情况下一棵两层的 B+ 树可以存 2000万行左右的数据，然后利用 B+ 树叶子节点存储了所有数据并进行了排序，并且叶子几点之间有指针，可以很好的支持全表扫描，范围查找等 SQL&lt;/p&gt;
+&lt;h2 id=&#34;mysql-锁有哪些如何理解&#34;&gt;Mysql 锁有哪些，如何理解
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;按粒度分类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;行锁：锁某行数据，锁粒度最小，并发度高&lt;/li&gt;
+&lt;li&gt;表锁：锁整张表，锁粒度最大，并发度低&lt;/li&gt;
+&lt;li&gt;间隙锁：锁的是一个区间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按读写分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;共享锁：读锁，一个事务给某行数据加了读锁，其他事务可以读，但不能写&lt;/li&gt;
+&lt;li&gt;排他锁：写锁，一个事务给某行数据加了写锁，其他事务不能读不能写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按实现方式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;乐观锁：不会真正去锁某行记录，通过一个版本号来实现&lt;/li&gt;
+&lt;li&gt;乐观锁：上面的行锁、表锁都是悲观锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在事务的隔离级别实现中，就需要利用锁来解决幻读&lt;/p&gt;
+&lt;h2 id=&#34;rdb-和-aof&#34;&gt;RDB 和 AOF
+&lt;/h2&gt;&lt;h3 id=&#34;rdb&#34;&gt;RDB
+&lt;/h3&gt;&lt;p&gt;Redis DataBase，在指定的时间间隔内将内存中的数据集快照写入磁盘，实际操作过程是 fork 一个子进程，先将数据写入临时文件，写入成功后，再替换之前的文件，用二进制压缩存储&lt;/p&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;整个 Redis 数据库将只包含一个文件 dump.rdb，方便持久化&lt;/li&gt;
+&lt;li&gt;容灾性号，方便备份&lt;/li&gt;
+&lt;li&gt;性能最大化，fork 子进程来完成写操作，让主进程继续处理命令，所以是 IO 最大化。使用单独子进程来进行持久化，主进程不会进行任何 IO 操作，保证了 Redis 的高性能&lt;/li&gt;
+&lt;li&gt;相对于数据集大是，比 AOF 的启动效率更高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据安全性低。RDB 是间隔一段时间进行持久化，如果持久化之间 redis 发生故障，会发生数据丢失。所以这种方式更适合数据要求不严谨的时候&lt;/li&gt;
+&lt;li&gt;由于 RDB 是通过 fork 子进程来协助完成数据持久化工作的，因此，如果当数据集较大时，可能会导致整个服务器停止服务几百毫秒，甚至是 1 秒钟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aof&#34;&gt;AOF
+&lt;/h3&gt;&lt;p&gt;Append Only File，以日志的形式记录服务器所处理的每一个写、删除操作，查询操作不会记录，以文本的方式记录，可以打开文件看到详细的操作记录&lt;/p&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据安全，Redis 中提供了 3 种同步策略，即每秒同步、每修改同步和不同步。事实上，每秒同步也是异步完成的，其效率也是非常高的，所差的是一旦系统出现当即现象，那么这一秒钟之内修改的数据将会丢失，而每修改同步，可以视为同步持久化，即每次发生的数据变化都会被立即记录到磁盘中&lt;/li&gt;
+&lt;li&gt;通过 append 模式写文件，即使中途服务器宕机也不会破坏已经存在的内容，可以通过 redis-check-aof 工具解决数据一致性问题&lt;/li&gt;
+&lt;li&gt;AOF 机制的 rewrite 模式。定期对 AOF 文件进行重写，达到压缩的目的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AOF 文件比 RDB 文件大，且恢复速度慢&lt;/li&gt;
+&lt;li&gt;数据集大的时候，比 RDB 启动效率低&lt;/li&gt;
+&lt;li&gt;运行效率没有 RDB 高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;redis-的过期键的删除策略&#34;&gt;Redis 的过期键的删除策略
+&lt;/h2&gt;&lt;p&gt;Redis 是 key-value 数据库，我们可以设置 Redis 中缓存的 key 的过期时间。Redis 的过期策略就是指当 Redis 中缓存的 key 过期了，Redis 如何处理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;惰性过期：只有当访问一个 key 时，才会判断该 key 是否已经过期，过期则清除。该策略可以最大化节省 CPU 资源，对内存不友好，极端情况下可能出现大量的过期 key 没有再次被访问，从而不会被清除，占用大量内存&lt;/li&gt;
+&lt;li&gt;定时过期（Redis 没使用）：实时监控过期时间，对内存友好，对 CPU 不友好&lt;/li&gt;
+&lt;li&gt;定期过期：每隔一段时间，会扫描一定数量的数据库的 expires 字典中一定数量的 key，并清除其中已经过期的 key。该策略是前两者的折中方案。通过调整定时扫描的 时间间隔和每次扫描的限定耗时，可以在不同情况下使得 CPU 和内存资源达到最优的平衡效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;redis-事务实现&#34;&gt;Redis 事务实现
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;事务开始
+&lt;ul&gt;
+&lt;li&gt;MULTI 命令的执行，标志着一个事务的开始。MULTI 命令会将客户端状态的 flags 属性中的 REDIS_MULTI 标识打开、&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;命令入队
+&lt;ul&gt;
+&lt;li&gt;当一个客户端切换到事务状态之后，服务器会根据这个客户端发送来的命令来执行不同的操作。如果客户端发送的命令为 MULTI、EXEC、WATCh、DISCARD 中的一个，立即执行这个命令，否则将命令放入一个事务队列里，然后向客户端返回 QUEUED 回复
+&lt;ul&gt;
+&lt;li&gt;如果客户端发送的命令为 EXEC、DISCARD、WATCh、MULTI 四个命令中的一个，那么服务器立即执行这个命令&lt;/li&gt;
+&lt;li&gt;如果发送到是其他命令，服务器并不立即执行这个命令。首先检查命令格式是否正确，如果不正确，服务器会在客户端状态（redisClient）的 flags 属性关闭 REDIS_MULTI 标识，并返回错误信息给客户端。如果正确，将这个命令放入一个事务队列里，然后返回 QUEUED 回复&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;事务队列是按照 FIFO 的方式保存入队命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;事务执行
+&lt;ul&gt;
+&lt;li&gt;客户端发送 EXEC 命令，服务器执行 EXEC 命令逻辑
+&lt;ul&gt;
+&lt;li&gt;如果客户端状态的 flags 属性不包含 REDIS_MULTI 标识，或者包含 REDIS_DIRTY_CAS 或者 REDIS_DIRTY_EXEC 标识，那么就直接取消事务的执行&lt;/li&gt;
+&lt;li&gt;否则客户端处于事务状态（flags 有 REDIS_MULTI标识），服务器会遍历客户端的事务队列，然后执行事务队列中的所有命令，最后将返回结果全部返给客户端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;redis 不支持事务回滚机制，但是他会检查每一个事务中的命令是否错误&lt;/li&gt;
+&lt;li&gt;redis 事务不支持检查程序员自己逻辑的错误
+&lt;ul&gt;
+&lt;li&gt;WATCH 命令是一个乐观锁，可以为 Redis 事务提供 check-and-set （CAS）行为。可以监控一个或多个键，一旦其中有一个键被修改（或删除），之后的事务就不会执行，监控一直持续到 EXEC 命令&lt;/li&gt;
+&lt;li&gt;MULTI 命令用于开启一个事务，它总是返回 OK。MuLTI 执行之后，客户端可以继续向服务器发送任意多条命令，这些命令不会立即被执行，而是被放到一个队列中，当 EXEC 被调用时，所有队列中的命令才会被执行&lt;/li&gt;
+&lt;li&gt;EXEC：执行所有事务块内的命令。返回事务块内所有命令的返回值，按命令执行的先后顺序排列。当操作被打断时，返回空值 nil&lt;/li&gt;
+&lt;li&gt;通过调用 DISCARD，客户端可以清空事务队列，并放弃执行事务，并且客户端会从事务状态退出&lt;/li&gt;
+&lt;li&gt;UNWATCH 命令可以取消 WATCH 对所有 key 的监控&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;redis-主从复制的核心原理&#34;&gt;Redis 主从复制的核心原理
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>Spring</title>
         <link>https://akaxedx.github.io/p/spring/</link>
         <pubDate>Fri, 30 Aug 2024 17:59:49 +0800</pubDate>
@@ -50,6 +322,20 @@
 &lt;/h2&gt;&lt;p&gt;单例模式表示 JVM 中某个类的对象只会存在一个&lt;/p&gt;
 &lt;p&gt;单例 Bean 并不表示 JVM 中只能存在唯一的某个类的对象&lt;/p&gt;
 &lt;p&gt;单例 Bean ，使用同一个名字能拿到同一个对象，但我可以 new 出来很多个该对象取不同的名字&lt;/p&gt;
+&lt;h2 id=&#34;spring-中的事务是如何实现的&#34;&gt;Spring 中的事务是如何实现的
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Spring 事务底层是基于数据库事务和 AOP 机制的&lt;/li&gt;
+&lt;li&gt;首先对于使用了 @Transactional 注解的 Bean，spring 会创建一个代理对象作为 Bean&lt;/li&gt;
+&lt;li&gt;当调用代理对象的方法时，会先判断该方法上是否加了 @Transactional 注解&lt;/li&gt;
+&lt;li&gt;如果加了，那么则利用事务管理器创建一个数据库连接&lt;/li&gt;
+&lt;li&gt;并且修改数据库连接的 autocommit 属性为 false，禁止此连接的自动提交，这是实现 Spring 事务非常重要的一步&lt;/li&gt;
+&lt;li&gt;然后执行当前方法，方法中会执行 sql&lt;/li&gt;
+&lt;li&gt;执行完当前方法后，如果没有出现异常就直接提交事务&lt;/li&gt;
+&lt;li&gt;如果出现了异常，并且这个异常是需要回滚的就会回滚事务，否则仍然提交事务&lt;/li&gt;
+&lt;li&gt;Spring 事务的隔离级别对应的就是数据库的隔离级别&lt;/li&gt;
+&lt;li&gt;Spring 事务的传播机制是 Spring 事务自己实现的，也是 Spring 事务中最复杂的&lt;/li&gt;
+&lt;li&gt;Spring 事务的传播机制是基于数据库连接来做的，一个数据库连接一个事务，如果传播机制配置为需要新开一个事务，那么实际上就是先建立一个数据库连接，在此新数据库连接上执行 sql&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;spring-事务传播机制&#34;&gt;Spring 事务传播机制
 &lt;/h2&gt;&lt;p&gt;多个事务方法相互调用时，事务如何在这些方法间传播，方法 A是一个事务的方法，方法 A 执行过程中调用了方法 B，那么方法 B 有无事务以及方法 B 对事务的要求不同都会对方法 A 的事务具体执行造成影响，同时方法 A 的事务对方法 B 的事务执行也有影响，这种影响具体是什么就由这两个方法所定义的事务传播类型所决定&lt;/p&gt;
 &lt;ul&gt;
@@ -61,8 +347,90 @@
 &lt;li&gt;NEVER：不使用事务，如果当前事务存在，则抛出异常&lt;/li&gt;
 &lt;li&gt;NESTED：如果当前事务存在，则在嵌套事务中执行，否则开启一个事物&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;spring-1&#34;&gt;Spring
-&lt;/h2&gt;</description>
+&lt;h2 id=&#34;spring-事务什么时候会失效&#34;&gt;Spring 事务什么时候会失效
+&lt;/h2&gt;&lt;p&gt;spring 事务的原理是 AOP，进行了切面增强，那么失效的根本原因是这个 AOP 不起作用了，常见情况有以下几种&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发生自调用，类里面使用 this 调用本类的方法（this 通常省略），此时这个 this 对象不是代理类，而是 UserService 对象本身&lt;/li&gt;
+&lt;li&gt;方法不是 public 的：@Transactional 只能用于 public 方法上，否则事务不会失效，如果要用在非 public 方法上，可以开启 AspectJ 代理模式&lt;/li&gt;
+&lt;li&gt;数据库不支持事务&lt;/li&gt;
+&lt;li&gt;没有被 spring 管理&lt;/li&gt;
+&lt;li&gt;异常被吃掉事务不会回滚（或抛出的一场没有被定义，默认 RuntimeException）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spring-中-bean-是线程安全的吗&#34;&gt;Spring 中 Bean 是线程安全的吗
+&lt;/h2&gt;&lt;p&gt;Bean 本质上还是一个对象&lt;/p&gt;
+&lt;p&gt;Spring 本身没有针对 Bean 做线程安全的处理，所以&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 Bean 是无状态的，那么 Bean 是线程安全的&lt;/li&gt;
+&lt;li&gt;如果 Bean 是有状态的，那么 Bean 是线程不安全的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（有状态：Bean 里的属性会变化，Setter方法）&lt;/p&gt;
+&lt;p&gt;另外，Bean 是不是线程安全，跟 Bean 的作用域没有关系，Bean 的作用域只是表示 Bean 生命周期范围，对于任何生命周期的 Bean 都是一个对象，这个对象是不是线程安全的，还是得看这个 Bean 对象本身&lt;/p&gt;
+&lt;h2 id=&#34;spring-中的-bean-创建的生命周期有哪些步骤&#34;&gt;Spring 中的 Bean 创建的生命周期有哪些步骤
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;推断构造方法&lt;/li&gt;
+&lt;li&gt;实例化&lt;/li&gt;
+&lt;li&gt;填充属性（依赖注入）&lt;/li&gt;
+&lt;li&gt;处理 Aware 回调&lt;/li&gt;
+&lt;li&gt;初始化前，处理 @PostConstruct 注解&lt;/li&gt;
+&lt;li&gt;初始化，处理 InitializingBean 接口&lt;/li&gt;
+&lt;li&gt;初始化后，进行 AOP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/spring/image-20240902094138683.png&#34;
+	width=&#34;1818&#34;
+	height=&#34;880&#34;
+	srcset=&#34;https://akaxedx.github.io/p/spring/image-20240902094138683_hu5351735520810056888.png 480w, https://akaxedx.github.io/p/spring/image-20240902094138683_hu8986877396039803655.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240902094138683&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;495px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;applicationcontext-和-beanfactory-有什么区别&#34;&gt;ApplicationContext 和 beanFactory 有什么区别
+&lt;/h2&gt;&lt;p&gt;BeanFactory 是 Spring 中非常核心的组件，表示 Bean 工厂，可以生成 Bean，维护 Bean，而 ApplicationContext 继承了 BeanFactory，所以 ApplicationContext 拥有 BeanFactory 所有的特点，也是一个 Bean 工厂，但是 ApplicationContext 除开继承了 BeanFactory 之外，还继承了诸如 EnvironmentCapable、MessageSource、ApplicationEventPublisher 等接口，从而 ApplicationContext 还有获取系统环境变量、国际化、事件发布等功能，这是 BeanFactory 所不具备的&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;ApplicationContext&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;extends&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;EnvironmentCapable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ListableBeanFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;HierarchicalBeanFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MessageSource&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ApplicationEventPublisher&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ResourcePatternResolver&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这里 ApplicationContext 不仅继承了 ListableBeanFactory，还继承了环境变量操作的接口&lt;/p&gt;
+&lt;p&gt;EnvironmentCapable ，国际化 MessageSource 等接口&lt;/p&gt;
+&lt;h2 id=&#34;spring-容器启动流程是怎样的&#34;&gt;Spring 容器启动流程是怎样的
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在创建 Sprig 容器，也就是启动 Spring 时&lt;/li&gt;
+&lt;li&gt;首先会进行扫描，扫描得到所有的 BeanDefinition 对象，并存在一个 Map 中&lt;/li&gt;
+&lt;li&gt;然后筛选出非懒加载的单例 BeanDefinition 进行创建 Bean，对于多例 Bean 不需要再启动过程中去进行创建，对于多例 Bean 会在每次获取 Bean 时利用 BeanDefinition 去创建&lt;/li&gt;
+&lt;li&gt;利用 BeanDefinition 创建 Bean 就是 Bean 的创建生命周期，这期间把包括了合并 BeanDefinition、推断构造方法、实例化、属性填充、初始化前、初始化、初始化后等步骤，其中 AOP 就是发生再初始化后这一步骤中&lt;/li&gt;
+&lt;li&gt;单例 Bean 创建完了之后， Spring 会发布一个容器启动事件&lt;/li&gt;
+&lt;li&gt;Spring 启动结束&lt;/li&gt;
+&lt;li&gt;在源码中会更复杂，比如源码中会提供一些模板方法，让子类来实现，比如源码中还涉及到一些 BeanFactoryPostProcessor 和 BeanPostprocessor 的注册，Spring 的扫描就是通过 BeanFactoryPostProcessor 来实现的，依赖注入就是通过 BeanPostprocessor 来实现的&lt;/li&gt;
+&lt;li&gt;在 Spring 启动过程中还回去处理 @Import 等注解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spring-boot-中常用注解及其底层实现&#34;&gt;Spring Boot 中常用注解及其底层实现
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;@SpringBootApplication 注解：这个注解标识了一个 SpringBoot 工程，它实际上是另外三个注解的组合
+&lt;ul&gt;
+&lt;li&gt;@SpringBootConfiguration：这个注解实际上就是以恶搞 @Configuration，表示启动类也是一个配置类&lt;/li&gt;
+&lt;li&gt;@EnableAutoConfiguration：向 Spring 容器中导入了一个 Selector，用来加载 ClassPath 下 SpringFactories 中所定义的自动配置类，将这些自动加载为配置 Bean&lt;/li&gt;
+&lt;li&gt;@ComponentScan：标识扫描路径，因为默认是没有配置实际扫描路径，所以 SpringBoot 扫描的路径是启动类所在的当前目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;@Bean 注解：用来定义 Bean，类似于 XML 中的 &lt;bean&gt; 标签，Spring 在启动时，会对加了 @Bean 注解的方法进行解析，将方法的名字作为 beanName，并通过执行方法得到 bean 对象&lt;/li&gt;
+&lt;li&gt;@Controller、@Service、@ResponseBody、@Autowired&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;spring-boot-是如何启动-tomcat的&#34;&gt;Spring Boot 是如何启动 Tomcat的
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;首先，SpringBoot 在启动时会先创建一个 Spring 容器&lt;/li&gt;
+&lt;li&gt;在创建 Spring 容器过程中，会利用 @ConditionalOnClass 技术来判断当前 classpath 中是否存在 Tomcat 依赖，如果存在则会生成一个启动 Tomcat 的 Bean&lt;/li&gt;
+&lt;li&gt;Spring 容器创建完后，就会获取激动 Tomcat 的 Bean，并且创建 Tomcat 对象，并绑定端口等，然后启动 Tomcat&lt;/li&gt;
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>计网基础</title>
