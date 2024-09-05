@@ -16,9 +16,6 @@
     <meta name="twitter:image" content='https://akaxedx.github.io/p/java-%E5%9F%BA%E7%A1%80/698503.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
-  
-
-
     </head>
     <body class="
     article-page
@@ -753,38 +750,38 @@
 </h4><p>terminated() 方法执行完后，线程池状态变为 TERMINATED</p>
 <h3 id="synchronized-和-reentrantlock">Synchronized 和 ReentrantLock
 </h3><div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Synchronized</th>
-<th>ReentrantLock</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java 中的一个关键值</td>
-<td>JDK 提供的一个类</td>
-</tr>
-<tr>
-<td>自动加锁与释放锁</td>
-<td>手动加锁与释放</td>
-</tr>
-<tr>
-<td>JVM 层面的锁</td>
-<td>API 层面的锁</td>
-</tr>
-<tr>
-<td>非公平锁</td>
-<td>公平锁或非公平锁</td>
-</tr>
-<tr>
-<td>锁的是对象，锁信息保存在对象头中</td>
-<td>int 类型的 state 标识来标识锁的状态</td>
-</tr>
-<tr>
-<td>底层有锁升级的过程</td>
-<td>没有锁升级的过程</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Synchronized</th>
+          <th style="text-align: left">ReentrantLock</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Java 中的一个关键值</td>
+          <td style="text-align: left">JDK 提供的一个类</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">自动加锁与释放锁</td>
+          <td style="text-align: left">手动加锁与释放</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">JVM 层面的锁</td>
+          <td style="text-align: left">API 层面的锁</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">非公平锁</td>
+          <td style="text-align: left">公平锁或非公平锁</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">锁的是对象，锁信息保存在对象头中</td>
+          <td style="text-align: left">int 类型的 state 标识来标识锁的状态</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">底层有锁升级的过程</td>
+          <td style="text-align: left">没有锁升级的过程</td>
+      </tr>
+  </tbody>
 </table></div>
 <h3 id="reentrantlock-分为公平和非公平锁底层是怎么实现的">ReentrantLock 分为公平和非公平锁，底层是怎么实现的
 </h3><p>首先，不管是公平锁还是非公平锁，他们的底层实现都会用 AQS 来进行排队，他们的区别在于线程在使用 lock() 方法加锁时：</p>
