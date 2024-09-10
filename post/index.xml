@@ -1440,48 +1440,1969 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
         <pubDate>Thu, 29 Aug 2024 20:13:09 +0800</pubDate>
         
         <guid>https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/saber.jpg" alt="Featured image of post 计网基础" /&gt;&lt;h1 id=&#34;计网基础&#34;&gt;计网基础
-&lt;/h1&gt;&lt;h2 id=&#34;描述下-http-和-https-的区别&#34;&gt;描述下 HTTP 和 HTTPS 的区别
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;HTTP：互联网上应用最为广泛的一种网络通信协议，基于 TCP，可以使浏览器工作更为高效，减少网络传输&lt;/li&gt;
-&lt;li&gt;HTTPS：是 HTTP 的加强版，可认为是 HTTP + SSL（Secure Socket Layer）。在 HTTP 的基础上增加了一系列的安全机制。一方面保证数据传输安全，另一方面对网文者增加了验证机制。是目前现行架构下，最为安全的解决方案&lt;/li&gt;
+        <description>&lt;img src="https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/saber.jpg" alt="Featured image of post 计网基础" /&gt;&lt;h1 id=&#34;计算机基础&#34;&gt;计算机基础
+&lt;/h1&gt;&lt;h2 id=&#34;计网&#34;&gt;计网
+&lt;/h2&gt;&lt;h3 id=&#34;计网定义&#34;&gt;计网定义
+&lt;/h3&gt;&lt;p&gt;一些&lt;strong&gt;互相连接&lt;/strong&gt;的&lt;strong&gt;自治&lt;/strong&gt;的计算机的&lt;strong&gt;集合&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;互联：是指计算机之间可以通过有线或者无线的方式进行数据通信
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;自治：是指独立的计算机，他有自己的硬件和软件，可以单独运行使用
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;集合：是指至少需要两台计算机
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;中国的三大 ISP ：中国电信，中国联通，中国移动&lt;/p&gt;
+&lt;p&gt;一旦某个用户能够接入到因特网，所需要的就是购买一些如调制解调器或路由器这样大设备，让其他用户可以和他相连&lt;/p&gt;
+&lt;h3 id=&#34;网络协议三要素&#34;&gt;网络协议三要素
+&lt;/h3&gt;&lt;p&gt;语法、语义、同步&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;语法：用户数据与控制信息的结构和格式
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;语义：需要发出控制信息，以及完成的动作与做出的响应
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;同步：可以理解为时序，即对时间实现顺序的详细说明
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;三种交换方式&#34;&gt;三种交换方式
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;路由器&lt;/strong&gt; 是实现 &lt;strong&gt;分组交换&lt;/strong&gt; 的关键构件，其任务是 &lt;strong&gt;转发&lt;/strong&gt; 收到的分组，这是网络核心部分最重要的功能&lt;/p&gt;
+&lt;p&gt;传统两两相连的方式，当电话数量很多时，电话线也很多，不方便&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155050027.png&#34;
+	width=&#34;457&#34;
+	height=&#34;170&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155050027_hu14567489024671540383.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155050027_hu4509065484853563326.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;传统两两相连&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;268&#34;
+		data-flex-basis=&#34;645px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;电路交换&#34;&gt;电路交换
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;电话交换机接通电话线的方式就是电路交换&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;主要区别&#34;&gt;主要区别
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;HTTP 的连接是简单无状态的，HTTPS 的数据传输是经过证书加密的，安全性更高&lt;/li&gt;
-&lt;li&gt;HTTP 是免费的，HTTPS 需要申请证书，证书通常需要收费，费用一般不低&lt;/li&gt;
-&lt;li&gt;他们的传输协议不同，所使用的端口也不同，HTTP 默认80端口，HTTPS 默认是 443&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155011131.png&#34;
+	width=&#34;754&#34;
+	height=&#34;373&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155011131_hu11317975719871954022.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155011131_hu5820108057580892698.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;电路交换&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;202&#34;
+		data-flex-basis=&#34;485px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;分组交换&#34;&gt;分组交换
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155145948.png&#34;
+	width=&#34;851&#34;
+	height=&#34;389&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155145948_hu7488459850958635014.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155145948_hu8950072133881074106.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;分组交换&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;218&#34;
+		data-flex-basis=&#34;525px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;通常我们把表示该消息的整块数据称为一个报文
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	在发送报文之前，先把较长的报文划分成一个个更小的等长数据段，在每一个数据段前面，加上一些由必要的控制信息组成的 首部，就构成了一个分组，也可以称为 “包”
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;首部包含了分组的目的地址
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;发送过程&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;发送方
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	构造分组
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	发送分组
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;路由器
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	缓存分组
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	转发分组
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;简称为 “分组转发”
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;路由器处理分组的过程：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	把收到的分组先放入缓存（暂时存储）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	查找转发表，找出到某个目的地地址应从哪个端口转发
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	把分组送到适当的端口转发出去
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;接收方
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	接收分组
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	还原报文
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;报文交换&#34;&gt;报文交换
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;报文交换中的结点页采用存储转发方式，但报文交换，对报文的大小没有限制，这就要求 结点交换机需要较大的缓存空间
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;报文交换主要用于早期的电报通信网，现在较少使用，通常被较先进的分组交换方式所取代
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;三种交换方式的对比&#34;&gt;三种交换方式的对比
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160048010.png&#34;
+	width=&#34;983&#34;
+	height=&#34;316&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160048010_hu1913997843669285884.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160048010_hu10800634270868451483.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;三种交换方式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;311&#34;
+		data-flex-basis=&#34;746px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假设 A B C D 是分组传输路径所要经过的 4 个结点交换机，纵坐标为时间&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;按覆盖范围分类&#34;&gt;按覆盖范围分类
+&lt;/h3&gt;&lt;h4 id=&#34;广域网wan&#34;&gt;广域网（WAN）
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;作用范围通常为几十到几千公里，因而又是也称为远程网。广域网是互联网的核心部分，其任务是通过 长距离 运送主机所发送的数据
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;城域网man&#34;&gt;城域网（MAN）
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;作用范围一般是一个城市，可跨越几个街区 甚至是整个城市
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;局域网lan&#34;&gt;局域网（LAN）
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;一般用微型计算机或工作站通过高速通信线路相连（速率通常在 10 Mbit/s 以上），但地理上范围较小（1 km 左右）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;个域网pan&#34;&gt;个域网（PAN）
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;就是在个人工作的地方把个人使用的 电子设备 用 无线技术 连接起来的网络
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;按拓扑结构分类&#34;&gt;按拓扑结构分类
+&lt;/h3&gt;&lt;h4 id=&#34;总线型网络&#34;&gt;总线型网络
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160809882.png&#34;
+	width=&#34;288&#34;
+	height=&#34;122&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160809882_hu8823031595121198473.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160809882_hu13584145528975814926.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;总线型网络&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;236&#34;
+		data-flex-basis=&#34;566px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;星型网络&#34;&gt;星型网络
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160817973.png&#34;
+	width=&#34;326&#34;
+	height=&#34;221&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160817973_hu6476348648867477229.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160817973_hu891317602139904541.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;星星网络&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;147&#34;
+		data-flex-basis=&#34;354px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;环形网络&#34;&gt;环形网络
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160825960.png&#34;
+	width=&#34;358&#34;
+	height=&#34;236&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160825960_hu8921348613228070488.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160825960_hu17666959587411086321.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;环形网络&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;364px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;网状型网络&#34;&gt;网状型网络
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160842999.png&#34;
+	width=&#34;455&#34;
+	height=&#34;250&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160842999_hu11302245186812681850.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160842999_hu9862601464588204531.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;网状型网络&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;436px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;计算机网络的性能指标&#34;&gt;计算机网络的性能指标
+&lt;/h3&gt;&lt;h4 id=&#34;速率&#34;&gt;速率
+&lt;/h4&gt;&lt;p&gt;传送比特的速率，也成为比特率或者数据率&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161143504.png&#34;
+	width=&#34;376&#34;
+	height=&#34;165&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161143504_hu1270885549524773281.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161143504_hu8154390869009050445.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;常见单位&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;227&#34;
+		data-flex-basis=&#34;546px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;带宽&#34;&gt;带宽
+&lt;/h4&gt;&lt;p&gt;网络的通信线路所能传送数据的能力&lt;/p&gt;
+&lt;p&gt;单位：Hz&lt;/p&gt;
+&lt;h4 id=&#34;吞吐量&#34;&gt;吞吐量
+&lt;/h4&gt;&lt;p&gt;在单位时间内通过某个 信道 的数据量&lt;/p&gt;
+&lt;h4 id=&#34;时延等等&#34;&gt;时延、等等
+&lt;/h4&gt;&lt;h3 id=&#34;按传输介质分类&#34;&gt;按传输介质分类
+&lt;/h3&gt;&lt;h4 id=&#34;有线网络&#34;&gt;有线网络
+&lt;/h4&gt;&lt;h4 id=&#34;无线网络&#34;&gt;无线网络
+&lt;/h4&gt;&lt;h3 id=&#34;常见计算机网络体系结构&#34;&gt;常见计算机网络体系结构
+&lt;/h3&gt;&lt;p&gt;【计算机网络】的体系结构是 &lt;strong&gt;计算机网络的各层及其协议的集合&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161324601.png&#34;
+	width=&#34;1040&#34;
+	height=&#34;549&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161324601_hu17872162686886380873.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161324601_hu13970851203908224450.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;计算机网络体系结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;454px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如今使用的最多的是 TCP/IP 体系结构，新进闺蜜最大的，覆盖全球的&lt;/p&gt;
+&lt;h4 id=&#34;大概流程&#34;&gt;大概流程
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161518959.png&#34;
+	width=&#34;702&#34;
+	height=&#34;393&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161518959_hu7793507957609049691.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161518959_hu2552963914643963880.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;流程&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;物理层&#34;&gt;物理层
+&lt;/h4&gt;&lt;p&gt;就是解决在各种传输媒体上传输比特 0 和 1 的问题，进而给数据链路层提供 &lt;strong&gt;透明传输比特流的服务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162109416.png&#34;
+	width=&#34;789&#34;
+	height=&#34;324&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162109416_hu4996283422332700507.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162109416_hu14197854535771662921.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;物理层&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;243&#34;
+		data-flex-basis=&#34;584px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;主要由以下四个任务&#34;&gt;主要由以下四个任务
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;机械特性：指明所有接线器的形状和尺寸。引脚数目和排列、固定和锁定装置&lt;/li&gt;
+&lt;li&gt;电气特性：指明在接口电缆的各条线上出现的电压的范围&lt;/li&gt;
+&lt;li&gt;功能特性：指明某条线上出现的某一电平的电压表示何种意义&lt;/li&gt;
+&lt;li&gt;过程特性：指明对于不同功能的各种可能事件的出现顺序&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;HTTPS 的缺点&lt;/p&gt;
+&lt;p&gt;传输媒体分为两类：&lt;strong&gt;引导型传输媒体，非引导型传输媒体&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;HTTPS 的握手协议比较费时，所以会影响服务的相应速度以及吞吐量&lt;/li&gt;
-&lt;li&gt;HTTPS 也并不是完全安全的。他的证书体系起始并不完全安全，HTTPS 在面对 DDOS 的攻击时，几乎起不到任何作用&lt;/li&gt;
-&lt;li&gt;功能越强大的证书费用越高&lt;/li&gt;
+&lt;li&gt;引导型传输媒体：通轴电缆、双绞线、光纤、电力线&lt;/li&gt;
+&lt;li&gt;非引导行传输媒体：无线电波、微波、红外线、可见光&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;cookie-和-session-的区别&#34;&gt;Cookie 和 Session 的区别
-&lt;/h2&gt;&lt;p&gt;当服务器 tomcat 第一次接收到客户端请求时，会开辟一块独立的 session 空间，建立一个 session 对象，同时会生成一个 session id，通过响应头的方式保存到客户端浏览器的 cookie 当中。以后客户端每次请求，都会在请求头部带上这个 session id，这样可以对应上服务端的一些会话的相关信息，比如用户的登录状态&lt;/p&gt;
-&lt;p&gt;如果没有客户端的 Cookie，Session 是无法进行身份验证的&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当服务端从单体应用升级为分布式之后，cookie + session 这种机制要怎么扩展&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;传输方式&#34;&gt;传输方式
+&lt;/h5&gt;&lt;h6 id=&#34;串行传输&#34;&gt;串行传输
+&lt;/h6&gt;&lt;p&gt;数据是一个比特一个比特依此发送的，只需要一条数据传输线路&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162631568.png&#34;
+	width=&#34;620&#34;
+	height=&#34;61&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162631568_hu5130049304346057718.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162631568_hu15645950804910677873.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;串行传输&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;1016&#34;
+		data-flex-basis=&#34;2439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;并行传输&#34;&gt;并行传输
+&lt;/h6&gt;&lt;p&gt;一次发送 n 个比特，需要 n 条传输线路&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162712281.png&#34;
+	width=&#34;640&#34;
+	height=&#34;280&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162712281_hu8058370166708868663.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162712281_hu15294752856128314295.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;并行传输&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;228&#34;
+		data-flex-basis=&#34;548px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;同步传输&#34;&gt;同步传输
+&lt;/h6&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;数据块以稳定的比特流形式传输，字节之间没有间隔，接收端在每个比特的中间时刻进行检测，以判别接收到的比特 0 或是比特 1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162958305.png&#34;
+	width=&#34;947&#34;
+	height=&#34;118&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162958305_hu5740641862618794534.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162958305_hu11714509317516954802.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;同步传输&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;802&#34;
+		data-flex-basis=&#34;1926px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;异步传输&#34;&gt;异步传输
+&lt;/h6&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;以字节为独立的传输单位，字节之间的时间间隔是不固定的，在每个字节的前后分别加上起始位和结束位
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163231186.png&#34;
+	width=&#34;1027&#34;
+	height=&#34;116&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163231186_hu7921547464991363348.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163231186_hu15011859022533098691.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;异步传输&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;885&#34;
+		data-flex-basis=&#34;2124px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;单向通信&#34;&gt;单向通信
+&lt;/h6&gt;&lt;p&gt;又称单工通信，通信双方只有一个传输方向&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163415581.png&#34;
+	width=&#34;1064&#34;
+	height=&#34;175&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163415581_hu14842767649530656633.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163415581_hu11006528590833079439.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;单工&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;608&#34;
+		data-flex-basis=&#34;1459px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;双向交替通信半双工&#34;&gt;双向交替通信（半双工）
+&lt;/h6&gt;&lt;p&gt;可以互相传输数据，但是不能同时进行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163502408.png&#34;
+	width=&#34;699&#34;
+	height=&#34;115&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163502408_hu7636437118763444544.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163502408_hu14237088601677792089.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;半双工&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;607&#34;
+		data-flex-basis=&#34;1458px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;双向同时通信双工&#34;&gt;双向同时通信（双工）
+&lt;/h6&gt;&lt;p&gt;通信双方可以同时发送和接收消息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163510406.png&#34;
+	width=&#34;921&#34;
+	height=&#34;153&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163510406_hu15774828032697016570.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163510406_hu8351911443911792858.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;双工&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;601&#34;
+		data-flex-basis=&#34;1444px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;码元&#34;&gt;码元
+&lt;/h6&gt;&lt;p&gt;简单来说 &lt;strong&gt;码元&lt;/strong&gt; 就是一段调制好的 &lt;strong&gt;基本波形&lt;/strong&gt; ，可以表示比特信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163726916.png&#34;
+	width=&#34;765&#34;
+	height=&#34;190&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163726916_hu15979472672719579900.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163726916_hu10965137805058304191.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;码元&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;402&#34;
+		data-flex-basis=&#34;966px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;编码调制&#34;&gt;编码、调制
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163829333.png&#34;
+	width=&#34;591&#34;
+	height=&#34;163&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163829333_hu14134997093165350844.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163829333_hu5680753160051103946.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;编码与调制&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;362&#34;
+		data-flex-basis=&#34;870px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163916297.png&#34;
+	width=&#34;748&#34;
+	height=&#34;425&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163916297_hu3181469423474419416.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163916297_hu2449790587565047953.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数字信号和模拟信号&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;信号失真&#34;&gt;信号失真
+&lt;/h6&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;信号在传输过程中会受到各种因素的影响，是的信号波形失去码元之间的清晰界限，这种现象称为 码间串扰
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164103057.png&#34;
+	width=&#34;575&#34;
+	height=&#34;137&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164103057_hu2889034447401330633.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164103057_hu4332432157495972565.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;失真&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;419&#34;
+		data-flex-basis=&#34;1007px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;造成信号失真的因素
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	码元传输速率
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	信号传输距离
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	噪声干扰
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	传输媒体质量
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h6 id=&#34;奈氏准则&#34;&gt;奈氏准则
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164223114.png&#34;
+	width=&#34;593&#34;
+	height=&#34;166&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164223114_hu7272997050769524240.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164223114_hu7831901370187462814.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;奈氏准则&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;357&#34;
+		data-flex-basis=&#34;857px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;奈氏准则&lt;/code&gt; 是理想条件下推导的，&lt;strong&gt;没有考虑传输距离、噪声干扰等因素&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id=&#34;香农公式&#34;&gt;香农公式
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164413029.png&#34;
+	width=&#34;345&#34;
+	height=&#34;245&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164413029_hu6778789440878862138.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164413029_hu9686542419413506640.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;香农公式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;数据链路层&#34;&gt;数据链路层
+&lt;/h4&gt;&lt;h5 id=&#34;概述&#34;&gt;概述
+&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;链路&lt;/strong&gt; 是从一个 &lt;strong&gt;结点到相邻结点&lt;/strong&gt; 的一段 &lt;strong&gt;物理线路&lt;/strong&gt; ，&lt;strong&gt;数据链路&lt;/strong&gt; 则是在 &lt;strong&gt;链路的基础&lt;/strong&gt; 上增加了一些必要的 &lt;strong&gt;硬件（如网络适配器）和软件（如协议的实现）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164723313.png&#34;
+	width=&#34;1104&#34;
+	height=&#34;402&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164723313_hu4290913032498505072.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164723313_hu17808457339051802372.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数据链路层&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;274&#34;
+		data-flex-basis=&#34;659px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;数据链路层传送的协议数据单元是 &lt;strong&gt;帧&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;封装成帧&#34;&gt;封装成帧
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;封装成帧&lt;/strong&gt; 就是在一段数据的前后分别添加首部和尾部，然后就构成了一个帧&lt;/li&gt;
+&lt;li&gt;首部和尾部的一个重要的作用就是进行 &lt;strong&gt;帧定界&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164956042.png&#34;
+	width=&#34;881&#34;
+	height=&#34;230&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164956042_hu18375431784862084461.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164956042_hu3760306503001266094.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;封装成帧&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;383&#34;
+		data-flex-basis=&#34;919px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;透明传输&#34;&gt;透明传输
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165019201.png&#34;
+	width=&#34;649&#34;
+	height=&#34;227&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165019201_hu15669474561572719015.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165019201_hu6869196643126652989.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;透明传输&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;285&#34;
+		data-flex-basis=&#34;686px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如果数据中的某个字节的 &lt;strong&gt;二进制代码恰好和 SOH 或 EOT 一样&lt;/strong&gt;，数据链路就会 &lt;strong&gt;错误地“找到帧的边界”&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解决透明传输的方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;面向 字节的物理链路 使用 字节填充，面向 比特的物理链路 使用 比特填充 的方式实现透明传输
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;发送端的数据链路层在数据中出现控制字符 “SOH” 或 “EOT” 的前面 &lt;strong&gt;插入一个转义字符“ESC”&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;差错检测&#34;&gt;差错检测
+&lt;/h5&gt;&lt;p&gt;比特在传输过程中可能会产生差错，&lt;strong&gt;1可能变成0，0可能变成1，这就称为比特差错&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id=&#34;差错检测法&#34;&gt;差错检测法
+&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;奇偶校验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165617623.png&#34;
+	width=&#34;969&#34;
+	height=&#34;119&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165617623_hu17468449543106075510.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165617623_hu4386081384878721611.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;奇校验&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;814&#34;
+		data-flex-basis=&#34;1954px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;只能检测出奇数个比特出现错误码的情况&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;session 黏贴：在负载均衡中，通过一个机制保证所有的请求都会转发到同一个 tomcat 实例中。问题：当这个 tomcat 实例出现问题后，请求会被转发到其他实例，这时候用户的 session 信息丢失&lt;/li&gt;
-&lt;li&gt;session 复制：当一个 tomcat 实例上保存了 session 信息后，主动将 session 复制到集群中的其他实例。问题：复制需要时间，在复制过程中，容易产生 session 信息丢失&lt;/li&gt;
-&lt;li&gt;session 共享：将服务端的 session 信息保存到一个第三方中，比如 redis。可实现单点登录&lt;/li&gt;
+&lt;li&gt;CRC&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;bionioaio-分别是什么&#34;&gt;BIO，NIO，AIO 分别是什么
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;BIO：同步阻塞 IO，使用 BIO 读取数据，线程会阻塞住，并且需要线程主动去查询是否有数据可读，并且需要处理完一个 Socket 之后才能处理下一个 Socket&lt;/li&gt;
-&lt;li&gt;NIO：同步非阻塞 IO，使用 NIO 读取数据时，线程不会阻塞，但需要线程主动去查询是否有 IO 事件&lt;/li&gt;
-&lt;li&gt;AIO：也叫 NIO2.0，异步非阻塞 IO，使用 AIO 读取数据时，线程不会阻塞，并且当有数据可读时会通知给线程，不需要线程主动去查询&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165715760.png&#34;
+	width=&#34;916&#34;
+	height=&#34;313&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165715760_hu2282113318641159268.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165715760_hu1472470811241529616.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;CRC&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;292&#34;
+		data-flex-basis=&#34;702px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;集线器&#34;&gt;集线器
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170421204.png&#34;
+	width=&#34;223&#34;
+	height=&#34;147&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170421204_hu13990732219288058826.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170421204_hu11142030231847326508.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;集线器&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;364px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;集线器是运作在 OSI 模型中的 &lt;strong&gt;物理层&lt;/strong&gt; ，可以是做多端口的【中继器】&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170539175.png&#34;
+	width=&#34;431&#34;
+	height=&#34;236&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170539175_hu3362372609130364124.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170539175_hu3195664130152546603.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ＨＵＢ就是集线器&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;438px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;交换机&#34;&gt;交换机
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170741002.png&#34;
+	width=&#34;359&#34;
+	height=&#34;209&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170741002_hu10562308683304219919.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170741002_hu16712247762699379105.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;交换机&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;412px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;也叫做　&lt;strong&gt;交换式集线器&lt;/strong&gt;，它通过对信息进行重新生成，并经过内部处理后　&lt;strong&gt;转发至指定端口，具备自动寻址能力和交换作用&lt;/strong&gt;，在数据链路层&lt;/p&gt;
+&lt;h5 id=&#34;集线器和交换机的区别&#34;&gt;集线器和交换机的区别
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170953640.png&#34;
+	width=&#34;267&#34;
+	height=&#34;136&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170953640_hu14170012639760192702.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170953640_hu5222095230638705675.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;３Ｍ带宽&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;196&#34;
+		data-flex-basis=&#34;471px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;集线器平分带宽，交换机的话也是　３Ｍ&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最初&lt;/strong&gt;　的　&lt;strong&gt;以太网&lt;/strong&gt;　是将许多计算机都连接到同一根总线上&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909171209032.png&#34;
+	width=&#34;534&#34;
+	height=&#34;145&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909171209032_hu9253873010144217462.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909171209032_hu1757148367698056952.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最初的以太网&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;368&#34;
+		data-flex-basis=&#34;883px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;csmacd&#34;&gt;CSMA/CD
+&lt;/h5&gt;&lt;p&gt;【CSMA/CD】即 &lt;strong&gt;冲突检测&lt;/strong&gt; 的 &lt;strong&gt;载波监听多路访问&lt;/strong&gt; 的方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;三大要点
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多点接入&lt;/strong&gt;：说明这是总线型网络，许多计算机以多点接入的方式连接在一根总线上&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;载波监听&lt;/strong&gt;：用电子技术检测总线上有没有其他计算机也在发送&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;碰撞检测&lt;/strong&gt;：即适配器便发送数据边检测信道上的信号电压的变化情况，以便判断自己在发送数据时其他站是否也在发送数据&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;netty-的高性能体现在哪些方面&#34;&gt;Netty 的高性能体现在哪些方面
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;NIO 模型，用最少的资源做更多的事情&lt;/li&gt;
-&lt;li&gt;内存零拷贝，尽量减少不必要的内存拷贝，实现了更高效率的传输&lt;/li&gt;
-&lt;li&gt;内存池设计，申请的内存可以重用，主要指直接内存，内部实现使用一颗二叉查找树管理内存分配情况&lt;/li&gt;
-&lt;li&gt;串行化处理读写：避免使用锁带来的性能开销。即消息的处理尽可能在同一个线程内完成，期间不进行线程切换。这样避免了多线程竞争和同步锁。表面上看，串行化设计似乎 CPU 利用率不高，但是，通过调整 NIO 线程池的线程参数，可以同时启动多个串行化的线程并行运行，这种局部无锁化的串行线程设计相比一个队列+对各工作线程模型性能更优&lt;/li&gt;
-&lt;li&gt;高性能序列化协议：支持 protobuf 等高性能序列化协议&lt;/li&gt;
-&lt;li&gt;高效并发编程的体现：volatile 的大量、正确使用。CAS 和原子类的管饭使用，线程安全容器的使用，通过读写锁提升开发性能&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h5 id=&#34;ppp&#34;&gt;PPP
+&lt;/h5&gt;&lt;p&gt;点对点协议，为在点对点连接上传输多协议数据包提供了一个标准方法，为两个对等节点之间的 IP 流量传输提供一种 &lt;strong&gt;封装协议&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;广播域&#34;&gt;广播域
+&lt;/h5&gt;&lt;p&gt;指网络中的某一设备同时向 &lt;strong&gt;网络中所有的其他设备发送数据&lt;/strong&gt;，这个数据所能 &lt;strong&gt;广播到的范围&lt;/strong&gt; 即为广播域&lt;/p&gt;
+&lt;h5 id=&#34;冲突域&#34;&gt;冲突域
+&lt;/h5&gt;&lt;p&gt;多少 &lt;strong&gt;站点能抽到这个信息&lt;/strong&gt;，这些站点就构成一个冲突域&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;交换机&lt;/strong&gt; 所有端口都在同一个广播域内，而每一个端口就是一个冲突域，&lt;strong&gt;所以交换机能分割冲突域，但分割不了广播域&lt;/strong&gt; 。但是，&lt;strong&gt;虚拟局域网（Vlan）&lt;/strong&gt; 技术的交换机可以 &lt;strong&gt;隔离广播域&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172202422.png&#34;
+	width=&#34;809&#34;
+	height=&#34;392&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172202422_hu12804208310199853675.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172202422_hu17237733666900228116.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;交换机&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;495px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;A 发消息 BC 都能收到&lt;/p&gt;
+&lt;h5 id=&#34;vlan&#34;&gt;VLAN
+&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;虚拟局域网 VLAN&lt;/strong&gt; 是由一些局域网网段构成的 &lt;strong&gt;与物理位置无关的逻辑组&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同一个 VLAN 内部可以广播通信，不同 VLAN 不可以广播通信&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172432162.png&#34;
+	width=&#34;751&#34;
+	height=&#34;397&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172432162_hu16534341035226300699.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172432162_hu9622385088885630507.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;VLAN&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;454px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;接口划分方式&#34;&gt;接口划分方式
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172504911.png&#34;
+	width=&#34;510&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172504911_hu9868981151546748158.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172504911_hu4627888954987610281.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;原理&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;90&#34;
+		data-flex-basis=&#34;217px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1、Access 接口
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	Access 接口一般用于和不能识别 Tag 的用户终端（如用户主机、服务器等）相连，或者不需要区分不同 VLAN 成员时使用
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2、Trunk 接口
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	Trunk 接口一般用于连接交换机、路由器、AP 以及可以同时收发 Tagged 帧和 Untagged 帧的语音终端
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3、Hybrid 接口
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	Hybrid 接口既可以用于连接不能识别 Tag 的用户终端，也可以用于连接交换机、路由器以及可以同时收发 Tagged 帧和 Untagged 帧的语音终端、AP
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;所属 VLAN&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;允许通过 VLAN&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;access&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;只能一个（即划入的 VLAN）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;只能一个即划入的 VLAN&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;trunk&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;只能一个 （即 pvid）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;任意个&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173035750.png&#34;
+	width=&#34;485&#34;
+	height=&#34;323&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173035750_hu7589021174030903447.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173035750_hu12009911159848381643.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;区别&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;mac-地址&#34;&gt;MAC 地址
+&lt;/h5&gt;&lt;p&gt;MAC 地址是一个 &lt;strong&gt;唯一标识符&lt;/strong&gt;，有助于在任何网络上识别您的机器&lt;/p&gt;
+&lt;h5 id=&#34;arp-地址解析协议&#34;&gt;ARP 地址解析协议
+&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;IP 地址解析为以太网 MAC&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;当主机或其他网络设备由数据要发送给另一个主机或设备时，它必须知道对方的网络层地址（即 IP地址）。但是仅仅由 IP 地址是不够的，因为 IP 数据报必须封装成帧才能通过物理网络发送，因此发送站还必须由接收站的地址，所以需要一个从 IP 地址到物理地址的映射
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;网络层&#34;&gt;网络层
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173726445.png&#34;
+	width=&#34;804&#34;
+	height=&#34;273&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173726445_hu13573533601620476750.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173726445_hu6444268210060745810.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;294&#34;
+		data-flex-basis=&#34;706px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;作用&#34;&gt;作用
+&lt;/h5&gt;&lt;p&gt;确定在本路由器如何转发分组，确定分组从源到目的经过的路径，是 &lt;strong&gt;点到点&lt;/strong&gt; 服务&lt;/p&gt;
+&lt;h5 id=&#34;ip-网际协议&#34;&gt;IP （网际协议）
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173850439.png&#34;
+	width=&#34;534&#34;
+	height=&#34;284&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173850439_hu4036587847905736566.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173850439_hu8110680232880927977.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;IP 网际协议&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;451px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IP 地址&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipv4：32位	二进制	192.168.100.1	主流
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipv6：128位	十六进制	ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff	在使用，未来会普及
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;IP 地址的组成&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;网络号 + 主机号
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;network + host
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;网络号&lt;/strong&gt;：用来标识一个网段&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;主机号&lt;/strong&gt;：用来标识这个网段上的某一台主机&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IP 地址的分类&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A 类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174254867.png&#34;
+	width=&#34;454&#34;
+	height=&#34;85&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174254867_hu13922894293219995683.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174254867_hu11137669722382865929.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;A 类地址&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;534&#34;
+		data-flex-basis=&#34;1281px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;网络号.主机号.主机.主机
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;第一个可指派的网络号位1，网络地址为 1.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;最后一个可指派的网络号为 126 网络地址为 126.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可指派的网络号：2^(8-1) - 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	减2的原因是除去最小网络号0和最大网络号127
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	127.0.0.1 回环地址，用来在每台计算机测试 tcp/ip 协议使用，只能在本机访问，别人不允许访问
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可分配的 ip 地址共有：2^24 - 2 、
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	其中减去的为全为0的网络地址和全为1的广播地址
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;B 类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174927305.png&#34;
+	width=&#34;590&#34;
+	height=&#34;97&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174927305_hu12991678357889195004.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174927305_hu9500365516194470828.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;B 类地址&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;608&#34;
+		data-flex-basis=&#34;1459px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;128 ~191
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;网络号.网络号.主机.主机
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;最小网络号也是第一个可指派的网络号128.0网络地址为128.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;最大网络号也是最后一个可指派的网络号191.255网络地址为191.255.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	可指派的网络号：2^(16-2)-2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可分配的 ip 地址共有：2^16-2个
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;C 类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909220343024.png&#34;
+	width=&#34;477&#34;
+	height=&#34;92&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909220343024_hu6598145422911077217.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909220343024_hu17099090709761058529.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;C 类地址&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;518&#34;
+		data-flex-basis=&#34;1244px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;192 ~223
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;网络号.网络号.网络号.主机
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;最小网络号也是第一个可指派的网络号192.0.0网络地址为192.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;最大网络号也是最后一个可指派的的网络号223.255.255网络地址为223.255.255.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2^(24-3) -2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2^8 -2 个
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;公网上使用ABC三类地址&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;D 类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;224 ~ 组播地址
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;E 类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;保留给科学家使用&lt;/p&gt;
+&lt;p&gt;有人提出是否可以从主机号部分借用一部分作为子网号&lt;/p&gt;
+&lt;p&gt;所以就有了一个划分子网的工具：&lt;strong&gt;子网掩码&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从1985 年起 &lt;strong&gt;在 IP 地址中&lt;/strong&gt; 又 &lt;strong&gt;增加了一个“子网号字段”&lt;/strong&gt;，使两级的 &lt;strong&gt;IP 地址变为三级的 IP 地址&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;cidr&#34;&gt;CIDR
+&lt;/h5&gt;&lt;p&gt;无类域间路由选择&lt;/p&gt;
+&lt;p&gt;消除了传统的 A 类、B 类和 C 类地址以及划分子网的概念，因而可以更加有效地分配 IPv4 的地址空间&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;即在 IP 地址后面加上一个斜线“/”，然后写上网络前缀所占的比特数&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;192.168.1.0/22
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;子网掩码概念&lt;/p&gt;
+&lt;p&gt;子网掩码可以表明分类 &lt;strong&gt;IP 地址的主机号部分被借用了几个比特做为子网号&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;如何划分子网&#34;&gt;如何划分子网
+&lt;/h5&gt;&lt;p&gt;从 &lt;strong&gt;主机号&lt;/strong&gt; 借用若干个为 &lt;strong&gt;作为子网号 subnet-id&lt;/strong&gt;，而主机号，也就相应减少了若干个位&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909221703096.png&#34;
+	width=&#34;745&#34;
+	height=&#34;158&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909221703096_hu3074352459488115022.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909221703096_hu6315609167636368493.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;子网掩码&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;471&#34;
+		data-flex-basis=&#34;1131px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;网络地址：网络号 + 子网号 + 主机号（全为0）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;广播地址：网络号 + 子网号 + 主机号 （全为1）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;子网掩码：网络号（全为1） + 子网号（全为1） + 主机号（全为0）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;IP 地址总数：根据主机号的位数进行确定
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可分配 IP 地址数：IP 地址总数 - 2（去除主机号全为0的网络地址和主机号全为1的广播地址）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可分配 IP 地址范围：就是子网地址 + 1 ~ 广播地址 - 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A 类地址 网络号8位主机号24位	地址范围是1.0.0.0~126.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;B 类地址 网络号16位主机号16位	地址范围是128.0.0.0~191.255.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C 类地址 网络号24位主机号8位	地址范围是192.0.0.0~223.255.255.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;划分子网是从主机号中借位进行划分的
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;子网划分方式有两种	①定长子网划分	②可变长子网划分
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;直接交付和间接交付&#34;&gt;直接交付和间接交付
+&lt;/h5&gt;&lt;p&gt;如果 &lt;strong&gt;目的网络地址和源&lt;/strong&gt; 网络地址相同，就是在 &lt;strong&gt;同一个网络中，属于直接交付&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910154920140.png&#34;
+	width=&#34;412&#34;
+	height=&#34;260&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910154920140_hu8805345887522666100.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910154920140_hu18339891816617617133.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;直接交付&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;380px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如果 &lt;strong&gt;目的网络地址和源&lt;/strong&gt; 网络地址不相同，就 &lt;strong&gt;不在同一个网络中，属于间接交付，&lt;/strong&gt; 通常是一个路由器帮忙转发&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;直连网络
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;静态路由（人工配置）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;动态路由（路由选择协议）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910155207946.png&#34;
+	width=&#34;1005&#34;
+	height=&#34;403&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910155207946_hu11653787212992027215.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910155207946_hu8448387946949608958.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;路由&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;249&#34;
+		data-flex-basis=&#34;598px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如何判断是不是同一个网段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建 vlan1：ip 地址：192.168.1.1 子网掩码：255.255.255.0&lt;/p&gt;
+&lt;p&gt;创建 vlan2：ip 地址：192.168.2.1 子网掩码：255.255.255.0&lt;/p&gt;
+&lt;p&gt;那么他们是不是在同一个网段呢&lt;/p&gt;
+&lt;p&gt;​	详细计算&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;将 ip 地址 192.168.1.1 转为二进制
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11000000 10101000 00000001 00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;将子网掩码 255.255.255.0 转为二进制
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11111111.11111111.11111111.00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;然后将两者与运算
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11000000 10101000 00000001 00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11111111.11111111.11111111.00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;得到
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11000000 10101000 00000001 00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;转成网络号是
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;192.168.1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;将 ip 地址 192.168.2.1 转为二进制
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11000000 10101000 00000010 00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;将子网掩码 255.255.255.0 转为二进制
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11111111.11111111.11111111.00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;然后将两者与运算
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11000000 10101000 00000010 00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11111111.11111111.11111111.00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;得到
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11000000 10101000 00000010 00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;转成网络号是
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;192.168.2.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;不是一个网段
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;传输层&#34;&gt;传输层
+&lt;/h4&gt;&lt;h5 id=&#34;概念&#34;&gt;概念
+&lt;/h5&gt;&lt;p&gt;IP 层是实现点到点的连接&lt;/p&gt;
+&lt;p&gt;传输层是提供【端到端】的连接，即实现不同进程之间的通信&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在传输层主要依赖 TCP 和 UDP 协议，TCP 是一种可靠的、面向连接的通信协议。UDP 是一种不可靠、无连接的通信协议&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;tcp&#34;&gt;TCP
+&lt;/h5&gt;&lt;h6 id=&#34;tcp-报文结构&#34;&gt;TCP 报文结构
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910160503292.png&#34;
+	width=&#34;733&#34;
+	height=&#34;355&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910160503292_hu111997642924921707.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910160503292_hu2277656281131618513.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TCP 报文结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;495px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;源端口号：发送数据进程的端口号，范围0~65525
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;目标端口号：接收数据进程的端口号，范围0~65525
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;序列号：序列字段的值指的是本报文段所发送的数据的第一个字节的序号
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;确认号：期望收到对方的下一个报文段的数据的第一个字节的序号
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URG：紧急比特，当 URG = 1 时，表明紧急指针字段有效，它告诉系统此报文中有紧急数据应尽快传送（相当于高优先级的数据）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ACK：确认比特，只有当 ACK = 1 时确认号字段才有效。当 ACK = 0 时，确认号无效
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PSH：推送比特，接收方 TCP 收到推送比特置 1 的报文段，就尽快地交付给接收应用进程，而不再等到整个缓存都填满了后再向上交付
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RST：复位比特，当 RST = 1 时，表明 TCP 连接中出现严重差错（如由于主机崩溃或其他原因），必须释放连接，然后再重新尽力运输连接
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;SYN：同步比特，同步比特 SYN 置为 1，就表示这是一个连接请求或连接接受报文
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;FIN：终止比特，用来释放一个连接。当 FIN = 1 时，表明此报文段的发送端的数据已经发送完毕，并要求释放运输连接
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h6 id=&#34;三次握手&#34;&gt;三次握手
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910161839535.png&#34;
+	width=&#34;615&#34;
+	height=&#34;301&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910161839535_hu16654946396619983286.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910161839535_hu15135589977268863277.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;三次握手&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;490px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;四次挥手&#34;&gt;四次挥手
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162051938.png&#34;
+	width=&#34;744&#34;
+	height=&#34;327&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162051938_hu10861619807176694962.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162051938_hu5169307796127136414.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;四次挥手&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;227&#34;
+		data-flex-basis=&#34;546px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;tcp-流量控制&#34;&gt;TCP 流量控制
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163506699.png&#34;
+	width=&#34;644&#34;
+	height=&#34;191&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163506699_hu17817380927008521281.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163506699_hu15136410787684820898.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TCP 流量控制&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;337&#34;
+		data-flex-basis=&#34;809px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;tcp-拥塞控制&#34;&gt;TCP 拥塞控制
+&lt;/h6&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;TCP 进行拥塞控制的算法有四种，即慢开始、拥塞避免、快重传和快恢复
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163755649.png&#34;
+	width=&#34;617&#34;
+	height=&#34;275&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163755649_hu12623040169116883514.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163755649_hu14795592476746147233.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;拥塞控制&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;224&#34;
+		data-flex-basis=&#34;538px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（1）慢开始算法
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	在 TCP 刚刚连好并开始发送 TCP 报文段时，先令拥塞窗口 cwnd = 1，使用慢开始算法后，每经过一个传输轮次（即往返时延 RTT），拥塞窗口 cwnd 就会加倍，即 cwnd 的大小指数式增长。这样，慢开始一直把拥塞窗口 cwnd 增大到一个规定的慢开始门限 ssthresh（阈值），然后改用拥塞避免算法
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（2）拥塞避免算法
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	拥塞避免算法的做法如下：发送端的拥塞窗口 cwnd 没经过 一个往返时延 RTT 就增加一个 MSS 的大小，而不是加倍，使 cwnd 加法增大
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	· 当 cwnd &amp;lt; ssthresh 时，使用慢开始算法
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	· 当 cwnd &amp;gt; ssthresh 时，停止使用慢开始算法而改用拥塞避免算法
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	· 当 cwnd = ssthresh 时，既可以使用慢开始算法，又可以使用拥塞避免算法（通常做法）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	网络拥塞的处理
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		网络出现拥塞时，无论是在慢开始阶段还是在拥塞避免阶段，把慢开始门限 ssthresh 设置为出现拥塞时发送方的 cwnd 值的一半（但不能小于2）。然后把拥塞窗口 cwnd 重新设置为 1，执行慢开始算法
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（3）快重传
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	在 TCP 可靠传输机制中，快重传技术使用了冗余 ACK 来检测丢包的发生，在某些情况下可更早地重传丢失的报文段。当发送方连续收到三个重复的 ACK 报文时，直接重传对方尚未收到的报文段，而不必等待那个报文段设置的重传计时器超时
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（4）快恢复
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	发送端收到连续三个冗余 ACK （即重复确认）时，执行“乘法减小”算法，把慢开始门限 ssthresh 设置为出现拥塞时发送方 cwnd 的一半，慢开始算法将拥塞窗口 cwnd 设置为 1，但是它设置为 ssthresh / 2 的值开始，由于跳过了 cwnd 从 1 起始的慢开始过程，所以称为快恢复
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;udp&#34;&gt;UDP
+&lt;/h5&gt;&lt;h6 id=&#34;udp-报文结构&#34;&gt;UDP 报文结构
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162504271.png&#34;
+	width=&#34;533&#34;
+	height=&#34;190&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162504271_hu13972302189003294758.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162504271_hu6407475349768355126.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;UDP 报文结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;280&#34;
+		data-flex-basis=&#34;673px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;源端口号：通常包含发送数据报的应用程序所使用的 UDP 端口。接收端的应用程序利用这个字段的值作为发送响应的目的地址。这个字段是可选的，所以发送端的应用程序不一定会把自己的端口号写入该字段中。如果不写入端口号，则把这个字段设置为0。这样，接收端的应用程序就不能发送响应了
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;目标端口号：接收端计算机上 UDP 软件使用的端口
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;长度：表示 UDP 数据报长文，包含 UDP 报文头和 UDP 数据长度
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;校验和：检验数据在传输过程中是否被损坏
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;tcp-和-udp-的区别&#34;&gt;TCP 和 UDP 的区别
+&lt;/h5&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;UDP&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;TCP&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;是否连接&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;无连接&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;面向连接&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;是否可靠&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;不可靠传输，不使用流量控制和拥塞控制&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;可靠传输，使用流量控制和拥塞控制&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;连接对象个数&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持一对一，一对多，多对一和多对多交互通信&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;只能是一对一通信&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;传输方式&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;面向报文&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;面向字节流&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;首部开销&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;首部开销小，仅 8 字节&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;首部最小 20 字节，最大 60 字节&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;适用场景&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;适用于实时应用（IP 电话、视频会议、直播等）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;适用于要求可靠传输的应用，例如文件传输&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;端口&#34;&gt;端口
+&lt;/h5&gt;&lt;p&gt;TCP 端口是指就是为 TCP 协议通信提供服务的端口。在 TCP 传输控制协议中，建立端对端的连接是靠 IP 地址和 TCP 的端口号的共同作用。UDP 端口是指就是为 UDP 协议通信提供服务的端口&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910165704233.png&#34;
+	width=&#34;741&#34;
+	height=&#34;206&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910165704233_hu15243820266049191668.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910165704233_hu14490293988566480832.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;端口&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;359&#34;
+		data-flex-basis=&#34;863px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;端口号的范围是从 1~65535，一般分为 3 类端口：熟知端口号，登记端口号，客户端口号或短暂端口号&lt;/p&gt;
+&lt;p&gt;熟知端口号：数值一般为0~1023，每个端口号应用于特定熟知的应用协议&lt;/p&gt;
+&lt;p&gt;登记端口号：数值为 1024~49151，为没有熟知端口号的应用程序使用的，使用这个范围的端口号必须在 IANA 互联网数字分配机构登记，以防止重复&lt;/p&gt;
+&lt;p&gt;客户端口号或短暂端口号：数值为 49151~65535，留给客户进程选择暂时使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;常见端口列表&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170110123.png&#34;
+	width=&#34;989&#34;
+	height=&#34;419&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170110123_hu4532275280232146863.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170110123_hu6939981388096612525.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;常见端口&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;236&#34;
+		data-flex-basis=&#34;566px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;应用层&#34;&gt;应用层
+&lt;/h4&gt;&lt;h5 id=&#34;网络应用模型&#34;&gt;网络应用模型
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;客户/服务器模型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170352714.png&#34;
+	width=&#34;507&#34;
+	height=&#34;300&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170352714_hu7973476516168684650.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170352714_hu2902252461079037547.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;客户/服务器模型&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;405px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;服务器：系统启动后，便不断运行，被动等待并接受来自客户机的请求&lt;/li&gt;
+&lt;li&gt;客户机：请求计算服务的主机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;P2P 模型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在 P2P 模型中，任意一对计算机称为对等方（Peer），直接相互通信
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在对等网络中上的每台计算机具有相同的功能，没有主从之分，没有专用服务器，也没有专用工作站，任何一台计算机既可以作为服务器，又可以作为工作站
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170655711.png&#34;
+	width=&#34;301&#34;
+	height=&#34;246&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170655711_hu498638833189702621.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170655711_hu207158615999346470.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;P2P&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;122&#34;
+		data-flex-basis=&#34;293px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在 P2P 中，随着用户不断加入，服务需求的不断增加，系统的整体资源和服务能力得以同步扩充和提高。新用户的加入可以提供服务和资源，更好地满足了网络中用户的需求，促进分布式体系的实现
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;dns&#34;&gt;DNS
+&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;域名系统：便于把具有特定含义的主机名转换为便于机器处理的 IP 地址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h6 id=&#34;分类&#34;&gt;分类
+&lt;/h6&gt;&lt;p&gt;包括顶级域名，二级域名，三级域名等&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171123872.png&#34;
+	width=&#34;1004&#34;
+	height=&#34;215&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171123872_hu1206683020958284987.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171123872_hu8496001714735091462.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;域名&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;466&#34;
+		data-flex-basis=&#34;1120px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;以 tieba.baidu.com为例
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;正确的域名划分为
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	.com 					顶级域名/一级域
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	baidu.com				二级域名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	tieba.baidu.com			三级域名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	detail.tieba.baidu.com	四级域名
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171612661.png&#34;
+	width=&#34;1083&#34;
+	height=&#34;468&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171612661_hu16714743498954968928.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171612661_hu2962421370854437034.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;DNS 解析流程&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;231&#34;
+		data-flex-basis=&#34;555px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;递归查询和迭代查询的区别：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	递归查询是一种 DNS 服务器的查询模式，在该模式下 DNS 服务器接收到客户机请求，必须使用一个准确的查询结果回复客户机。如果 DNS 服务器本地没存储查询 DNS 信息，那么该服务器会询问其他服务器，并将返回的查询结果提交给客户机
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	迭代查询 DNS 服务器是另外一种查询模式，DNS 服务器会向客户机提供其他能够解析查询请求的 DNS 服务器，当客户机发送查询请求时，DNS 服务器并不直接回复查询结果，而是告诉客户机另一台 DNS 服务器地址，客户机再向这台 DNS 服务器提交请求，依此循环直到返回查询的结果
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;几个重要的协议&#34;&gt;几个重要的协议
+&lt;/h5&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1、远程登录协议（Telnet）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2、文件传输协议（FTP）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3、超文本传输协议（HTTP）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;4、域名服务协议（DNS）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;5、简单邮件传输协议（SMTP）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;6、邮局协议（POP3）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	其中，从网络上下载文件时使用的是 FTP 协议，上网浏览网页时使用的是 HTTP 协议
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	在网络上访问一台主机时，通常不直接输入 IP 地址，而是输入域名，用的时 DNS 服务协议，它会将域名解析为 IP 地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	通过 FoxMail 发送电子邮件时，使用 SMTP 协议，接收电子邮件时使用 POP3 协议
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;万维网&#34;&gt;万维网
+&lt;/h5&gt;&lt;h6 id=&#34;概述-1&#34;&gt;概述
+&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;概念&lt;/strong&gt;：万维网 是 &lt;strong&gt;超大规模&lt;/strong&gt;，联机形式的 &lt;strong&gt;资料空间&lt;/strong&gt;，是 &lt;strong&gt;海量网络站点和网页集合&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定位资源&lt;/strong&gt;：使用 &lt;strong&gt;统一资源定位符 URL 可以唯一标识一个资源&lt;/strong&gt;，这个资源可以是文本，视频，音频，图片&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;URL 形式&lt;/strong&gt;：&amp;lt;协议&amp;gt;://&amp;lt;主机地址&amp;gt;:&amp;lt;端口号&amp;gt;/&amp;lt;路径&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;协议：http，ftp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;主机地址：IP 地址， 域名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;端口号：16 位端口号，0~65535
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URL 不区分大小写字母
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;获取资源&lt;/strong&gt;：&lt;strong&gt;用户点击超链接获取资源，&lt;/strong&gt; 服务器通过 &lt;strong&gt;HTTP 协议&lt;/strong&gt; 将资源传输给用户&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;万维网工作方式&lt;/strong&gt;：&lt;strong&gt;客户端/服务器 方式&lt;/strong&gt;，客户端就是网页浏览器 IE，火狐等，服务器是部署 HTTP 服务器程序，如 Tomcat，IIS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;http&#34;&gt;HTTP
+&lt;/h5&gt;&lt;p&gt;定义了 &lt;strong&gt;浏览器 向 服务器 请求资源的方式&lt;/strong&gt;，以及 &lt;strong&gt;服务器 如何将资源 发送给浏览器&lt;/strong&gt;，具体流程如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（1）用户操作：用户 在浏览器上 输入 URL，或点击超链接
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（2）分析 URL：浏览器 分析 URL 链接
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（3）请求 IP 地址：浏览器向 DNS 服务器请求域名对应的 IP 地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（4）解析 IP 地址：DNS 服务器将域名解析成 IP 地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（5）建立 TCP 连接：客户端与服务器端建立 TCP 连接
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（6）浏览器申请资源：浏览器向服务器发出申请资源命令
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（7）服务器响应：服务器响应浏览器的资源申请
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（8）释放 TCP 连接：客户端服务器双方释放 TCP 连接
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（9）浏览器显示资源：浏览器显示从服务器中获取到的文本，图片，视频等资源
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h6 id=&#34;请求报文&#34;&gt;请求报文
+&lt;/h6&gt;&lt;p&gt;请求报文的格式由  &lt;strong&gt;请求行+请求头+请求体&lt;/strong&gt; 构成&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请求行：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;请求方法 + 请求 URL + Http 协议版本&lt;/p&gt;
+&lt;p&gt;请求方法：常见的 HTTP 请求方法有 GET，POST 还有 DELETE、HEAD、OPTIONS、PUT、TRACE 等方法&lt;/p&gt;
+&lt;p&gt;请求行示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-HTTP&#34; data-lang=&#34;HTTP&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;POST&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;/s?ie=utf-8&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;HTTP&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;请求头：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;常见的请求头&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-http&#34; data-lang=&#34;http&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;User-Agent: 浏览器类型
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Accept: 客户端可识别的响应内容类型列表
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Accept-Language: 客户端可接收的自然语言
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Accept-Encoding: 客户端可接收的编码压缩格式
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Accept-Charest:可接受的应答字符集
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Host: 请求的主机名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;onnection: 连接方式（close 或 keepalive）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Cookie: 存储与客户端扩展字段，向同一域名的服务器端发送属于该域的 cookie
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;content-type: 响应类型
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Host: baidu.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;Cookie: name=study
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;content-type: application/x-www-form-urlencode
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;User-Agent: chorm 83
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;请求体：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;get 方式请求体位空
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;post 方式的请求体可以不为空（JSON）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;响应报文：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;响应报文的格式也是由响应行+响应头+空行+响应体构成&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;响应行：&lt;strong&gt;报文协议版本 + 状态码&lt;/strong&gt; 以及状态描述&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HTTP/1.1 200 OK
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;常见 HTTP 状态码&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;分类&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;分类描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1**&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;信息，服务器收到请求，需要请求者继续执行操作&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2**&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;成功，操作被成功接收并处理&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3**&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;重定向，需要进一步操作以完成请求&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4**&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;客户端错误，请求包含语法错误或无法完成请求&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;5**&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;服务器错误，服务器在处理请求过程中发生了错误&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;200 - 请求成功
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;301 - 资源 被永久转移到其他 URL
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;404 - 请求的资源不存在
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;500 - 内部服务器错误
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;https&#34;&gt;HTTPS
+&lt;/h5&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https 和 http 的区别
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（1）https 的端口是443，http 的端口是80，且两者的连接方式不同
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（2）http 传输是明文的，而 https 是用 ssl 进行加密的，https 的安全性更高
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;（3）https 是需要申请证书的，http 不用
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;计网知识点补充&#34;&gt;计网知识点补充
+&lt;/h3&gt;&lt;h4 id=&#34;http11http2http3-的区别&#34;&gt;HTTP/1.1	HTTP/2	HTTP/3 的区别
+&lt;/h4&gt;&lt;h5 id=&#34;http11&#34;&gt;HTTP/1.1
+&lt;/h5&gt;&lt;p&gt;HTTP/1/1 是互联网第一个真正意义的 HTTP 标准版本&lt;/p&gt;
+&lt;p&gt;核心是 &lt;strong&gt;一次一份&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;当获取响应后，才可以发送下一个 HTTP 请求
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在 TCP 连接建立之后，我们获取 html 文件，依据 html 文件获取 css、js 等文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这些过程都是一次一次请求的，当其中一个文件请求失败，后续的文件也就拿不到了 这就是 HTTP 队头阻塞
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;HTTP1.1为了解决 队头阻塞问题，使用了 &lt;strong&gt;管线化&lt;/strong&gt; 技术，即一个连接中可以发送多个请求，但是 &lt;strong&gt;响应的时候也必须按照发送的顺序接收&lt;/strong&gt; ，浏览器基本不用&lt;/p&gt;
+&lt;p&gt;开发者为了减少请求次数，也开发出了很多黑科技，比如 &lt;strong&gt;精灵图&lt;/strong&gt; ，base64 直接传字符串&lt;/p&gt;
+&lt;h5 id=&#34;http2&#34;&gt;HTTP/2
+&lt;/h5&gt;&lt;p&gt;核心是 &lt;strong&gt;多路复用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单个 TCP 连接就可以进行交错发送请求和响应&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;把原本 HTTP 报文的首部和实体拆为两个部分 - 首部帧，数据帧
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;有一个流标识符来进行组合，实现了交错发送请求和响应，不会响应错乱
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;帧类型也可以设置优先级
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;HTTP/1 对实体进行了压缩，而 HTTP/2 对首部也进行了压缩，使用了 HPACK 算法&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务器推送&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当浏览器进行请求时，服务器可以不用像以往一样解析 HTML 后再一个一个响应，而是把浏览器后续所需要的文件全发过来。但是存在安全隐患，如果只是点错了网页，就会被大量推送文件，非常臃肿&lt;/p&gt;
+&lt;h5 id=&#34;http3&#34;&gt;HTTP/3
+&lt;/h5&gt;&lt;p&gt;HTTP/2 只解决了 HTTP/1 的队头阻塞，但是 TCP 层面的 队头阻塞依然存在，数据再传输层发生了 丢包，仍然是继续等待&lt;/p&gt;
+&lt;p&gt;核心是 &lt;strong&gt;整合&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;HTTP/3 把 TCP 和 TLS 的握手过程整合在了一起，减少来回开销&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910181922456.png&#34;
+	width=&#34;1596&#34;
+	height=&#34;857&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910181922456_hu11095597729407860708.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910181922456_hu16888471892750363818.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;右侧 HTTP/3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;446px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;QUIC 协议 整合了 TCP 和 TLS&lt;/p&gt;
+&lt;p&gt;所以 HTTP/3 默认使用了加密的，所以可以说是 TCP2.0 但不是 UDP2.0&lt;/p&gt;
+&lt;p&gt;应用层过来的数据会被 QUIC 封装成 帧，和 HTTP/2 的帧很像，也是有流标识符&lt;/p&gt;
+&lt;p&gt;而 HTTP/3 应用层 中并没有使用帧，而是直接移到了 QUIC 中，从源头解决了 队头阻塞&lt;/p&gt;
+&lt;p&gt;QUIC 帧 后续被合成 QUIC 数据包，加入连接 ID，即使网络 IP 发生变化，也可以使用 连接ID 重新连接，避免握手&lt;/p&gt;
+&lt;p&gt;QUIC 帧的内容也是被加密的，最后被 UDP 分装从数据段&lt;/p&gt;
 </description>
         </item>
         <item>
