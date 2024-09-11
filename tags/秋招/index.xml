@@ -1010,12 +1010,12 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 </description>
         </item>
         <item>
-        <title>计网基础</title>
-        <link>https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/</link>
+        <title>计算机基础</title>
+        <link>https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</link>
         <pubDate>Thu, 29 Aug 2024 20:13:09 +0800</pubDate>
         
-        <guid>https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/saber.jpg" alt="Featured image of post 计网基础" /&gt;&lt;h1 id=&#34;计算机基础&#34;&gt;计算机基础
+        <guid>https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</guid>
+        <description>&lt;img src="https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/saber.jpg" alt="Featured image of post 计算机基础" /&gt;&lt;h1 id=&#34;计算机基础&#34;&gt;计算机基础
 &lt;/h1&gt;&lt;h2 id=&#34;计网&#34;&gt;计网
 &lt;/h2&gt;&lt;h3 id=&#34;计网定义&#34;&gt;计网定义
 &lt;/h3&gt;&lt;p&gt;一些&lt;strong&gt;互相连接&lt;/strong&gt;的&lt;strong&gt;自治&lt;/strong&gt;的计算机的&lt;strong&gt;集合&lt;/strong&gt;&lt;/p&gt;
@@ -1058,10 +1058,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;&lt;h3 id=&#34;三种交换方式&#34;&gt;三种交换方式
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;路由器&lt;/strong&gt; 是实现 &lt;strong&gt;分组交换&lt;/strong&gt; 的关键构件，其任务是 &lt;strong&gt;转发&lt;/strong&gt; 收到的分组，这是网络核心部分最重要的功能&lt;/p&gt;
 &lt;p&gt;传统两两相连的方式，当电话数量很多时，电话线也很多，不方便&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155050027.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155050027.png&#34;
 	width=&#34;457&#34;
 	height=&#34;170&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155050027_hu14567489024671540383.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155050027_hu4509065484853563326.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155050027_hu14567489024671540383.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155050027_hu4509065484853563326.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;传统两两相连&#34;
@@ -1076,10 +1076,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;电话交换机接通电话线的方式就是电路交换&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155011131.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155011131.png&#34;
 	width=&#34;754&#34;
 	height=&#34;373&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155011131_hu11317975719871954022.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155011131_hu5820108057580892698.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155011131_hu11317975719871954022.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155011131_hu5820108057580892698.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;电路交换&#34;
@@ -1091,10 +1091,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;分组交换&#34;&gt;分组交换
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155145948.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155145948.png&#34;
 	width=&#34;851&#34;
 	height=&#34;389&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155145948_hu7488459850958635014.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909155145948_hu8950072133881074106.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155145948_hu7488459850958635014.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909155145948_hu8950072133881074106.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;分组交换&#34;
@@ -1175,10 +1175,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;三种交换方式的对比&#34;&gt;三种交换方式的对比
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160048010.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160048010.png&#34;
 	width=&#34;983&#34;
 	height=&#34;316&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160048010_hu1913997843669285884.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160048010_hu10800634270868451483.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160048010_hu1913997843669285884.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160048010_hu10800634270868451483.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;三种交换方式&#34;
@@ -1232,10 +1232,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;按拓扑结构分类&#34;&gt;按拓扑结构分类
 &lt;/h3&gt;&lt;h4 id=&#34;总线型网络&#34;&gt;总线型网络
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160809882.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160809882.png&#34;
 	width=&#34;288&#34;
 	height=&#34;122&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160809882_hu8823031595121198473.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160809882_hu13584145528975814926.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160809882_hu8823031595121198473.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160809882_hu13584145528975814926.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;总线型网络&#34;
@@ -1247,10 +1247,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;星型网络&#34;&gt;星型网络
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160817973.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160817973.png&#34;
 	width=&#34;326&#34;
 	height=&#34;221&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160817973_hu6476348648867477229.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160817973_hu891317602139904541.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160817973_hu6476348648867477229.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160817973_hu891317602139904541.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;星星网络&#34;
@@ -1262,10 +1262,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;环形网络&#34;&gt;环形网络
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160825960.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160825960.png&#34;
 	width=&#34;358&#34;
 	height=&#34;236&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160825960_hu8921348613228070488.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160825960_hu17666959587411086321.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160825960_hu8921348613228070488.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160825960_hu17666959587411086321.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;环形网络&#34;
@@ -1277,10 +1277,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;网状型网络&#34;&gt;网状型网络
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160842999.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160842999.png&#34;
 	width=&#34;455&#34;
 	height=&#34;250&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160842999_hu11302245186812681850.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909160842999_hu9862601464588204531.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160842999_hu11302245186812681850.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909160842999_hu9862601464588204531.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网状型网络&#34;
@@ -1294,10 +1294,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;h3 id=&#34;计算机网络的性能指标&#34;&gt;计算机网络的性能指标
 &lt;/h3&gt;&lt;h4 id=&#34;速率&#34;&gt;速率
 &lt;/h4&gt;&lt;p&gt;传送比特的速率，也成为比特率或者数据率&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161143504.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161143504.png&#34;
 	width=&#34;376&#34;
 	height=&#34;165&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161143504_hu1270885549524773281.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161143504_hu8154390869009050445.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161143504_hu1270885549524773281.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161143504_hu8154390869009050445.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;常见单位&#34;
@@ -1319,10 +1319,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/h4&gt;&lt;h4 id=&#34;无线网络&#34;&gt;无线网络
 &lt;/h4&gt;&lt;h3 id=&#34;常见计算机网络体系结构&#34;&gt;常见计算机网络体系结构
 &lt;/h3&gt;&lt;p&gt;【计算机网络】的体系结构是 &lt;strong&gt;计算机网络的各层及其协议的集合&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161324601.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161324601.png&#34;
 	width=&#34;1040&#34;
 	height=&#34;549&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161324601_hu17872162686886380873.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161324601_hu13970851203908224450.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161324601_hu17872162686886380873.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161324601_hu13970851203908224450.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;计算机网络体系结构&#34;
@@ -1335,10 +1335,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;p&gt;如今使用的最多的是 TCP/IP 体系结构，新进闺蜜最大的，覆盖全球的&lt;/p&gt;
 &lt;h4 id=&#34;大概流程&#34;&gt;大概流程
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161518959.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161518959.png&#34;
 	width=&#34;702&#34;
 	height=&#34;393&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161518959_hu7793507957609049691.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909161518959_hu2552963914643963880.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161518959_hu7793507957609049691.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909161518959_hu2552963914643963880.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;流程&#34;
@@ -1351,10 +1351,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;物理层&#34;&gt;物理层
 &lt;/h4&gt;&lt;p&gt;就是解决在各种传输媒体上传输比特 0 和 1 的问题，进而给数据链路层提供 &lt;strong&gt;透明传输比特流的服务&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162109416.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162109416.png&#34;
 	width=&#34;789&#34;
 	height=&#34;324&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162109416_hu4996283422332700507.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162109416_hu14197854535771662921.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162109416_hu4996283422332700507.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162109416_hu14197854535771662921.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;物理层&#34;
@@ -1380,10 +1380,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;h5 id=&#34;传输方式&#34;&gt;传输方式
 &lt;/h5&gt;&lt;h6 id=&#34;串行传输&#34;&gt;串行传输
 &lt;/h6&gt;&lt;p&gt;数据是一个比特一个比特依此发送的，只需要一条数据传输线路&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162631568.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162631568.png&#34;
 	width=&#34;620&#34;
 	height=&#34;61&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162631568_hu5130049304346057718.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162631568_hu15645950804910677873.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162631568_hu5130049304346057718.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162631568_hu15645950804910677873.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;串行传输&#34;
@@ -1396,10 +1396,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;并行传输&#34;&gt;并行传输
 &lt;/h6&gt;&lt;p&gt;一次发送 n 个比特，需要 n 条传输线路&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162712281.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162712281.png&#34;
 	width=&#34;640&#34;
 	height=&#34;280&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162712281_hu8058370166708868663.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162712281_hu15294752856128314295.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162712281_hu8058370166708868663.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162712281_hu15294752856128314295.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;并行传输&#34;
@@ -1419,10 +1419,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;数据块以稳定的比特流形式传输，字节之间没有间隔，接收端在每个比特的中间时刻进行检测，以判别接收到的比特 0 或是比特 1
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162958305.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162958305.png&#34;
 	width=&#34;947&#34;
 	height=&#34;118&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162958305_hu5740641862618794534.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909162958305_hu11714509317516954802.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162958305_hu5740641862618794534.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909162958305_hu11714509317516954802.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;同步传输&#34;
@@ -1442,10 +1442,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;以字节为独立的传输单位，字节之间的时间间隔是不固定的，在每个字节的前后分别加上起始位和结束位
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163231186.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163231186.png&#34;
 	width=&#34;1027&#34;
 	height=&#34;116&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163231186_hu7921547464991363348.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163231186_hu15011859022533098691.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163231186_hu7921547464991363348.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163231186_hu15011859022533098691.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;异步传输&#34;
@@ -1458,10 +1458,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;单向通信&#34;&gt;单向通信
 &lt;/h6&gt;&lt;p&gt;又称单工通信，通信双方只有一个传输方向&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163415581.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163415581.png&#34;
 	width=&#34;1064&#34;
 	height=&#34;175&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163415581_hu14842767649530656633.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163415581_hu11006528590833079439.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163415581_hu14842767649530656633.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163415581_hu11006528590833079439.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;单工&#34;
@@ -1474,10 +1474,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;双向交替通信半双工&#34;&gt;双向交替通信（半双工）
 &lt;/h6&gt;&lt;p&gt;可以互相传输数据，但是不能同时进行&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163502408.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163502408.png&#34;
 	width=&#34;699&#34;
 	height=&#34;115&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163502408_hu7636437118763444544.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163502408_hu14237088601677792089.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163502408_hu7636437118763444544.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163502408_hu14237088601677792089.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;半双工&#34;
@@ -1490,10 +1490,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;双向同时通信双工&#34;&gt;双向同时通信（双工）
 &lt;/h6&gt;&lt;p&gt;通信双方可以同时发送和接收消息&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163510406.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163510406.png&#34;
 	width=&#34;921&#34;
 	height=&#34;153&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163510406_hu15774828032697016570.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163510406_hu8351911443911792858.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163510406_hu15774828032697016570.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163510406_hu8351911443911792858.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;双工&#34;
@@ -1506,10 +1506,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;码元&#34;&gt;码元
 &lt;/h6&gt;&lt;p&gt;简单来说 &lt;strong&gt;码元&lt;/strong&gt; 就是一段调制好的 &lt;strong&gt;基本波形&lt;/strong&gt; ，可以表示比特信息&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163726916.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163726916.png&#34;
 	width=&#34;765&#34;
 	height=&#34;190&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163726916_hu15979472672719579900.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163726916_hu10965137805058304191.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163726916_hu15979472672719579900.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163726916_hu10965137805058304191.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;码元&#34;
@@ -1521,10 +1521,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;编码调制&#34;&gt;编码、调制
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163829333.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163829333.png&#34;
 	width=&#34;591&#34;
 	height=&#34;163&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163829333_hu14134997093165350844.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163829333_hu5680753160051103946.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163829333_hu14134997093165350844.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163829333_hu5680753160051103946.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;编码与调制&#34;
@@ -1535,10 +1535,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 		data-flex-basis=&#34;870px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163916297.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163916297.png&#34;
 	width=&#34;748&#34;
 	height=&#34;425&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163916297_hu3181469423474419416.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909163916297_hu2449790587565047953.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163916297_hu3181469423474419416.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909163916297_hu2449790587565047953.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;数字信号和模拟信号&#34;
@@ -1558,10 +1558,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;信号在传输过程中会受到各种因素的影响，是的信号波形失去码元之间的清晰界限，这种现象称为 码间串扰
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164103057.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164103057.png&#34;
 	width=&#34;575&#34;
 	height=&#34;137&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164103057_hu2889034447401330633.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164103057_hu4332432157495972565.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164103057_hu2889034447401330633.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164103057_hu4332432157495972565.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;失真&#34;
@@ -1589,10 +1589,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h6 id=&#34;奈氏准则&#34;&gt;奈氏准则
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164223114.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164223114.png&#34;
 	width=&#34;593&#34;
 	height=&#34;166&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164223114_hu7272997050769524240.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164223114_hu7831901370187462814.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164223114_hu7272997050769524240.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164223114_hu7831901370187462814.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;奈氏准则&#34;
@@ -1605,10 +1605,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;奈氏准则&lt;/code&gt; 是理想条件下推导的，&lt;strong&gt;没有考虑传输距离、噪声干扰等因素&lt;/strong&gt;&lt;/p&gt;
 &lt;h6 id=&#34;香农公式&#34;&gt;香农公式
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164413029.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164413029.png&#34;
 	width=&#34;345&#34;
 	height=&#34;245&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164413029_hu6778789440878862138.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164413029_hu9686542419413506640.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164413029_hu6778789440878862138.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164413029_hu9686542419413506640.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;香农公式&#34;
@@ -1622,10 +1622,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;h4 id=&#34;数据链路层&#34;&gt;数据链路层
 &lt;/h4&gt;&lt;h5 id=&#34;概述&#34;&gt;概述
 &lt;/h5&gt;&lt;p&gt;&lt;strong&gt;链路&lt;/strong&gt; 是从一个 &lt;strong&gt;结点到相邻结点&lt;/strong&gt; 的一段 &lt;strong&gt;物理线路&lt;/strong&gt; ，&lt;strong&gt;数据链路&lt;/strong&gt; 则是在 &lt;strong&gt;链路的基础&lt;/strong&gt; 上增加了一些必要的 &lt;strong&gt;硬件（如网络适配器）和软件（如协议的实现）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164723313.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164723313.png&#34;
 	width=&#34;1104&#34;
 	height=&#34;402&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164723313_hu4290913032498505072.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164723313_hu17808457339051802372.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164723313_hu4290913032498505072.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164723313_hu17808457339051802372.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;数据链路层&#34;
@@ -1642,10 +1642,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;li&gt;&lt;strong&gt;封装成帧&lt;/strong&gt; 就是在一段数据的前后分别添加首部和尾部，然后就构成了一个帧&lt;/li&gt;
 &lt;li&gt;首部和尾部的一个重要的作用就是进行 &lt;strong&gt;帧定界&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164956042.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164956042.png&#34;
 	width=&#34;881&#34;
 	height=&#34;230&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164956042_hu18375431784862084461.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909164956042_hu3760306503001266094.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164956042_hu18375431784862084461.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909164956042_hu3760306503001266094.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;封装成帧&#34;
@@ -1657,10 +1657,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;透明传输&#34;&gt;透明传输
-&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165019201.png&#34;
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165019201.png&#34;
 	width=&#34;649&#34;
 	height=&#34;227&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165019201_hu15669474561572719015.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165019201_hu6869196643126652989.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165019201_hu15669474561572719015.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165019201_hu6869196643126652989.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;透明传输&#34;
@@ -1690,10 +1690,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/h6&gt;&lt;ul&gt;
 &lt;li&gt;奇偶校验&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165617623.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165617623.png&#34;
 	width=&#34;969&#34;
 	height=&#34;119&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165617623_hu17468449543106075510.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165617623_hu4386081384878721611.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165617623_hu17468449543106075510.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165617623_hu4386081384878721611.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;奇校验&#34;
@@ -1708,10 +1708,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;ul&gt;
 &lt;li&gt;CRC&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165715760.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165715760.png&#34;
 	width=&#34;916&#34;
 	height=&#34;313&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165715760_hu2282113318641159268.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909165715760_hu1472470811241529616.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165715760_hu2282113318641159268.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909165715760_hu1472470811241529616.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;CRC&#34;
@@ -1723,10 +1723,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;集线器&#34;&gt;集线器
-&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170421204.png&#34;
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170421204.png&#34;
 	width=&#34;223&#34;
 	height=&#34;147&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170421204_hu13990732219288058826.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170421204_hu11142030231847326508.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170421204_hu13990732219288058826.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170421204_hu11142030231847326508.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;集线器&#34;
@@ -1738,10 +1738,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;集线器是运作在 OSI 模型中的 &lt;strong&gt;物理层&lt;/strong&gt; ，可以是做多端口的【中继器】&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170539175.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170539175.png&#34;
 	width=&#34;431&#34;
 	height=&#34;236&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170539175_hu3362372609130364124.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170539175_hu3195664130152546603.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170539175_hu3362372609130364124.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170539175_hu3195664130152546603.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;ＨＵＢ就是集线器&#34;
@@ -1753,10 +1753,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;交换机&#34;&gt;交换机
-&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170741002.png&#34;
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170741002.png&#34;
 	width=&#34;359&#34;
 	height=&#34;209&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170741002_hu10562308683304219919.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170741002_hu16712247762699379105.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170741002_hu10562308683304219919.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170741002_hu16712247762699379105.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;交换机&#34;
@@ -1769,10 +1769,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;p&gt;也叫做　&lt;strong&gt;交换式集线器&lt;/strong&gt;，它通过对信息进行重新生成，并经过内部处理后　&lt;strong&gt;转发至指定端口，具备自动寻址能力和交换作用&lt;/strong&gt;，在数据链路层&lt;/p&gt;
 &lt;h5 id=&#34;集线器和交换机的区别&#34;&gt;集线器和交换机的区别
-&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170953640.png&#34;
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170953640.png&#34;
 	width=&#34;267&#34;
 	height=&#34;136&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170953640_hu14170012639760192702.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909170953640_hu5222095230638705675.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170953640_hu14170012639760192702.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909170953640_hu5222095230638705675.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;３Ｍ带宽&#34;
@@ -1785,10 +1785,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &gt;&lt;/p&gt;
 &lt;p&gt;集线器平分带宽，交换机的话也是　３Ｍ&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;最初&lt;/strong&gt;　的　&lt;strong&gt;以太网&lt;/strong&gt;　是将许多计算机都连接到同一根总线上&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909171209032.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909171209032.png&#34;
 	width=&#34;534&#34;
 	height=&#34;145&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909171209032_hu9253873010144217462.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909171209032_hu1757148367698056952.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909171209032_hu9253873010144217462.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909171209032_hu1757148367698056952.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;最初的以太网&#34;
@@ -1817,10 +1817,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;h5 id=&#34;冲突域&#34;&gt;冲突域
 &lt;/h5&gt;&lt;p&gt;多少 &lt;strong&gt;站点能抽到这个信息&lt;/strong&gt;，这些站点就构成一个冲突域&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;交换机&lt;/strong&gt; 所有端口都在同一个广播域内，而每一个端口就是一个冲突域，&lt;strong&gt;所以交换机能分割冲突域，但分割不了广播域&lt;/strong&gt; 。但是，&lt;strong&gt;虚拟局域网（Vlan）&lt;/strong&gt; 技术的交换机可以 &lt;strong&gt;隔离广播域&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172202422.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172202422.png&#34;
 	width=&#34;809&#34;
 	height=&#34;392&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172202422_hu12804208310199853675.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172202422_hu17237733666900228116.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172202422_hu12804208310199853675.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172202422_hu17237733666900228116.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;交换机&#34;
@@ -1837,10 +1837,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;ul&gt;
 &lt;li&gt;同一个 VLAN 内部可以广播通信，不同 VLAN 不可以广播通信&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172432162.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172432162.png&#34;
 	width=&#34;751&#34;
 	height=&#34;397&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172432162_hu16534341035226300699.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172432162_hu9622385088885630507.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172432162_hu16534341035226300699.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172432162_hu9622385088885630507.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;VLAN&#34;
@@ -1852,10 +1852,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;接口划分方式&#34;&gt;接口划分方式
-&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172504911.png&#34;
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172504911.png&#34;
 	width=&#34;510&#34;
 	height=&#34;562&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172504911_hu9868981151546748158.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909172504911_hu4627888954987610281.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172504911_hu9868981151546748158.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909172504911_hu4627888954987610281.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;原理&#34;
@@ -1905,10 +1905,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173035750.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173035750.png&#34;
 	width=&#34;485&#34;
 	height=&#34;323&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173035750_hu7589021174030903447.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173035750_hu12009911159848381643.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173035750_hu7589021174030903447.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173035750_hu12009911159848381643.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;区别&#34;
@@ -1932,10 +1932,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;网络层&#34;&gt;网络层
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173726445.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173726445.png&#34;
 	width=&#34;804&#34;
 	height=&#34;273&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173726445_hu13573533601620476750.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173726445_hu6444268210060745810.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173726445_hu13573533601620476750.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173726445_hu6444268210060745810.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;结构&#34;
@@ -1949,10 +1949,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;h5 id=&#34;作用&#34;&gt;作用
 &lt;/h5&gt;&lt;p&gt;确定在本路由器如何转发分组，确定分组从源到目的经过的路径，是 &lt;strong&gt;点到点&lt;/strong&gt; 服务&lt;/p&gt;
 &lt;h5 id=&#34;ip-网际协议&#34;&gt;IP （网际协议）
-&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173850439.png&#34;
+&lt;/h5&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173850439.png&#34;
 	width=&#34;534&#34;
 	height=&#34;284&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173850439_hu4036587847905736566.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909173850439_hu8110680232880927977.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173850439_hu4036587847905736566.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909173850439_hu8110680232880927977.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;IP 网际协议&#34;
@@ -1993,10 +1993,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;ul&gt;
 &lt;li&gt;A 类&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174254867.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909174254867.png&#34;
 	width=&#34;454&#34;
 	height=&#34;85&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174254867_hu13922894293219995683.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174254867_hu11137669722382865929.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909174254867_hu13922894293219995683.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909174254867_hu11137669722382865929.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;A 类地址&#34;
@@ -2040,10 +2040,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;B 类&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174927305.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909174927305.png&#34;
 	width=&#34;590&#34;
 	height=&#34;97&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174927305_hu12991678357889195004.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909174927305_hu9500365516194470828.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909174927305_hu12991678357889195004.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909174927305_hu9500365516194470828.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;B 类地址&#34;
@@ -2075,10 +2075,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;C 类&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909220343024.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909220343024.png&#34;
 	width=&#34;477&#34;
 	height=&#34;92&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909220343024_hu6598145422911077217.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909220343024_hu17099090709761058529.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909220343024_hu6598145422911077217.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909220343024_hu17099090709761058529.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;C 类地址&#34;
@@ -2146,10 +2146,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;p&gt;子网掩码可以表明分类 &lt;strong&gt;IP 地址的主机号部分被借用了几个比特做为子网号&lt;/strong&gt;&lt;/p&gt;
 &lt;h5 id=&#34;如何划分子网&#34;&gt;如何划分子网
 &lt;/h5&gt;&lt;p&gt;从 &lt;strong&gt;主机号&lt;/strong&gt; 借用若干个为 &lt;strong&gt;作为子网号 subnet-id&lt;/strong&gt;，而主机号，也就相应减少了若干个位&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909221703096.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909221703096.png&#34;
 	width=&#34;745&#34;
 	height=&#34;158&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909221703096_hu3074352459488115022.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240909221703096_hu6315609167636368493.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909221703096_hu3074352459488115022.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240909221703096_hu6315609167636368493.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;子网掩码&#34;
@@ -2208,10 +2208,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;
 &lt;/div&gt;&lt;h5 id=&#34;直接交付和间接交付&#34;&gt;直接交付和间接交付
 &lt;/h5&gt;&lt;p&gt;如果 &lt;strong&gt;目的网络地址和源&lt;/strong&gt; 网络地址相同，就是在 &lt;strong&gt;同一个网络中，属于直接交付&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910154920140.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910154920140.png&#34;
 	width=&#34;412&#34;
 	height=&#34;260&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910154920140_hu8805345887522666100.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910154920140_hu18339891816617617133.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910154920140_hu8805345887522666100.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910154920140_hu18339891816617617133.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;直接交付&#34;
@@ -2238,10 +2238,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;动态路由（路由选择协议）
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910155207946.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910155207946.png&#34;
 	width=&#34;1005&#34;
 	height=&#34;403&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910155207946_hu11653787212992027215.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910155207946_hu8448387946949608958.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910155207946_hu11653787212992027215.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910155207946_hu8448387946949608958.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;路由&#34;
@@ -2324,10 +2324,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;p&gt;&lt;strong&gt;在传输层主要依赖 TCP 和 UDP 协议，TCP 是一种可靠的、面向连接的通信协议。UDP 是一种不可靠、无连接的通信协议&lt;/strong&gt;&lt;/p&gt;
 &lt;h5 id=&#34;tcp&#34;&gt;TCP
 &lt;/h5&gt;&lt;h6 id=&#34;tcp-报文结构&#34;&gt;TCP 报文结构
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910160503292.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910160503292.png&#34;
 	width=&#34;733&#34;
 	height=&#34;355&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910160503292_hu111997642924921707.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910160503292_hu2277656281131618513.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910160503292_hu111997642924921707.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910160503292_hu2277656281131618513.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;TCP 报文结构&#34;
@@ -2369,10 +2369,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h6 id=&#34;三次握手&#34;&gt;三次握手
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910161839535.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910161839535.png&#34;
 	width=&#34;615&#34;
 	height=&#34;301&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910161839535_hu16654946396619983286.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910161839535_hu15135589977268863277.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910161839535_hu16654946396619983286.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910161839535_hu15135589977268863277.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;三次握手&#34;
@@ -2384,10 +2384,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;四次挥手&#34;&gt;四次挥手
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162051938.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910162051938.png&#34;
 	width=&#34;744&#34;
 	height=&#34;327&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162051938_hu10861619807176694962.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162051938_hu5169307796127136414.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910162051938_hu10861619807176694962.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910162051938_hu5169307796127136414.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;四次挥手&#34;
@@ -2399,10 +2399,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 	
 &gt;&lt;/p&gt;
 &lt;h6 id=&#34;tcp-流量控制&#34;&gt;TCP 流量控制
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163506699.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910163506699.png&#34;
 	width=&#34;644&#34;
 	height=&#34;191&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163506699_hu17817380927008521281.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163506699_hu15136410787684820898.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910163506699_hu17817380927008521281.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910163506699_hu15136410787684820898.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;TCP 流量控制&#34;
@@ -2422,10 +2422,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;TCP 进行拥塞控制的算法有四种，即慢开始、拥塞避免、快重传和快恢复
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163755649.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910163755649.png&#34;
 	width=&#34;617&#34;
 	height=&#34;275&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163755649_hu12623040169116883514.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910163755649_hu14795592476746147233.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910163755649_hu12623040169116883514.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910163755649_hu14795592476746147233.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;拥塞控制&#34;
@@ -2476,10 +2476,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/div&gt;
 &lt;/div&gt;&lt;h5 id=&#34;udp&#34;&gt;UDP
 &lt;/h5&gt;&lt;h6 id=&#34;udp-报文结构&#34;&gt;UDP 报文结构
-&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162504271.png&#34;
+&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910162504271.png&#34;
 	width=&#34;533&#34;
 	height=&#34;190&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162504271_hu13972302189003294758.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910162504271_hu6407475349768355126.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910162504271_hu13972302189003294758.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910162504271_hu6407475349768355126.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;UDP 报文结构&#34;
@@ -2548,10 +2548,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/table&gt;
 &lt;h5 id=&#34;端口&#34;&gt;端口
 &lt;/h5&gt;&lt;p&gt;TCP 端口是指就是为 TCP 协议通信提供服务的端口。在 TCP 传输控制协议中，建立端对端的连接是靠 IP 地址和 TCP 的端口号的共同作用。UDP 端口是指就是为 UDP 协议通信提供服务的端口&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910165704233.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910165704233.png&#34;
 	width=&#34;741&#34;
 	height=&#34;206&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910165704233_hu15243820266049191668.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910165704233_hu14490293988566480832.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910165704233_hu15243820266049191668.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910165704233_hu14490293988566480832.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;端口&#34;
@@ -2569,10 +2569,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;p&gt;客户端口号或短暂端口号：数值为 49151~65535，留给客户进程选择暂时使用&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;常见端口列表&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170110123.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170110123.png&#34;
 	width=&#34;989&#34;
 	height=&#34;419&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170110123_hu4532275280232146863.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170110123_hu6939981388096612525.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170110123_hu4532275280232146863.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170110123_hu6939981388096612525.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;常见端口&#34;
@@ -2588,10 +2588,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;客户/服务器模型&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170352714.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170352714.png&#34;
 	width=&#34;507&#34;
 	height=&#34;300&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170352714_hu7973476516168684650.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170352714_hu2902252461079037547.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170352714_hu7973476516168684650.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170352714_hu2902252461079037547.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;客户/服务器模型&#34;
@@ -2623,10 +2623,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在对等网络中上的每台计算机具有相同的功能，没有主从之分，没有专用服务器，也没有专用工作站，任何一台计算机既可以作为服务器，又可以作为工作站
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170655711.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170655711.png&#34;
 	width=&#34;301&#34;
 	height=&#34;246&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170655711_hu498638833189702621.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910170655711_hu207158615999346470.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170655711_hu498638833189702621.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910170655711_hu207158615999346470.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;P2P&#34;
@@ -2651,10 +2651,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/blockquote&gt;
 &lt;h6 id=&#34;分类&#34;&gt;分类
 &lt;/h6&gt;&lt;p&gt;包括顶级域名，二级域名，三级域名等&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171123872.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910171123872.png&#34;
 	width=&#34;1004&#34;
 	height=&#34;215&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171123872_hu1206683020958284987.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171123872_hu8496001714735091462.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910171123872_hu1206683020958284987.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910171123872_hu8496001714735091462.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;域名&#34;
@@ -2683,10 +2683,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	detail.tieba.baidu.com	四级域名
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171612661.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910171612661.png&#34;
 	width=&#34;1083&#34;
 	height=&#34;468&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171612661_hu16714743498954968928.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910171612661_hu2962421370854437034.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910171612661_hu16714743498954968928.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910171612661_hu2962421370854437034.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;DNS 解析流程&#34;
@@ -2958,10 +2958,10 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;/h5&gt;&lt;p&gt;HTTP/2 只解决了 HTTP/1 的队头阻塞，但是 TCP 层面的 队头阻塞依然存在，数据再传输层发生了 丢包，仍然是继续等待&lt;/p&gt;
 &lt;p&gt;核心是 &lt;strong&gt;整合&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;HTTP/3 把 TCP 和 TLS 的握手过程整合在了一起，减少来回开销&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910181922456.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910181922456.png&#34;
 	width=&#34;1596&#34;
 	height=&#34;857&#34;
-	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910181922456_hu11095597729407860708.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%BD%91%E5%9F%BA%E7%A1%80/image-20240910181922456_hu16888471892750363818.png 1024w&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910181922456_hu11095597729407860708.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240910181922456_hu16888471892750363818.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;右侧 HTTP/3&#34;
@@ -2978,6 +2978,226 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 &lt;p&gt;而 HTTP/3 应用层 中并没有使用帧，而是直接移到了 QUIC 中，从源头解决了 队头阻塞&lt;/p&gt;
 &lt;p&gt;QUIC 帧 后续被合成 QUIC 数据包，加入连接 ID，即使网络 IP 发生变化，也可以使用 连接ID 重新连接，避免握手&lt;/p&gt;
 &lt;p&gt;QUIC 帧的内容也是被加密的，最后被 UDP 分装从数据段&lt;/p&gt;
+&lt;h2 id=&#34;操作系统&#34;&gt;操作系统
+&lt;/h2&gt;&lt;h3 id=&#34;操作系统定义&#34;&gt;操作系统定义
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;控制和管理整个计算机系统的硬件和软件资源&lt;/li&gt;
+&lt;li&gt;合理地组织调度计算机的 &lt;strong&gt;工作&lt;/strong&gt; 和 &lt;strong&gt;资源分配&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;提供给用户和其他软件方便的 &lt;strong&gt;接口&lt;/strong&gt; 和 &lt;strong&gt;环境&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;计算机系统中最基本的 &lt;strong&gt;系统软件&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;一句话：操作系统是架在用户和底层硬件之间的桥梁&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911152706331.png&#34;
+	width=&#34;552&#34;
+	height=&#34;306&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911152706331_hu1913643335799997030.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911152706331_hu4197870534553051551.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;操作系统&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;432px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;常见的操作系统&#34;&gt;常见的操作系统
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Windows&lt;/li&gt;
+&lt;li&gt;MacOs&lt;/li&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;li&gt;安卓&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;操作系统功能&#34;&gt;操作系统功能
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911152758075.png&#34;
+	width=&#34;414&#34;
+	height=&#34;235&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911152758075_hu10974926777451046691.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911152758075_hu16739411521345500686.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;操作系统功能&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;处理器：用于分配和控制处理器&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;存储器：负责内存的分配与回收&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I/O设备：负责 I/O 设备的分配与操纵&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文件管理：负责文件的存取，共享和保护&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;操作系统的特征&#34;&gt;操作系统的特征
+&lt;/h3&gt;&lt;h4 id=&#34;并发&#34;&gt;并发
+&lt;/h4&gt;&lt;p&gt;两个或 &lt;strong&gt;多个事件&lt;/strong&gt; 在 &lt;strong&gt;同一时间间隔内&lt;/strong&gt; 发生。这些事件宏观上是同时发生，&lt;strong&gt;微观上是交替发生&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;操作系统的并发性&lt;/strong&gt; 指计算机系统中 &lt;strong&gt;同时存在着多个运行的程序&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;并行&#34;&gt;并行
+&lt;/h4&gt;&lt;p&gt;两个或 &lt;strong&gt;多个事件&lt;/strong&gt; 在 &lt;strong&gt;同一时刻&lt;/strong&gt; 发生&lt;/p&gt;
+&lt;h4 id=&#34;共享&#34;&gt;共享
+&lt;/h4&gt;&lt;p&gt;资源共享，指系统中的 &lt;strong&gt;资源可供内存中多个并发执行的进程共同使用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;两种共享方式 &lt;strong&gt;互斥共享方式和同时共享方式&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;互斥共享方式&#34;&gt;互斥共享方式
+&lt;/h5&gt;&lt;p&gt;互斥共享是指当 &lt;strong&gt;资源被一个进程 A 占用&lt;/strong&gt; 时，&lt;strong&gt;其他&lt;/strong&gt; 想使用该资源的进程 B 就 &lt;strong&gt;只能等待&lt;/strong&gt; ，只用进程 A 使用完该资源后，进程 B 才能够使用该资源，这种共享方式就叫做互斥式共享，把这种资源叫做 &lt;strong&gt;临界资源或独占资源&lt;/strong&gt;。如打印机就属于临界资源&lt;/p&gt;
+&lt;h5 id=&#34;同时共享方式&#34;&gt;同时共享方式
+&lt;/h5&gt;&lt;p&gt;某一资源在一段时间内 &lt;strong&gt;可由多个进程“同时”访问，&lt;/strong&gt; 这种“同时”是宏观上的，&lt;strong&gt;在微观上，这些进程可能使交替&lt;/strong&gt; 对该资源进行访问，&lt;strong&gt;磁盘设备就是这类资源&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;虚拟&#34;&gt;虚拟
+&lt;/h4&gt;&lt;p&gt;把一个物理上的实体变为若干个逻辑上的对应物，&lt;strong&gt;物理实体是实际存在的，而逻辑上对应物是用户感受到的&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;虚拟分为 &lt;strong&gt;时分复用技术&lt;/strong&gt; 和 &lt;strong&gt;空分复用技术&lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&#34;时分复用技术&#34;&gt;时分复用技术
+&lt;/h5&gt;&lt;p&gt;微观上处理机在各个微小的时间段内 &lt;strong&gt;交替着为各个进程服务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如：一个单核 CPU 可以执行多个程序，给用户一种多核的 “假象”&lt;/p&gt;
+&lt;h5 id=&#34;空分复用技术&#34;&gt;空分复用技术
+&lt;/h5&gt;&lt;p&gt;空分复用是指 &lt;strong&gt;多个程序或用户同时使用一个资源的不同部分&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如：电脑磁盘分为 C 盘，D 盘，E 盘等，实际上只是虚拟逻辑上的分区，实际电脑硬盘还是一个&lt;/p&gt;
+&lt;h4 id=&#34;异步&#34;&gt;异步
+&lt;/h4&gt;&lt;p&gt;在多道程序环境下，允许多个程序并发执行，但由于资源有限，&lt;strong&gt;进程的执行不是一贯到底，而是走走停停，以不可预知的速度向前推进&lt;/strong&gt;，这就是进程的异步性&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最基本的特征：并发和共享，两者互为存在条件&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;操作系统的发展阶段和分类&#34;&gt;操作系统的发展阶段和分类
+&lt;/h3&gt;&lt;h4 id=&#34;手工操作阶段&#34;&gt;手工操作阶段
+&lt;/h4&gt;&lt;p&gt;输入/输出速度慢 处理机处理速度快，&lt;strong&gt;处理机利用率低&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;单道批处理&#34;&gt;单道批处理
+&lt;/h4&gt;&lt;p&gt;引入 &lt;strong&gt;脱机输入/输出技术&lt;/strong&gt; （用磁带完成），并监督程序负责控制作业的输入、输出&lt;/p&gt;
+&lt;p&gt;优点：资源利用率有所提升&lt;/p&gt;
+&lt;p&gt;缺点：&lt;strong&gt;内存中仅有一道程序运行&lt;/strong&gt;，只有该程序运行结束之后才能调入下一道程序&lt;/p&gt;
+&lt;h4 id=&#34;多道批处理&#34;&gt;多道批处理
+&lt;/h4&gt;&lt;p&gt;每次往内存中 &lt;strong&gt;输入多道程序，操作系统正式诞生&lt;/strong&gt;，并引用了中断技术，**由操作系统负责管理这些程序的运行。**各个程序 &lt;strong&gt;并发执行&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;优点：&lt;strong&gt;多道程序并发执行&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;缺点：&lt;strong&gt;用户响应时间长&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;分时操作系统&#34;&gt;分时操作系统
+&lt;/h4&gt;&lt;p&gt;计算机 &lt;strong&gt;以时间片为单位轮流为各个用户/作业服务&lt;/strong&gt;，各个用户 &lt;strong&gt;可通过终端与计算机进行交互&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;优点：&lt;strong&gt;用户请求可以被即时响应，并且用户对计算机的操作相互独立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;缺点：&lt;strong&gt;不能有限处理一些紧急任务，循环地为每个用户/作业服务一个时间片，不区分任务的紧急性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;分时操作系统典型的例子就是 &lt;strong&gt;Unix 和 Linux 操作系统&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;实时操作系统&#34;&gt;实时操作系统
+&lt;/h4&gt;&lt;p&gt;优点：&lt;strong&gt;能够有限相应一些紧急任务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 &lt;strong&gt;实时操作系统&lt;/strong&gt; 的控制下，计算机系统接收到外部信号后及时进行处理，并且要在 &lt;strong&gt;严格的时限内处理完事件&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;硬实时系统
+&lt;ul&gt;
+&lt;li&gt;必须在 &lt;strong&gt;绝对严格&lt;/strong&gt; 的规定时间内完成处理 如：导弹控制系统，自动驾驶系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;软实时系统
+&lt;ul&gt;
+&lt;li&gt;有一个截止时间，但 &lt;strong&gt;并不严格&lt;/strong&gt; 如：12306 火车订票系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;操作系统的结构设计&#34;&gt;操作系统的结构设计
+&lt;/h3&gt;&lt;h4 id=&#34;传统操作系统结构&#34;&gt;传统操作系统结构
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;无结构操作系统&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模块化结构 OS&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165018026.png&#34;
+	width=&#34;606&#34;
+	height=&#34;240&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165018026_hu8659787251761899979.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165018026_hu4103461894358193177.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;模块化结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;252&#34;
+		data-flex-basis=&#34;606px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;分层式结构 OS&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165113109.png&#34;
+	width=&#34;489&#34;
+	height=&#34;234&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165113109_hu13308030815342674607.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165113109_hu13696760106524343507.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;分层式结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;208&#34;
+		data-flex-basis=&#34;501px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;客户服务器模式&#34;&gt;客户/服务器模式
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;由客户机、服务器、网络系统组成&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;四步骤：客户发送请求信息，服务器接收消息，服务器回送消息，客户机接收消息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165239075.png&#34;
+	width=&#34;474&#34;
+	height=&#34;241&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165239075_hu11663291362438083019.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165239075_hu2020199166157243642.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;客户/服务器模式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;196&#34;
+		data-flex-basis=&#34;472px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;面向对象的程序设计&#34;&gt;面向对象的程序设计
+&lt;/h4&gt;&lt;p&gt;像 Java、C++ 等高级语言就是面向对象编程，在操作系统中也用到很多面向对象的设计思想。&lt;strong&gt;比如文件就可以看作一个类&lt;/strong&gt;，类的变量可以是文件的类型、大小或创建者&lt;/p&gt;
+&lt;h4 id=&#34;微内核-os-结构&#34;&gt;微内核 OS 结构
+&lt;/h4&gt;&lt;p&gt;为提高操作系统的正确性、灵活性、易维护性、可扩充性，现代操作系统结构大多采用基于客户/服务器模式为内核结构，将操作系统分为 &lt;strong&gt;微内核和多个服务器&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165540052.png&#34;
+	width=&#34;565&#34;
+	height=&#34;319&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165540052_hu1749062119515017581.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911165540052_hu8714786866399698140.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微内核&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;425px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;补充概念&#34;&gt;补充概念
+&lt;/h3&gt;&lt;h4 id=&#34;特权命令&#34;&gt;特权命令
+&lt;/h4&gt;&lt;p&gt;多为特权命令是指有特权权限的指令，由于这类指令的权限最大，如果使用不当，将导致整个系统崩溃。比如：&lt;strong&gt;清内存、置时钟、分配系统资源、修改虚存的段表和页表，修改用户的访问权限等&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;系统调用&#34;&gt;系统调用
+&lt;/h4&gt;&lt;p&gt;系统调用是操作系统提供给 **应用程序使用的接口，**可以理解为一种可供程序 **调用的特殊函数，**应用程序可以发出系统调用请求来 &lt;strong&gt;获得操作系统的服务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用户可以利用读系统 &lt;strong&gt;调用 read，用户也可以利用写系统调用 write&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;中断和异常&#34;&gt;中断和异常
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911170136578.png&#34;
+	width=&#34;1049&#34;
+	height=&#34;308&#34;
+	srcset=&#34;https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911170136578_hu17645470898803940312.png 480w, https://akaxedx.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/image-20240911170136578_hu17275045775889886230.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;中断&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;340&#34;
+		data-flex-basis=&#34;817px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;原语&#34;&gt;原语
+&lt;/h4&gt;&lt;p&gt;由若干条指令组成，来完成一定功能的过程，执行必须过程连续，&lt;strong&gt;不允许被中断&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;处理机状态&#34;&gt;处理机状态
+&lt;/h4&gt;&lt;p&gt;内核态：CPU 可以 &lt;strong&gt;访问【内存】所有数据，包括外围设备，例如硬盘，网卡&lt;/strong&gt; CPU 也可以将自己从一个程序切换到另一个程序&lt;/p&gt;
+&lt;p&gt;用户态：&lt;strong&gt;只能受限的访问内存，且不允许范文外围设备，占用 CPU 的能力被剥夺&lt;/strong&gt;，CPU资源可以被其他程序获取&lt;/p&gt;
+&lt;p&gt;内核态和用户态的区别就是 &lt;strong&gt;权限不同&lt;/strong&gt;，内核态处于权限0，权限较高，用户态处于权限3，权限较低&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用户态切换到内核态的方式&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;系统调用&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;进程调用：exit，fork&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文件系统访问：chmod、chown&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设备调用：read、write&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;信息读取：读取设备信息&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通信：mma、pipe等&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中断&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
