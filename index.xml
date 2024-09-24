@@ -13,7 +13,7 @@
         <pubDate>Tue, 24 Sep 2024 15:59:43 +0800</pubDate>
         
         <guid>https://akaxedx.github.io/p/jvm-%E8%AF%A6%E8%A7%A3/</guid>
-        <description>&lt;h1 id=&#34;jvm-详解&#34;&gt;JVM 详解
+        <description>&lt;img src="https://akaxedx.github.io/p/jvm-%E8%AF%A6%E8%A7%A3/zoye.jpeg" alt="Featured image of post JVM 详解" /&gt;&lt;h1 id=&#34;jvm-详解&#34;&gt;JVM 详解
 &lt;/h1&gt;&lt;h2 id=&#34;jvm-内存管理&#34;&gt;JVM 内存管理
 &lt;/h2&gt;&lt;p&gt;在之前，我们了解了 JVM 的大致运作原理以及相关特性，这一章，我们首先会从内存管理说起。&lt;/p&gt;
 &lt;p&gt;在传统的 C/C++ 开发中，我们经常通过使用申请内存的方式来创建对象或是存放某些数据，但是这样也带来了一些额外的问题，我们要在何时释放这些内存，怎么才能使得内存的使用最高效，因此，内存管理是一个非常严肃的问题。&lt;/p&gt;
