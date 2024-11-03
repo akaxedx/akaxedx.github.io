@@ -7471,58 +7471,58 @@
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;列名&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;描述&lt;/th&gt;
+          &lt;th&gt;列名&lt;/th&gt;
+          &lt;th&gt;描述&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;id&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;查询语句中每出现一个 SELECT 关键字，MySQL 就会为它分配一个唯一的 id 值，某些子查询会被优化为 join 查询，那么出现的 id 会一样&lt;/td&gt;
+          &lt;td&gt;id&lt;/td&gt;
+          &lt;td&gt;查询语句中每出现一个 SELECT 关键字，MySQL 就会为它分配一个唯一的 id 值，某些子查询会被优化为 join 查询，那么出现的 id 会一样&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;select_type&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;SELECT 关键字对应的那个查询类型&lt;/td&gt;
+          &lt;td&gt;select_type&lt;/td&gt;
+          &lt;td&gt;SELECT 关键字对应的那个查询类型&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;table&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;表名&lt;/td&gt;
+          &lt;td&gt;table&lt;/td&gt;
+          &lt;td&gt;表名&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;partitions&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;匹配的分区信息&lt;/td&gt;
+          &lt;td&gt;partitions&lt;/td&gt;
+          &lt;td&gt;匹配的分区信息&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;type&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;针对单表的查询方式（全表扫描、索引）&lt;/td&gt;
+          &lt;td&gt;type&lt;/td&gt;
+          &lt;td&gt;针对单表的查询方式（全表扫描、索引）&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;possible_keys&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;可能用到的索引&lt;/td&gt;
+          &lt;td&gt;possible_keys&lt;/td&gt;
+          &lt;td&gt;可能用到的索引&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;key&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;实际上使用的索引&lt;/td&gt;
+          &lt;td&gt;key&lt;/td&gt;
+          &lt;td&gt;实际上使用的索引&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ken_len&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;实际上使用的索引长度&lt;/td&gt;
+          &lt;td&gt;ken_len&lt;/td&gt;
+          &lt;td&gt;实际上使用的索引长度&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ref&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;当使用索引列等值查询时，与索引列进行等值匹配的对象信息&lt;/td&gt;
+          &lt;td&gt;ref&lt;/td&gt;
+          &lt;td&gt;当使用索引列等值查询时，与索引列进行等值匹配的对象信息&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;rows&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;预估的需要读取的记录条数&lt;/td&gt;
+          &lt;td&gt;rows&lt;/td&gt;
+          &lt;td&gt;预估的需要读取的记录条数&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;filterte&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;某个表经过 搜索条件过滤后剩余记录条数的百分比&lt;/td&gt;
+          &lt;td&gt;filterte&lt;/td&gt;
+          &lt;td&gt;某个表经过 搜索条件过滤后剩余记录条数的百分比&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Extra&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;一些额外的信息，比如排列&lt;/td&gt;
+          &lt;td&gt;Extra&lt;/td&gt;
+          &lt;td&gt;一些额外的信息，比如排列&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -7753,159 +7753,6 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;redis-单线程为什么这么快&#34;&gt;Redis 单线程为什么这么快
 &lt;/h2&gt;&lt;p&gt;Redis 基于 Reactor 模式开发了网络事件处理器、文件事件处理器 file event handler。它是单线程的，所以 Redis 才叫做单线程的模型&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Spring</title>
-        <link>https://akaxedx.github.io/p/spring/</link>
-        <pubDate>Fri, 30 Aug 2024 17:59:49 +0800</pubDate>
-        
-        <guid>https://akaxedx.github.io/p/spring/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/spring/saber.jpg" alt="Featured image of post Spring" /&gt;&lt;h1 id=&#34;spring&#34;&gt;Spring
-&lt;/h1&gt;&lt;h2 id=&#34;谈谈-ioc&#34;&gt;谈谈 IOC
-&lt;/h2&gt;&lt;p&gt;IOC - 控制反转&lt;/p&gt;
-&lt;h3 id=&#34;什么是控制控制了什么&#34;&gt;什么是控制，控制了什么
-&lt;/h3&gt;&lt;p&gt;我们在使用 Spring 时，会建一些类，比如 UserService&lt;/p&gt;
-&lt;p&gt;使用一些注解，比如 @Autowired&lt;/p&gt;
-&lt;p&gt;但是，当程序运行时，用的是具体的 UserService 对象，那么这些对象是什么时候创建的，谁创建的，对象里的值哪里来的，这些都是 Spring 做的&lt;/p&gt;
-&lt;p&gt;这就是控制&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;控制对象的创建&lt;/li&gt;
-&lt;li&gt;控制对象内属性的赋值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;什么是反转&#34;&gt;什么是反转
-&lt;/h3&gt;&lt;p&gt;如果我们不使用 Spring，就需要我们自己创建对象以及赋值，反过来，Spring 帮我们做这些，这就是 &lt;strong&gt;反转&lt;/strong&gt;，表示一种 &lt;strong&gt;对象控制权&lt;/strong&gt; 的转移&lt;/p&gt;
-&lt;h3 id=&#34;反转有什么用为什么反转&#34;&gt;反转有什么用，为什么反转
-&lt;/h3&gt;&lt;p&gt;如果我们自己负责创建对象，自己赋值，会出现什么情况&lt;/p&gt;
-&lt;p&gt;比如现在有三个类&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A 类，A 类里有一个属性 C c&lt;/li&gt;
-&lt;li&gt;B 类，B 类里也有一个属性 C c&lt;/li&gt;
-&lt;li&gt;C 类&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;现在程序要运行，这三个类的对象都要创建出来，并且相应的属性要有值，那么除开定义这三个类，我们还需要写&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A a = new A()&lt;/li&gt;
-&lt;li&gt;B b = new B()&lt;/li&gt;
-&lt;li&gt;C c = new C()&lt;/li&gt;
-&lt;li&gt;a.c = c&lt;/li&gt;
-&lt;li&gt;b.c =c&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们会多些很多业务代码，而且随着属性变多，类变多，代码会变得异常复杂，将这些工作交给 Spring，减轻了程序员的负担&lt;/p&gt;
-&lt;h3 id=&#34;总结&#34;&gt;总结
-&lt;/h3&gt;&lt;p&gt;IoC 表示控制反转，表示如果使用 Spring，那么 Spring 会负责来创建对象，以及给对象内的属性赋值，也就是如果用 Spring，那么对象的控制权将转交给 Spring&lt;/p&gt;
-&lt;h2 id=&#34;单例-bean-和单例模式&#34;&gt;单例 Bean 和单例模式
-&lt;/h2&gt;&lt;p&gt;单例模式表示 JVM 中某个类的对象只会存在一个&lt;/p&gt;
-&lt;p&gt;单例 Bean 并不表示 JVM 中只能存在唯一的某个类的对象&lt;/p&gt;
-&lt;p&gt;单例 Bean ，使用同一个名字能拿到同一个对象，但我可以 new 出来很多个该对象取不同的名字&lt;/p&gt;
-&lt;h2 id=&#34;spring-中的事务是如何实现的&#34;&gt;Spring 中的事务是如何实现的
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Spring 事务底层是基于数据库事务和 AOP 机制的&lt;/li&gt;
-&lt;li&gt;首先对于使用了 @Transactional 注解的 Bean，spring 会创建一个代理对象作为 Bean&lt;/li&gt;
-&lt;li&gt;当调用代理对象的方法时，会先判断该方法上是否加了 @Transactional 注解&lt;/li&gt;
-&lt;li&gt;如果加了，那么则利用事务管理器创建一个数据库连接&lt;/li&gt;
-&lt;li&gt;并且修改数据库连接的 autocommit 属性为 false，禁止此连接的自动提交，这是实现 Spring 事务非常重要的一步&lt;/li&gt;
-&lt;li&gt;然后执行当前方法，方法中会执行 sql&lt;/li&gt;
-&lt;li&gt;执行完当前方法后，如果没有出现异常就直接提交事务&lt;/li&gt;
-&lt;li&gt;如果出现了异常，并且这个异常是需要回滚的就会回滚事务，否则仍然提交事务&lt;/li&gt;
-&lt;li&gt;Spring 事务的隔离级别对应的就是数据库的隔离级别&lt;/li&gt;
-&lt;li&gt;Spring 事务的传播机制是 Spring 事务自己实现的，也是 Spring 事务中最复杂的&lt;/li&gt;
-&lt;li&gt;Spring 事务的传播机制是基于数据库连接来做的，一个数据库连接一个事务，如果传播机制配置为需要新开一个事务，那么实际上就是先建立一个数据库连接，在此新数据库连接上执行 sql&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;spring-事务传播机制&#34;&gt;Spring 事务传播机制
-&lt;/h2&gt;&lt;p&gt;多个事务方法相互调用时，事务如何在这些方法间传播，方法 A是一个事务的方法，方法 A 执行过程中调用了方法 B，那么方法 B 有无事务以及方法 B 对事务的要求不同都会对方法 A 的事务具体执行造成影响，同时方法 A 的事务对方法 B 的事务执行也有影响，这种影响具体是什么就由这两个方法所定义的事务传播类型所决定&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;REQUIRED（Spring 默认的事务传播类型）：如果当前没有事务，则自己新建一个事务，如果当前存在事务，则加入这个事务&lt;/li&gt;
-&lt;li&gt;SUPPORTS：当前存在事务，则加入当前事务，如果当前没有事务，就以非事务方法执行&lt;/li&gt;
-&lt;li&gt;MANDATORY：当前存在事务，则加入当前事务，如果当前事务不存在，则抛出异常&lt;/li&gt;
-&lt;li&gt;REQUIRED_NEW：创建一个新事物，如果当前存在事务，则挂起该事务&lt;/li&gt;
-&lt;li&gt;NOT_SUPPORTED：以非事务方式执行，如果当前存在事务，则挂起当前事务&lt;/li&gt;
-&lt;li&gt;NEVER：不使用事务，如果当前事务存在，则抛出异常&lt;/li&gt;
-&lt;li&gt;NESTED：如果当前事务存在，则在嵌套事务中执行，否则开启一个事物&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;spring-事务什么时候会失效&#34;&gt;Spring 事务什么时候会失效
-&lt;/h2&gt;&lt;p&gt;spring 事务的原理是 AOP，进行了切面增强，那么失效的根本原因是这个 AOP 不起作用了，常见情况有以下几种&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;发生自调用，类里面使用 this 调用本类的方法（this 通常省略），此时这个 this 对象不是代理类，而是 UserService 对象本身&lt;/li&gt;
-&lt;li&gt;方法不是 public 的：@Transactional 只能用于 public 方法上，否则事务不会失效，如果要用在非 public 方法上，可以开启 AspectJ 代理模式&lt;/li&gt;
-&lt;li&gt;数据库不支持事务&lt;/li&gt;
-&lt;li&gt;没有被 spring 管理&lt;/li&gt;
-&lt;li&gt;异常被吃掉事务不会回滚（或抛出的一场没有被定义，默认 RuntimeException）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;spring-中-bean-是线程安全的吗&#34;&gt;Spring 中 Bean 是线程安全的吗
-&lt;/h2&gt;&lt;p&gt;Bean 本质上还是一个对象&lt;/p&gt;
-&lt;p&gt;Spring 本身没有针对 Bean 做线程安全的处理，所以&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果 Bean 是无状态的，那么 Bean 是线程安全的&lt;/li&gt;
-&lt;li&gt;如果 Bean 是有状态的，那么 Bean 是线程不安全的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;（有状态：Bean 里的属性会变化，Setter方法）&lt;/p&gt;
-&lt;p&gt;另外，Bean 是不是线程安全，跟 Bean 的作用域没有关系，Bean 的作用域只是表示 Bean 生命周期范围，对于任何生命周期的 Bean 都是一个对象，这个对象是不是线程安全的，还是得看这个 Bean 对象本身&lt;/p&gt;
-&lt;h2 id=&#34;spring-中的-bean-创建的生命周期有哪些步骤&#34;&gt;Spring 中的 Bean 创建的生命周期有哪些步骤
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;推断构造方法&lt;/li&gt;
-&lt;li&gt;实例化&lt;/li&gt;
-&lt;li&gt;填充属性（依赖注入）&lt;/li&gt;
-&lt;li&gt;处理 Aware 回调&lt;/li&gt;
-&lt;li&gt;初始化前，处理 @PostConstruct 注解&lt;/li&gt;
-&lt;li&gt;初始化，处理 InitializingBean 接口&lt;/li&gt;
-&lt;li&gt;初始化后，进行 AOP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/spring/image-20240902094138683.png&#34;
-	width=&#34;1818&#34;
-	height=&#34;880&#34;
-	srcset=&#34;https://akaxedx.github.io/p/spring/image-20240902094138683_hu5351735520810056888.png 480w, https://akaxedx.github.io/p/spring/image-20240902094138683_hu8986877396039803655.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;image-20240902094138683&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;206&#34;
-		data-flex-basis=&#34;495px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;applicationcontext-和-beanfactory-有什么区别&#34;&gt;ApplicationContext 和 beanFactory 有什么区别
-&lt;/h2&gt;&lt;p&gt;BeanFactory 是 Spring 中非常核心的组件，表示 Bean 工厂，可以生成 Bean，维护 Bean，而 ApplicationContext 继承了 BeanFactory，所以 ApplicationContext 拥有 BeanFactory 所有的特点，也是一个 Bean 工厂，但是 ApplicationContext 除开继承了 BeanFactory 之外，还继承了诸如 EnvironmentCapable、MessageSource、ApplicationEventPublisher 等接口，从而 ApplicationContext 还有获取系统环境变量、国际化、事件发布等功能，这是 BeanFactory 所不具备的&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;ApplicationContext&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;extends&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;EnvironmentCapable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ListableBeanFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;HierarchicalBeanFactory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MessageSource&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ApplicationEventPublisher&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ResourcePatternResolver&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这里 ApplicationContext 不仅继承了 ListableBeanFactory，还继承了环境变量操作的接口&lt;/p&gt;
-&lt;p&gt;EnvironmentCapable ，国际化 MessageSource 等接口&lt;/p&gt;
-&lt;h2 id=&#34;spring-容器启动流程是怎样的&#34;&gt;Spring 容器启动流程是怎样的
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;在创建 Sprig 容器，也就是启动 Spring 时&lt;/li&gt;
-&lt;li&gt;首先会进行扫描，扫描得到所有的 BeanDefinition 对象，并存在一个 Map 中&lt;/li&gt;
-&lt;li&gt;然后筛选出非懒加载的单例 BeanDefinition 进行创建 Bean，对于多例 Bean 不需要再启动过程中去进行创建，对于多例 Bean 会在每次获取 Bean 时利用 BeanDefinition 去创建&lt;/li&gt;
-&lt;li&gt;利用 BeanDefinition 创建 Bean 就是 Bean 的创建生命周期，这期间把包括了合并 BeanDefinition、推断构造方法、实例化、属性填充、初始化前、初始化、初始化后等步骤，其中 AOP 就是发生再初始化后这一步骤中&lt;/li&gt;
-&lt;li&gt;单例 Bean 创建完了之后， Spring 会发布一个容器启动事件&lt;/li&gt;
-&lt;li&gt;Spring 启动结束&lt;/li&gt;
-&lt;li&gt;在源码中会更复杂，比如源码中会提供一些模板方法，让子类来实现，比如源码中还涉及到一些 BeanFactoryPostProcessor 和 BeanPostprocessor 的注册，Spring 的扫描就是通过 BeanFactoryPostProcessor 来实现的，依赖注入就是通过 BeanPostprocessor 来实现的&lt;/li&gt;
-&lt;li&gt;在 Spring 启动过程中还回去处理 @Import 等注解&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;spring-boot-中常用注解及其底层实现&#34;&gt;Spring Boot 中常用注解及其底层实现
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;@SpringBootApplication 注解：这个注解标识了一个 SpringBoot 工程，它实际上是另外三个注解的组合
-&lt;ul&gt;
-&lt;li&gt;@SpringBootConfiguration：这个注解实际上就是以恶搞 @Configuration，表示启动类也是一个配置类&lt;/li&gt;
-&lt;li&gt;@EnableAutoConfiguration：向 Spring 容器中导入了一个 Selector，用来加载 ClassPath 下 SpringFactories 中所定义的自动配置类，将这些自动加载为配置 Bean&lt;/li&gt;
-&lt;li&gt;@ComponentScan：标识扫描路径，因为默认是没有配置实际扫描路径，所以 SpringBoot 扫描的路径是启动类所在的当前目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;@Bean 注解：用来定义 Bean，类似于 XML 中的 &lt;bean&gt; 标签，Spring 在启动时，会对加了 @Bean 注解的方法进行解析，将方法的名字作为 beanName，并通过执行方法得到 bean 对象&lt;/li&gt;
-&lt;li&gt;@Controller、@Service、@ResponseBody、@Autowired&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;spring-boot-是如何启动-tomcat的&#34;&gt;Spring Boot 是如何启动 Tomcat的
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;首先，SpringBoot 在启动时会先创建一个 Spring 容器&lt;/li&gt;
-&lt;li&gt;在创建 Spring 容器过程中，会利用 @ConditionalOnClass 技术来判断当前 classpath 中是否存在 Tomcat 依赖，如果存在则会生成一个启动 Tomcat 的 Bean&lt;/li&gt;
-&lt;li&gt;Spring 容器创建完后，就会获取激动 Tomcat 的 Bean，并且创建 Tomcat 对象，并绑定端口等，然后启动 Tomcat&lt;/li&gt;
-&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -8786,21 +8633,21 @@
 &lt;/div&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;所属 VLAN&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;允许通过 VLAN&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;所属 VLAN&lt;/th&gt;
+          &lt;th&gt;允许通过 VLAN&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;access&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;只能一个（即划入的 VLAN）&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;只能一个即划入的 VLAN&lt;/td&gt;
+          &lt;td&gt;access&lt;/td&gt;
+          &lt;td&gt;只能一个（即划入的 VLAN）&lt;/td&gt;
+          &lt;td&gt;只能一个即划入的 VLAN&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;trunk&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;只能一个 （即 pvid）&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;任意个&lt;/td&gt;
+          &lt;td&gt;trunk&lt;/td&gt;
+          &lt;td&gt;只能一个 （即 pvid）&lt;/td&gt;
+          &lt;td&gt;任意个&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -9407,41 +9254,41 @@
 &lt;/h5&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;UDP&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;TCP&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;UDP&lt;/th&gt;
+          &lt;th&gt;TCP&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;是否连接&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;无连接&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;面向连接&lt;/td&gt;
+          &lt;td&gt;是否连接&lt;/td&gt;
+          &lt;td&gt;无连接&lt;/td&gt;
+          &lt;td&gt;面向连接&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;是否可靠&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;不可靠传输，不使用流量控制和拥塞控制&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;可靠传输，使用流量控制和拥塞控制&lt;/td&gt;
+          &lt;td&gt;是否可靠&lt;/td&gt;
+          &lt;td&gt;不可靠传输，不使用流量控制和拥塞控制&lt;/td&gt;
+          &lt;td&gt;可靠传输，使用流量控制和拥塞控制&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;连接对象个数&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;支持一对一，一对多，多对一和多对多交互通信&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;只能是一对一通信&lt;/td&gt;
+          &lt;td&gt;连接对象个数&lt;/td&gt;
+          &lt;td&gt;支持一对一，一对多，多对一和多对多交互通信&lt;/td&gt;
+          &lt;td&gt;只能是一对一通信&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;传输方式&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;面向报文&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;面向字节流&lt;/td&gt;
+          &lt;td&gt;传输方式&lt;/td&gt;
+          &lt;td&gt;面向报文&lt;/td&gt;
+          &lt;td&gt;面向字节流&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;首部开销&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;首部开销小，仅 8 字节&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;首部最小 20 字节，最大 60 字节&lt;/td&gt;
+          &lt;td&gt;首部开销&lt;/td&gt;
+          &lt;td&gt;首部开销小，仅 8 字节&lt;/td&gt;
+          &lt;td&gt;首部最小 20 字节，最大 60 字节&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;适用场景&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;适用于实时应用（IP 电话、视频会议、直播等）&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;适用于要求可靠传输的应用，例如文件传输&lt;/td&gt;
+          &lt;td&gt;适用场景&lt;/td&gt;
+          &lt;td&gt;适用于实时应用（IP 电话、视频会议、直播等）&lt;/td&gt;
+          &lt;td&gt;适用于要求可靠传输的应用，例如文件传输&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -9760,30 +9607,30 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;分类&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;分类描述&lt;/th&gt;
+          &lt;th&gt;分类&lt;/th&gt;
+          &lt;th&gt;分类描述&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1**&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;信息，服务器收到请求，需要请求者继续执行操作&lt;/td&gt;
+          &lt;td&gt;1**&lt;/td&gt;
+          &lt;td&gt;信息，服务器收到请求，需要请求者继续执行操作&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2**&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;成功，操作被成功接收并处理&lt;/td&gt;
+          &lt;td&gt;2**&lt;/td&gt;
+          &lt;td&gt;成功，操作被成功接收并处理&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;3**&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;重定向，需要进一步操作以完成请求&lt;/td&gt;
+          &lt;td&gt;3**&lt;/td&gt;
+          &lt;td&gt;重定向，需要进一步操作以完成请求&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;4**&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;客户端错误，请求包含语法错误或无法完成请求&lt;/td&gt;
+          &lt;td&gt;4**&lt;/td&gt;
+          &lt;td&gt;客户端错误，请求包含语法错误或无法完成请求&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;5**&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;服务器错误，服务器在处理请求过程中发生了错误&lt;/td&gt;
+          &lt;td&gt;5**&lt;/td&gt;
+          &lt;td&gt;服务器错误，服务器在处理请求过程中发生了错误&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -10097,31 +9944,6 @@
 &lt;li&gt;&lt;strong&gt;中断&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;异常&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>Tomcat</title>
-        <link>https://akaxedx.github.io/p/tomcat/</link>
-        <pubDate>Sun, 25 Aug 2024 18:10:13 +0800</pubDate>
-        
-        <guid>https://akaxedx.github.io/p/tomcat/</guid>
-        <description>&lt;img src="https://akaxedx.github.io/p/tomcat/saber.jpg" alt="Featured image of post Tomcat" /&gt;&lt;h1 id=&#34;tomcat&#34;&gt;Tomcat
-&lt;/h1&gt;&lt;h2 id=&#34;tomcat-中为什么要使用自定义类加载器&#34;&gt;Tomcat 中为什么要使用自定义类加载器
-&lt;/h2&gt;&lt;p&gt;一个 Tomcat 中可以部署很多个应用，而每个应用中都存在很多类，各个应用中的类是独立的，全类名是可以相同的。一个 Tomcat 不管内部部署了多少应用，Tomcat 启动之后就是一个 Java 进程，也就是一个 JVM，所以如果 Tomcat 中只存在一个类加载器，比如默认的 AppClassLoader，那么只能加载一个同名类，这是有问题的。在 Tomcat中，会为部署的每个应用都生成一个类加载器实例，叫做 WebAppClassLoader，这样 Tomcat 中每个应用都可以使用自己的类加载器去加载自己的类，实现应用之间的类隔离，不出现冲突。另外 Tomcat 还利用自定义加载器实现了热加载的功能&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://akaxedx.github.io/p/tomcat/image-20240825182113654.png&#34;
-	width=&#34;894&#34;
-	height=&#34;486&#34;
-	srcset=&#34;https://akaxedx.github.io/p/tomcat/image-20240825182113654_hu16669531742994426364.png 480w, https://akaxedx.github.io/p/tomcat/image-20240825182113654_hu3744469537917276043.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Tomcat 应用图解&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;183&#34;
-		data-flex-basis=&#34;441px&#34;
-	
-&gt;&lt;/p&gt;
 </description>
         </item>
         

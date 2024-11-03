@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="开端 闲来无事，在b站加了一个群，群里有个有意思的机器人\n很有意思，在b站上搜索发现，springboot 是可以整合一些开源的框架完成这种操作，在使用后发现，目前的qq机器人框架都已经停止维护，登录协议已经无法使用，而且qq封禁力度大，很多机器人账号活不过几天，风险太大，就在准备放弃时，竟然发现！！！\n">
+<title>QQ官方机器人</title>
+
+<link rel='canonical' href='https://akaxedx.github.io/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/'>
+
+<link rel="stylesheet" href="/scss/style.min.ae5dcca4aba68a55efaf26a3449bc5aadef19e44c13385723d3fd76af6f91881.css"><meta property='og:title' content="QQ官方机器人">
+<meta property='og:description' content="开端 闲来无事，在b站加了一个群，群里有个有意思的机器人\n很有意思，在b站上搜索发现，springboot 是可以整合一些开源的框架完成这种操作，在使用后发现，目前的qq机器人框架都已经停止维护，登录协议已经无法使用，而且qq封禁力度大，很多机器人账号活不过几天，风险太大，就在准备放弃时，竟然发现！！！\n">
+<meta property='og:url' content='https://akaxedx.github.io/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/'>
+<meta property='og:site_name' content='AKAxedx-wfj'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='工具' /><meta property='article:published_time' content='2024-11-03T21:20:55&#43;08:00'/><meta property='article:modified_time' content='2024-11-03T21:20:55&#43;08:00'/><meta property='og:image' content='https://akaxedx.github.io/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/zoe.jpg' />
+<meta name="twitter:title" content="QQ官方机器人">
+<meta name="twitter:description" content="开端 闲来无事，在b站加了一个群，群里有个有意思的机器人\n很有意思，在b站上搜索发现，springboot 是可以整合一些开源的框架完成这种操作，在使用后发现，目前的qq机器人框架都已经停止维护，登录协议已经无法使用，而且qq封禁力度大，很多机器人账号活不过几天，风险太大，就在准备放弃时，竟然发现！！！\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://akaxedx.github.io/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/zoe.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu6690453460540257700.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😍</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">AKAxedx-wfj</a></h1>
+            <h2 class="site-description">时来天地皆同力，远去英雄不自由</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/akaxedx/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%BD%92%E6%A1%A3/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>深色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#首页">首页</a></li>
+    <li><a href="#无服务器">无服务器</a></li>
+    <li><a href="#有服务器">有服务器</a>
+      <ol>
+        <li><a href="#沙箱配置">沙箱配置</a></li>
+        <li><a href="#开发设置">开发设置</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#整合的功能">整合的功能</a>
+      <ol>
+        <li><a href="#kimi-的大模型能力">KIMI 的大模型能力</a></li>
+        <li><a href="#睿声-ai-的-mp3-生成功能">睿声 AI 的 mp3 生成功能</a></li>
+      </ol>
+    </li>
+    <li><a href="#最后的运行文件">最后的运行文件</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+                <img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/zoe_hu13040337239647520219.jpg"
+                        srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/zoe_hu13040337239647520219.jpg 800w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/zoe_hu12541954593258500490.jpg 1600w"
+                        width="800" 
+                        height="869" 
+                        loading="lazy"
+                        alt="Featured image of post QQ官方机器人" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/">QQ官方机器人</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-11-03</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="开端">开端
+</h1><p>闲来无事，在b站加了一个群，群里有个有意思的机器人</p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103213744400.png"
+	width="609"
+	height="245"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103213744400_hu13808798785653553409.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103213744400_hu8575679548021819656.png 1024w"
+	loading="lazy"
+	
+		alt="群机器人"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="248"
+		data-flex-basis="596px"
+	
+></p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103213825637.png"
+	width="511"
+	height="417"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103213825637_hu4432614517259968799.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103213825637_hu10597089985173401170.png 1024w"
+	loading="lazy"
+	
+		alt="群机器人"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="294px"
+	
+></p>
+<p>很有意思，在b站上搜索发现，springboot 是可以整合一些开源的框架完成这种操作，在使用后发现，目前的qq机器人框架都已经停止维护，登录协议已经无法使用，而且qq封禁力度大，很多机器人账号活不过几天，风险太大，就在准备放弃时，竟然发现！！！</p>
+<blockquote>
+<p>视频链接：https://www.bilibili.com/video/BV1Rp4y1J7kh/?spm_id_from=333.337.search-card.all.click&amp;vd_source=63e472546bd25b2f0e56091098e6b110</p>
+</blockquote>
+<h1 id="转折">转折
+</h1><p>qq开放平台在2024年5月份将qq官方机器人开放给个人使用，这简直让人太兴奋了，马不停蹄注册并开始使用</p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103214511670.png"
+	width="1268"
+	height="1074"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103214511670_hu6346837418169322721.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103214511670_hu17894499713280277808.png 1024w"
+	loading="lazy"
+	
+		alt="QQ开放平台"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="118"
+		data-flex-basis="283px"
+	
+></p>
+<p>在这里，我们可以创建机器人，填写一些奇奇怪怪不重要的信息就可以开始进行开发了</p>
+<h1 id="准备工作">准备工作
+</h1><h2 id="首页">首页
+</h2><p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103214709019.png"
+	width="1269"
+	height="1308"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103214709019_hu14500657949492336657.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103214709019_hu16280057091886147054.png 1024w"
+	loading="lazy"
+	
+		alt="qq机器人开发首页"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="97"
+		data-flex-basis="232px"
+	
+></p>
+<h2 id="无服务器">无服务器
+</h2><p>在我们没有服务器的情况下，我们可以通过配置沙箱进行开发，里面有很多现成的插件供我们使用和配置，这里不再过多赘述，具体设置可以看 <a class="link" href="https://www.bilibili.com/video/BV1HgeQeoEp1/?spm_id_from=333.337.search-card.all.click&amp;vd_source=63e472546bd25b2f0e56091098e6b110"  target="_blank" rel="noopener"
+    >这个链接</a></p>
+<h2 id="有服务器">有服务器
+</h2><p>作为一个拥有自己服务器的高端人士（用的最便宜最垃圾的服务器），我们当然要自己去开发有意思的功能，怎么能用别人的呢，我们开发的功能只是自己使用，并不会发布这个机器人（主要是ai太贵，发布出去用的人多了，钱包hold不住，自己玩玩拉倒）</p>
+<h3 id="沙箱配置">沙箱配置
+</h3><p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103215229178.png"
+	width="910"
+	height="932"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103215229178_hu13285922178333560057.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103215229178_hu14136162071938959066.png 1024w"
+	loading="lazy"
+	
+		alt="沙箱配置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="97"
+		data-flex-basis="234px"
+	
+></p>
+<p>在沙箱配置中，指定机器人生效的群聊，群聊只能选择一个（在具体的使用过程中发现，先指定一个群聊，在群聊中把机器人加入群聊，然后再重新指定群聊，先前加入机器人的群聊机器人不会消失，卡个bug可以让很多群都能使用这个机器人哦）</p>
+<h3 id="开发设置">开发设置
+</h3><p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103215718459.png"
+	width="889"
+	height="747"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103215718459_hu3132559694600060169.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103215718459_hu16749322197291320767.png 1024w"
+	loading="lazy"
+	
+		alt="开发设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="119"
+		data-flex-basis="285px"
+	
+></p>
+<p>我们在这里重置token并记录token值</p>
+<p>配置我们服务器的 IP 地址</p>
+<p>回调配置等暂时没有用到，回头再说，先把机器人搭起来</p>
+<h1 id="正式开发">正式开发
+</h1><p>我们使用 QQ 机器人的 Python sdk</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pip install qq-botpy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意 python 版本要在 3.8 以上哦</p>
+<p>预览整个结构</p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103220741494.png"
+	width="273"
+	height="183"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103220741494_hu10040800684549921917.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103220741494_hu7514290466144057600.png 1024w"
+	loading="lazy"
+	
+		alt="项目结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="149"
+		data-flex-basis="358px"
+	
+></p>
+<p>超级简单</p>
+<h2 id="整合的功能">整合的功能
+</h2><h3 id="kimi-的大模型能力">KIMI 的大模型能力
+</h3><p>先去看看 kimi 的 api 文档</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">curl https://api.moonshot.cn/v1/chat/completions <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -H <span class="s2">&#34;Authorization: Bearer </span><span class="nv">$MOONSHOT_API_KEY</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -d <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;model&#34;: &#34;moonshot-v1-8k&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;messages&#34;: [
+</span></span></span><span class="line"><span class="cl"><span class="s1">            {&#34;role&#34;: &#34;system&#34;, &#34;content&#34;: &#34;你是 Kimi，由 Moonshot AI 提供的人工智能助手，你更擅长中文和英文的对话。你会为用户提供安全，有帮助，准确的回答。同时，你会拒绝一切涉及恐怖主义，种族歧视，黄色暴力等问题的回答。Moonshot AI 为专有名词，不可翻译成其他语言。&#34;},
+</span></span></span><span class="line"><span class="cl"><span class="s1">            {&#34;role&#34;: &#34;user&#34;, &#34;content&#34;: &#34;你好，我叫李雷，1+1等于多少？&#34;}
+</span></span></span><span class="line"><span class="cl"><span class="s1">        ],
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;temperature&#34;: 0.3
+</span></span></span><span class="line"><span class="cl"><span class="s1">   }&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简单封装一下（文件名：nature_ai.py）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">botpy</span> <span class="kn">import</span> <span class="n">logging</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="n">_log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">apiKey</span> <span class="o">=</span> <span class="s1">&#39;你自己的apiKey&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;ai&#34;</span><span class="p">:{</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s1">&#39;Apifox/1.0.0 (https://apifox.com)&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;Bearer </span><span class="si">{</span><span class="n">apiKey</span><span class="si">}</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">urls</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;ai&#34;</span><span class="p">:</span><span class="s2">&#34;https://api.moonshot.cn/v1/chat/completions&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">post_to_ai</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">header</span> <span class="o">=</span> <span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ai&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;model&#34;</span><span class="p">:</span> <span class="s2">&#34;moonshot-v1-8k&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;messages&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="s2">&#34;role&#34;</span><span class="p">:</span> <span class="s2">&#34;user&#34;</span><span class="p">,</span> <span class="s2">&#34;content&#34;</span><span class="p">:</span> <span class="n">context</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">base_url</span> <span class="o">=</span> <span class="n">urls</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ai&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">replay</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">replay</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="睿声-ai-的-mp3-生成功能">睿声 AI 的 mp3 生成功能
+</h3><p>这个 AI 可厉害了，能输出雷军语音呢（笑）</p>
+<p>看看睿声 AI 的 api 文档</p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221110602.png"
+	width="312"
+	height="1098"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221110602_hu4825973437785350620.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221110602_hu9429781170495162289.png 1024w"
+	loading="lazy"
+	
+		alt="请求列表"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="28"
+		data-flex-basis="68px"
+	
+></p>
+<p>由于资金问题，我挑选了这两条（好多不给用，呜呜呜~~~~）</p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221424422.png"
+	width="631"
+	height="65"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221424422_hu9695193961906109335.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221424422_hu10353063906982659521.png 1024w"
+	loading="lazy"
+	
+		alt="创建异步任务生成任务"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="970"
+		data-flex-basis="2329px"
+	
+></p>
+<p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221353581.png"
+	width="635"
+	height="51"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221353581_hu6594039560841243647.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103221353581_hu4776946930310520699.png 1024w"
+	loading="lazy"
+	
+		alt="获取指定任务详情"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1245"
+		data-flex-basis="2988px"
+	
+></p>
+<p>看看 curl</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">curl --location --request POST <span class="s1">&#39;https://v1.reecho.cn/api/tts/generate&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;User-Agent: Apifox/1.0.0 (https://apifox.com)&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer ????????&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--data-raw <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">  &#34;contents&#34;: [
+</span></span></span><span class="line"><span class="cl"><span class="s1">    {
+</span></span></span><span class="line"><span class="cl"><span class="s1">      &#34;voiceId&#34;: &#34;雷军id&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s1">      &#34;text&#34;: &#34;大家好，我是雷军&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    }
+</span></span></span><span class="line"><span class="cl"><span class="s1">  ]
+</span></span></span><span class="line"><span class="cl"><span class="s1">}&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">curl --location --request GET <span class="s1">&#39;https://v1.reecho.cn/api/tts/generate/?limit&amp;offset&amp;status&amp;stream&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;User-Agent: Apifox/1.0.0 (https://apifox.com)&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer ????????&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>voiceId 是自己添加的语音模型，可在自己的控制台复制</p>
+<p>？写自己的 API KEY</p>
+<p>看看响应</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;status&#34;</span>: 403,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;message&#34;</span>: <span class="s2">&#34;Insufficient Credit, Please recharge first. 余额不足,请前往增值商店充值.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>额。。。</p>
+<p>重新来</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;status&#34;</span>: 200,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;message&#34;</span>: <span class="s2">&#34;OK&#34;</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;data&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;id&#34;</span>: <span class="s2">&#34;fe8eccdc-41d7-4c5e-a45f-f6744ba59699&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;userId&#34;</span>: <span class="s2">&#34;f84e43a0-9ec0-4ff6-942f-354024350246&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;status&#34;</span>: <span class="s2">&#34;pending&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;type&#34;</span>: <span class="s2">&#34;reecho-neural-voice-001&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;metadata&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">......
+</span></span><span class="line"><span class="cl">......
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>好长，但是我们要的是这个 id</p>
+<p>拿到id</p>
+<p>请求一下 get</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;status&#34;</span>: 200,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;message&#34;</span>: <span class="s2">&#34;OK&#34;</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;data&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;id&#34;</span>: <span class="s2">&#34;fe8eccdc-41d7-4c5e-a45f-f6744ba59699&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;userId&#34;</span>: <span class="s2">&#34;f84e43a0-9ec0-4ff6-942f-354024350246&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;status&#34;</span>: <span class="s2">&#34;generated&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;type&#34;</span>: <span class="s2">&#34;reecho-neural-voice-001&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;metadata&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;contents&#34;</span>: <span class="o">[</span>
+</span></span><span class="line"><span class="cl">                <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;voiceId&#34;</span>: <span class="s2">&#34;market:167b4212-c032-4f42-98fa-15293584aa51&#34;</span>,
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;text&#34;</span>: <span class="s2">&#34;大家好，我是雷军&#34;</span>,
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;audio&#34;</span>: <span class="s2">&#34;https://voc-public-storage.reecho.cn/generate/fe8eccdc-41d7-4c5e-a45f-f6744ba59699/fe8eccdc-41d7-4c5e-a45f-f6744ba59699-0-0yivct.mp3&#34;</span>,
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;duration&#34;</span>: 2.5861,
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;generatedAt&#34;</span>: <span class="s2">&#34;2024-11-03T14:18:19.745Z&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="o">}</span>
+</span></span><span class="line"><span class="cl">.....
+</span></span><span class="line"><span class="cl">.....
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更长了，但是没关系，我们拿到了 MP3 地址</p>
+<p>太好了，简单封装一下（voice_ai.py）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">botpy</span> <span class="kn">import</span> <span class="n">logging</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="n">_log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">voiceIdMap</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;lei/&#34;</span><span class="p">:</span><span class="s2">&#34;167b4212-c032-4f42-98fa-15293584aa51&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;sun/&#34;</span><span class="p">:</span><span class="s2">&#34;69623557-9b41-46b0-96b6-7e38705d8074&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">voiceApiKey</span> <span class="o">=</span> <span class="s1">&#39;？？？？？？？？&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;mp3&#34;</span><span class="p">:{</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s1">&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;voice_ai&#34;</span><span class="p">:{</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s1">&#39;Apifox/1.0.0 (https://apifox.com)&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;Bearer </span><span class="si">{</span><span class="n">voiceApiKey</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;*/*&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Host&#39;</span><span class="p">:</span> <span class="s1">&#39;v1.reecho.cn&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Connection&#39;</span><span class="p">:</span> <span class="s1">&#39;keep-alive&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">urls</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;voice_ai_get_id&#34;</span><span class="p">:</span><span class="s2">&#34;https://v1.reecho.cn/api/tts/generate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;voice_ai_get_mp3_url&#34;</span><span class="p">:</span><span class="s2">&#34;https://v1.reecho.cn/api/tts/generate/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">download_mp3</span><span class="p">(</span><span class="n">mp3_url</span><span class="p">)</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">header</span> <span class="o">=</span> <span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mp3&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mp3_url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">res</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mp3_url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;重试&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">voice_ai_get_id</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">pre</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">base_url</span> <span class="o">=</span> <span class="n">urls</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;voice_ai_get_id&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">header</span> <span class="o">=</span> <span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;voice_ai&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;contents&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;voiceId&#34;</span><span class="p">:</span> <span class="n">voiceIdMap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pre</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;text&#34;</span><span class="p">:</span> <span class="n">context</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">id_info</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">,</span><span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">id_info</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">voice_ai_get_mp3_url</span><span class="p">(</span><span class="n">id_info</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">id_info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">param_value</span> <span class="o">=</span> <span class="n">id_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">base_url</span> <span class="o">=</span> <span class="n">urls</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;voice_ai_get_mp3_url&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">param_value</span>
+</span></span><span class="line"><span class="cl">    <span class="n">header</span> <span class="o">=</span> <span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;voice_ai&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">response</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;status&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;generated&#39;</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mp3_url</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;metadata&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;contents&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;audio&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">mp3_url</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>写博客的时候才发现，原来两个 url 是同一个，草率了，不过问题不大</p>
+<p>这里有个细节，我们的 MP3 需要下载下来，因为 qq 支持的语音文件是 silk 格式，我们需要转码后再用 nginx 将资源暴露出去，获取新的 silk 的url</p>
+<h2 id="最后的运行文件">最后的运行文件
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">botpy</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">botpy</span> <span class="kn">import</span> <span class="n">logging</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">botpy.message</span> <span class="kn">import</span> <span class="n">C2CMessage</span><span class="p">,</span> <span class="n">GroupMessage</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">utils.requests_utils.voice_ai</span> <span class="k">as</span> <span class="nn">v_utils</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">utils.requests_utils.nature_ai</span> <span class="k">as</span> <span class="nn">a_utils</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hashlib</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">utils.mp3_utils.mp3</span> <span class="k">as</span> <span class="nn">mp3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;http://服务器ip地址/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">_log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">rootHome</span> <span class="o">=</span> <span class="s1">&#39;/home/download/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyClient</span><span class="p">(</span><span class="n">botpy</span><span class="o">.</span><span class="n">Client</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;robot 「</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">robot</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">」 on_ready!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_c2c_message_create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">C2CMessage</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># 雷军语音</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #雷军语音 &#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #孙狗语音 &#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hash_object</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hash_hex</span> <span class="o">=</span> <span class="n">hash_object</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pre</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #雷军语音 &#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pre</span> <span class="o">=</span> <span class="s1">&#39;lei/&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #孙狗语音 &#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pre</span> <span class="o">=</span> <span class="s1">&#39;sun/&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">leiHome</span> <span class="o">=</span> <span class="n">rootHome</span> <span class="o">+</span> <span class="n">pre</span>
+</span></span><span class="line"><span class="cl">            <span class="n">filename</span> <span class="o">=</span> <span class="n">leiHome</span> <span class="o">+</span> <span class="n">hash_hex</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">filename</span> <span class="o">+</span> <span class="s1">&#39;.mp3&#39;</span><span class="p">)</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">context</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_c2c_message</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">user_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">msg_type</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">msg_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">content</span><span class="o">=</span><span class="s2">&#34;请输入语音内容&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 异步执行任务，获取对应任务 id</span>
+</span></span><span class="line"><span class="cl">                <span class="n">id_info</span> <span class="o">=</span> <span class="n">v_utils</span><span class="o">.</span><span class="n">voice_ai_get_id</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">pre</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1"># 获取任务结束后的 MP3 地址</span>
+</span></span><span class="line"><span class="cl">                <span class="n">mp3_url</span> <span class="o">=</span> <span class="n">v_utils</span><span class="o">.</span><span class="n">voice_ai_get_mp3_url</span><span class="p">(</span><span class="n">id_info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1"># 下载对应 MP3</span>
+</span></span><span class="line"><span class="cl">                <span class="n">mp3</span><span class="o">.</span><span class="n">downloadMp3</span><span class="p">(</span><span class="n">mp3_url</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">mp3</span><span class="o">.</span><span class="n">convert_to_silk</span><span class="p">(</span><span class="n">filename</span> <span class="o">+</span> <span class="s1">&#39;.mp3&#39;</span><span class="p">,</span> <span class="n">leiHome</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">leiHome</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_url</span> <span class="o">=</span> <span class="n">host</span> <span class="o">+</span> <span class="n">pre</span> <span class="o">+</span>  <span class="n">hash_hex</span> <span class="o">+</span> <span class="s1">&#39;.silk&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;new url: </span><span class="si">{</span><span class="n">new_url</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">uploadMedia</span> <span class="o">=</span> <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_c2c_file</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">user_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">file_type</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>  <span class="c1"># 文件类型要对应上，具体支持的类型见方法说明</span>
+</span></span><span class="line"><span class="cl">                <span class="n">url</span><span class="o">=</span><span class="n">new_url</span> <span class="c1"># 文件Url</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;上传成功&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_c2c_message</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">user_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">msg_type</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>  <span class="c1"># 7表示富媒体类型</span>
+</span></span><span class="line"><span class="cl">                <span class="n">msg_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">media</span><span class="o">=</span><span class="n">uploadMedia</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># ai</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">user_message</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">replay</span> <span class="o">=</span> <span class="n">a_utils</span><span class="o">.</span><span class="n">post_to_ai</span><span class="p">(</span><span class="n">user_message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_c2c_message</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">user_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">msg_type</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">msg_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">content</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">replay</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;choices&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">def</span> <span class="nf">on_group_at_message_create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">GroupMessage</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># ai</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #雷军语音 &#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #孙狗语音 &#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;进来了&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hash_object</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hash_hex</span> <span class="o">=</span> <span class="n">hash_object</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pre</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #雷军语音 &#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pre</span> <span class="o">=</span> <span class="s1">&#39;lei/&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39; #孙狗语音 &#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pre</span> <span class="o">=</span> <span class="s1">&#39;sun/&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">leiHome</span> <span class="o">=</span> <span class="n">rootHome</span> <span class="o">+</span> <span class="n">pre</span>
+</span></span><span class="line"><span class="cl">            <span class="n">filename</span> <span class="o">=</span> <span class="n">leiHome</span> <span class="o">+</span> <span class="n">hash_hex</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">filename</span> <span class="o">+</span> <span class="s1">&#39;.mp3&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">context</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_c2c_message</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">user_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">msg_type</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">msg_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">content</span><span class="o">=</span><span class="s2">&#34;请输入语音内容&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 异步执行任务，获取对应任务 id</span>
+</span></span><span class="line"><span class="cl">                <span class="n">id_info</span> <span class="o">=</span> <span class="n">v_utils</span><span class="o">.</span><span class="n">voice_ai_get_id</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">pre</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1"># 获取任务结束后的 MP3 地址</span>
+</span></span><span class="line"><span class="cl">                <span class="n">mp3_url</span> <span class="o">=</span> <span class="n">v_utils</span><span class="o">.</span><span class="n">voice_ai_get_mp3_url</span><span class="p">(</span><span class="n">id_info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1"># 下载对应 MP3</span>
+</span></span><span class="line"><span class="cl">                <span class="n">mp3</span><span class="o">.</span><span class="n">downloadMp3</span><span class="p">(</span><span class="n">mp3_url</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">mp3</span><span class="o">.</span><span class="n">convert_to_silk</span><span class="p">(</span><span class="n">filename</span> <span class="o">+</span> <span class="s1">&#39;.mp3&#39;</span><span class="p">,</span> <span class="n">leiHome</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_url</span> <span class="o">=</span> <span class="n">host</span> <span class="o">+</span> <span class="n">pre</span> <span class="o">+</span> <span class="n">hash_hex</span> <span class="o">+</span> <span class="s1">&#39;.silk&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;new url: </span><span class="si">{</span><span class="n">new_url</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">uploadMedia</span> <span class="o">=</span> <span class="k">await</span>  <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_group_file</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">group_openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">group_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">file_type</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>  <span class="c1"># 文件类型要对应上，具体支持的类型见方法说明</span>
+</span></span><span class="line"><span class="cl">                <span class="n">url</span><span class="o">=</span><span class="n">new_url</span>  <span class="c1"># 文件Url</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;上传成功&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_group_message</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">group_openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">group_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">msg_type</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>  <span class="c1"># 7表示富媒体类型</span>
+</span></span><span class="line"><span class="cl">                <span class="n">msg_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">media</span><span class="o">=</span><span class="n">uploadMedia</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">user_message</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">replay</span> <span class="o">=</span> <span class="n">a_utils</span><span class="o">.</span><span class="n">post_to_ai</span><span class="p">(</span><span class="n">user_message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">messageResult</span> <span class="o">=</span> <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">_api</span><span class="o">.</span><span class="n">post_group_message</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">group_openid</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">group_openid</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">msg_type</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">msg_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">content</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">replay</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;choices&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">messageResult</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 通过预设置的类型，设置需要监听的事件通道</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># intents = botpy.Intents.none()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># intents.public_messages=True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 通过kwargs，设置需要监听的事件通道</span>
+</span></span><span class="line"><span class="cl">    <span class="n">intents</span> <span class="o">=</span> <span class="n">botpy</span><span class="o">.</span><span class="n">Intents</span><span class="p">(</span><span class="n">public_messages</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">client</span> <span class="o">=</span> <span class="n">MyClient</span><span class="p">(</span><span class="n">intents</span><span class="o">=</span><span class="n">intents</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">appid</span><span class="o">=</span><span class="s1">&#39;????&#39;</span><span class="p">,</span> <span class="n">secret</span><span class="o">=</span><span class="s1">&#39;????&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后的 appid 和 secret 都是机器人的参数，我们一开始拿到的那几个</p>
+<p>这里的具体内容不再介绍，都是 QQ 机器人 的 SDK</p>
+<p>文件类型啥的都可以在方法中找到注释</p>
+<p>贴上 github 地址：https://github.com/tencent-connect/botpy</p>
+<p>到此为止，我们实现了雷军语音的生成和 AI 问答的qq机器人，实在是太厉害了吧^_^</p>
+<h1 id="展示">展示
+</h1><p><img src="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103223602358.png"
+	width="881"
+	height="594"
+	srcset="/p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103223602358_hu2254629895922166595.png 480w, /p/qq%E5%AE%98%E6%96%B9%E6%9C%BA%E5%99%A8%E4%BA%BA/image-20241103223602358_hu8866569976819140373.png 1024w"
+	loading="lazy"
+	
+		alt="展示成果"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="148"
+		data-flex-basis="355px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 AKAxedx
+    </section>
+    
+    <section class="powerby">
+        
+            知识学爆，鸿运齐天 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
